@@ -1,0 +1,7242 @@
+{
+  "meta": {
+    "dataset": "clientes",
+    "query": "Clientes",
+    "count": 904,
+    "fetchedAt": "2025-09-22T15:07:04.010Z"
+  },
+  "data": [
+    {
+      "CODIGO": 2,
+      "CUIT": 30692919994,
+      "NOMBRE": "ABC ACCESORIOS SRL",
+      "CATEGORIA": "LISTA 3",
+      "EMAIL": "info@abcaccesorios.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 5,
+      "CUIT": 20119191115,
+      "NOMBRE": "ANTINORI SAUL IGNACIO",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "administracion@antinoriautopartes.com.ar",
+      "PASSW_WEB": "1191"
+    },
+    {
+      "CODIGO": 6,
+      "CUIT": 20222155801,
+      "NOMBRE": "ANZILIERO OMAR DAVID",
+      "CATEGORIA": "LISTA 3",
+      "EMAIL": "victoranziliero@hotmail.com",
+      "PASSW_WEB": "2221"
+    },
+    {
+      "CODIGO": 8,
+      "CUIT": 23126976739,
+      "NOMBRE": "ARIAS HECTOR CESAR",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "ariasservicios@regina.com.arariasservicios@regina.com.ar",
+      "PASSW_WEB": "1269"
+    },
+    {
+      "CODIGO": 17,
+      "CUIT": 20066552226,
+      "NOMBRE": "BERARDO OSVALDO PEDRO ANDRES",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "berardorepuestos@yahoo.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 22,
+      "CUIT": 20165087721,
+      "NOMBRE": "BORTOLOTTI NESTOR SEREVINO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "indusbor@gmail.com",
+      "PASSW_WEB": "2016"
+    },
+    {
+      "CODIGO": 23,
+      "CUIT": 27232038328,
+      "NOMBRE": "BOURLOT SILVINA MARIA",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "carsshot@arnetbiz.com.ar",
+      "PASSW_WEB": "2723"
+    },
+    {
+      "CODIGO": 30,
+      "CUIT": 20080432799,
+      "NOMBRE": "CARRIZO GUSTAVO EDILBERTO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "carrizogustavo@hotmail.com",
+      "PASSW_WEB": "2008"
+    },
+    {
+      "CODIGO": 36,
+      "CUIT": 33710417739,
+      "NOMBRE": "CHASCOMUS BATERIAS S.A.",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "info@chascobatsa.com.ar",
+      "PASSW_WEB": "3371"
+    },
+    {
+      "CODIGO": 38,
+      "CUIT": 30639126230,
+      "NOMBRE": "CORINDEL S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "corindel@ciudad.com.ar",
+      "PASSW_WEB": "3063"
+    },
+    {
+      "CODIGO": 42,
+      "CUIT": 30708397810,
+      "NOMBRE": "DDD S.A.",
+      "CATEGORIA": "LISTA 2",
+      "EMAIL": "",
+      "PASSW_WEB": "7083"
+    },
+    {
+      "CODIGO": 45,
+      "CUIT": 20219224118,
+      "NOMBRE": "DI PRISCO EDUARDO SALVADOR",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "escapes.uno@hotmail.com",
+      "PASSW_WEB": "2021"
+    },
+    {
+      "CODIGO": 47,
+      "CUIT": 20178430913,
+      "NOMBRE": "DIEGO CARLOS GUSTAVO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "dtrucks@wheellock.com.ar",
+      "PASSW_WEB": "2017"
+    },
+    {
+      "CODIGO": 54,
+      "CUIT": 20253095157,
+      "NOMBRE": "FARIAS GUSTAVO JAVIER",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "nuevocanio14@sanguillermo.com.ar",
+      "PASSW_WEB": "2025"
+    },
+    {
+      "CODIGO": 58,
+      "CUIT": 30517574984,
+      "NOMBRE": "HARDTRAC S.A",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "info@tronador.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 59,
+      "CUIT": 30615614072,
+      "NOMBRE": "GENCO S.A.",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "llucero@gencosa.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 60,
+      "CUIT": 20267562955,
+      "NOMBRE": "GONZALEZ RODRIGO HECTOR",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "vansdesignequipamiento@hotmail.com",
+      "PASSW_WEB": "2026"
+    },
+    {
+      "CODIGO": 66,
+      "CUIT": 20293123870,
+      "NOMBRE": "HUESPE NURY OMAR",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "nury_huespe@hotmail.com",
+      "PASSW_WEB": "2029"
+    },
+    {
+      "CODIGO": 70,
+      "CUIT": 20233832651,
+      "NOMBRE": "JANSSEN HARMS RONALD",
+      "CATEGORIA": "LISTA 3",
+      "EMAIL": "equipjanssen@hotmail.com",
+      "PASSW_WEB": "2023"
+    },
+    {
+      "CODIGO": 73,
+      "CUIT": 30542938362,
+      "NOMBRE": "JULIO C TREACHI E HIJOS SA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "repuestos@jctreachi.com.ar",
+      "PASSW_WEB": "3054"
+    },
+    {
+      "CODIGO": 75,
+      "CUIT": 30686674742,
+      "NOMBRE": "LO BRUNO AUTOMOTORES S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "repuestos@lobrunoautomotores.com.ar",
+      "PASSW_WEB": "3054"
+    },
+    {
+      "CODIGO": 78,
+      "CUIT": 20310478297,
+      "NOMBRE": "MAJUL FENOY MATIAS HASAN",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "rash_escapes@yahoo.com.ar",
+      "PASSW_WEB": "3104"
+    },
+    {
+      "CODIGO": 83,
+      "CUIT": 27244509431,
+      "NOMBRE": "MARTINEZ VIVIANA ELIZABETH",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "edu_barra965@outlook.com",
+      "PASSW_WEB": "2445"
+    },
+    {
+      "CODIGO": 89,
+      "CUIT": 30709672491,
+      "NOMBRE": "NEUMATICOS Y EQUIPAMIENTOS KEN",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "neumaticoskennedy@hotmail.com",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 92,
+      "CUIT": 20170792387,
+      "NOMBRE": "OCHOTECO RAMON ERNESTO",
+      "CATEGORIA": "LISTA 3",
+      "EMAIL": "ramonochoterto@hotmail.com",
+      "PASSW_WEB": "1707"
+    },
+    {
+      "CODIGO": 94,
+      "CUIT": 30708492937,
+      "NOMBRE": "OLIVERO DELMA S. Y COGNO GUSTA",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 95,
+      "CUIT": 30605631076,
+      "NOMBRE": "ORSINI ALBINO V. Y ORSINI ALBE",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "orsini_autopartes@hotmail.com",
+      "PASSW_WEB": "6056"
+    },
+    {
+      "CODIGO": 97,
+      "CUIT": 30709616591,
+      "NOMBRE": "PAIRE GERMAN M. Y PAIRE FRANCO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "fgalarmas@yahoo.com",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 101,
+      "CUIT": 20200975694,
+      "NOMBRE": "* PITTAVINO FERNANDO ESTEBAN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "alemaraccesorios@hotmail.com",
+      "PASSW_WEB": "2020"
+    },
+    {
+      "CODIGO": 108,
+      "CUIT": 20223944141,
+      "NOMBRE": "RESCALDANI DIEGO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "cabezonrepuestos@hotmail.com",
+      "PASSW_WEB": "2239"
+    },
+    {
+      "CODIGO": 111,
+      "CUIT": 27126598446,
+      "NOMBRE": "RODRIGUEZ MARIA DEL CARMEN",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 113,
+      "CUIT": 20163293286,
+      "NOMBRE": "ROMERO HUGO CARLOS",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "sanjose_repuestos@hotmail.com",
+      "PASSW_WEB": "2016"
+    },
+    {
+      "CODIGO": 115,
+      "CUIT": 20066502016,
+      "NOMBRE": "SANCHEZ ROBERTO DANIEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "robertosanchez_rs@hotmail.com",
+      "PASSW_WEB": "0665"
+    },
+    {
+      "CODIGO": 116,
+      "CUIT": 20118291833,
+      "NOMBRE": "SANTO MIGUEL ANGEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "compras@autopartescentro.com.ar",
+      "PASSW_WEB": "1182"
+    },
+    {
+      "CODIGO": 118,
+      "CUIT": 20240031982,
+      "NOMBRE": "SERAFINI DAVID ROBERTO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "totalcarautopartes@hotmail.com",
+      "PASSW_WEB": "2024"
+    },
+    {
+      "CODIGO": 130,
+      "CUIT": 20145427909,
+      "NOMBRE": "VELASCO DANIEL EDUARDO",
+      "CATEGORIA": "LISTA 3",
+      "EMAIL": "silviaguerrero@hotmail.com.ar",
+      "PASSW_WEB": "1454"
+    },
+    {
+      "CODIGO": 132,
+      "CUIT": 20226876341,
+      "NOMBRE": "VIRGOLINI MARCELO PABLO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "marcelovirgolini@hotmail.com",
+      "PASSW_WEB": "2022"
+    },
+    {
+      "CODIGO": 135,
+      "CUIT": 30701576159,
+      "NOMBRE": "VULTRACK S.A.",
+      "CATEGORIA": "LISTA 2",
+      "EMAIL": "ventas@vultrack.com / info@vultrack.com",
+      "PASSW_WEB": "7015"
+    },
+    {
+      "CODIGO": 140,
+      "CUIT": 20243260931,
+      "NOMBRE": "BRUERA JUAN HUMBERTO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "jhbruera@yahoo.com.ar",
+      "PASSW_WEB": "2432"
+    },
+    {
+      "CODIGO": 224,
+      "CUIT": 20133280724,
+      "NOMBRE": "OLTRA RICARDO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "rbo@rbop.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 249,
+      "CUIT": 30707387498,
+      "NOMBRE": "MOTORSPORT S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "arenaudeau@redmeschini.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 260,
+      "CUIT": 30709640646,
+      "NOMBRE": "RASTRO 74 SAN RAFAEL S.A.",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "rastro74@gmail.com",
+      "PASSW_WEB": "5565"
+    },
+    {
+      "CODIGO": 407,
+      "CUIT": 6597225,
+      "NOMBRE": "ROJO HECTOR",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 414,
+      "CUIT": 20303014722,
+      "NOMBRE": "BARRA DAMIAN JORGE",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "multikanios@gamil.com",
+      "PASSW_WEB": "2030"
+    },
+    {
+      "CODIGO": 431,
+      "CUIT": 20149144707,
+      "NOMBRE": "COGGIOLA ENRIQUE ADOLFO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ventas@conerepuestos.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 507,
+      "CUIT": 20239536337,
+      "NOMBRE": "SUAREZ BASALO RICARDO FEDERICO",
+      "CATEGORIA": "LISTA 3",
+      "EMAIL": "escapelibre@hotmail.com.ar",
+      "PASSW_WEB": "2023"
+    },
+    {
+      "CODIGO": 587,
+      "CUIT": 0,
+      "NOMBRE": "BRUNA JUAN CARLOS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "brunaautos@yahoo.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 783,
+      "CUIT": 30708585706,
+      "NOMBRE": "VELUCSE S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 798,
+      "CUIT": 20265249591,
+      "NOMBRE": "BARAHONA EDUARDO ROBERTO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "bmtunning@hotmail.com",
+      "PASSW_WEB": "5554"
+    },
+    {
+      "CODIGO": 806,
+      "CUIT": 20149625187,
+      "NOMBRE": "RUITI CLAUDIO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "ruiti4x4@live.com.ar",
+      "PASSW_WEB": "5555"
+    },
+    {
+      "CODIGO": 817,
+      "CUIT": 20223915184,
+      "NOMBRE": "CEPPI OSCAR",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 818,
+      "CUIT": 30709906557,
+      "NOMBRE": "MIGUEL CRUCES E HIJOS S.A",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 935,
+      "CUIT": 20295870312,
+      "NOMBRE": "CURRI PRIETO HUGO LUCAS",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "escapesmeteoro@yahoo.com.ar",
+      "PASSW_WEB": "2029"
+    },
+    {
+      "CODIGO": 964,
+      "CUIT": 20290140324,
+      "NOMBRE": "DOS RAMOS ALFERES LISANDRO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "lisandro8100@hotmail.com",
+      "PASSW_WEB": "2029"
+    },
+    {
+      "CODIGO": 1069,
+      "CUIT": 20255846249,
+      "NOMBRE": "POLARCAR",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "5562"
+    },
+    {
+      "CODIGO": 1139,
+      "CUIT": 20068896739,
+      "NOMBRE": "VERA SERVICIO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "vera.servicio@speedy.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 1159,
+      "CUIT": 30708783567,
+      "NOMBRE": "JUCA S.R.L.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "ruiti4x4@live.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 1172,
+      "CUIT": 30676945306,
+      "NOMBRE": "HIJOS DE CARLOS VERDINI S.R.L.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 1300,
+      "CUIT": 30711817081,
+      "NOMBRE": "TECNODEM S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 1303,
+      "CUIT": 33708025149,
+      "NOMBRE": "LU VAL S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "154719025 CLAUDIO 154198043 OFICINA",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 1362,
+      "CUIT": 20307413311,
+      "NOMBRE": "POLO MARCOS GABRIEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "jorgepolosa@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 1376,
+      "CUIT": 30708782773,
+      "NOMBRE": "FERRETERIAS DEL ESTE S.R.L.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "ferreteriasdeleste@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 1456,
+      "CUIT": 20283900380,
+      "NOMBRE": "MERLOS PABLO MATEO",
+      "CATEGORIA": "LISTA 2",
+      "EMAIL": "distribuidorambr4@gmail.com",
+      "PASSW_WEB": "2839"
+    },
+    {
+      "CODIGO": 1508,
+      "CUIT": 30699589027,
+      "NOMBRE": "VZ S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 1560,
+      "CUIT": 27301961044,
+      "NOMBRE": "FIDALGO MARIA VANESA",
+      "CATEGORIA": "LISTA 3",
+      "EMAIL": "",
+      "PASSW_WEB": "2730"
+    },
+    {
+      "CODIGO": 1604,
+      "CUIT": 30712393307,
+      "NOMBRE": "AUTOGHAM S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "autogham@autogham.com.ar / oscar@autogham.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 1679,
+      "CUIT": 30699380780,
+      "NOMBRE": "HTA CONSULT S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ventas@equiphonorio.com.ar",
+      "PASSW_WEB": "3069"
+    },
+    {
+      "CODIGO": 1687,
+      "CUIT": 20231730797,
+      "NOMBRE": "VALLI CARLOS EDGARDO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "ventas@evalli.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 1719,
+      "CUIT": 27284862428,
+      "NOMBRE": "TURAGLIO VANINA DEL VALLE",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "vaninaturaglio@hotmail.com / luisturaglio.com",
+      "PASSW_WEB": "123456789"
+    },
+    {
+      "CODIGO": 1720,
+      "CUIT": 20267282987,
+      "NOMBRE": "GIOVANINI FRANCO MARIANO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": "5662"
+    },
+    {
+      "CODIGO": 1736,
+      "CUIT": 20215546129,
+      "NOMBRE": "ARENAS WALTER Y CESAR",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 1737,
+      "CUIT": 20206144492,
+      "NOMBRE": "GONZALES MULTIMARCAS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "matrusilvia@yahoo.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 1765,
+      "CUIT": 30710778341,
+      "NOMBRE": "AISAR S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "nachokarqui@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 1807,
+      "CUIT": 30566262548,
+      "NOMBRE": "M TAGLE HIJO Y CIA. SACI2F",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "emai@taglerenault.com.ar",
+      "PASSW_WEB": "3056"
+    },
+    {
+      "CODIGO": 1845,
+      "CUIT": 30663381160,
+      "NOMBRE": "MOTCOR S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3066"
+    },
+    {
+      "CODIGO": 1911,
+      "CUIT": 0,
+      "NOMBRE": "UBEDA DANIEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 1920,
+      "CUIT": 23260854909,
+      "NOMBRE": "DARIO GORDO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "emafrisa_88@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 1943,
+      "CUIT": 21863862,
+      "NOMBRE": "RIOS FABIAN",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "xxx_extreme27@yahoo.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 1998,
+      "CUIT": 20047477191,
+      "NOMBRE": "DI NARDO MIGUEL ANGEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "boloneraentrerios@yahoo.com.ar",
+      "PASSW_WEB": "2004"
+    },
+    {
+      "CODIGO": 2226,
+      "CUIT": 30671958426,
+      "NOMBRE": "REPUESTOS GIMENEZ S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 2227,
+      "CUIT": 30709159182,
+      "NOMBRE": "YACOPINI SUD S.A.",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 2384,
+      "CUIT": 30689275490,
+      "NOMBRE": "CAMPAGNA S Y G S.H",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 2446,
+      "CUIT": 30711581010,
+      "NOMBRE": "AUTO STORE S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "autostore-larioja@hotmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 2482,
+      "CUIT": 30677018816,
+      "NOMBRE": "AUTOSHOP GUERRINI NEUMATICOSA",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "fernando.bastan@guerrinisa.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 2534,
+      "CUIT": 33694645009,
+      "NOMBRE": "DOBLE BAJA S.A.",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "info@doblebaja.com",
+      "PASSW_WEB": "5555"
+    },
+    {
+      "CODIGO": 2559,
+      "CUIT": 20306619900,
+      "NOMBRE": "FRANCOIS RAMIRO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 2683,
+      "CUIT": 30709777056,
+      "NOMBRE": "MANTELLO NEUMATICOS S.A",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 2687,
+      "CUIT": 30563513051,
+      "NOMBRE": "METALURGICA TAURO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ventastauro@avanceequipamientos.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 2858,
+      "CUIT": 20240269059,
+      "NOMBRE": "NAVIO EDGARDO IVAN",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 2907,
+      "CUIT": 20269990857,
+      "NOMBRE": "BRUNA CARLOS EZEQUIEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "brunaautos@hotmail.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 3021,
+      "CUIT": 30712131450,
+      "NOMBRE": "NIX S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 3150,
+      "CUIT": 20114299694,
+      "NOMBRE": "FERNANDEZ OSVALDO MIGUEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "fernandezmaquinarias@hotmail.com",
+      "PASSW_WEB": "2011"
+    },
+    {
+      "CODIGO": 3188,
+      "CUIT": 20224124768,
+      "NOMBRE": "PLUCHINO PABLO ELIO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "malargueescapes@hotmail.com",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 3215,
+      "CUIT": 20310119181,
+      "NOMBRE": "ARDEBOL CESAR SEBASTIAN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "distribuidoratoronto@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 3258,
+      "CUIT": 27053087197,
+      "NOMBRE": "CARREGA NUÑEZ GRACIELA ALICIA",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 3318,
+      "CUIT": 30703153433,
+      "NOMBRE": "PANELLA HNOS MOTOS S.R.L.",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 3322,
+      "CUIT": 20232910837,
+      "NOMBRE": "ALLENDE LEONARDO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "leogallende@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 3350,
+      "CUIT": 30708400005,
+      "NOMBRE": "DISTRIBUIDORA MILO S.R.L.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "dmilosrl@speedy.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 3386,
+      "CUIT": 20277994861,
+      "NOMBRE": "SILVA GERARDO RAMON",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "gerardo1980-@hotmail.com",
+      "PASSW_WEB": "2779"
+    },
+    {
+      "CODIGO": 3393,
+      "CUIT": 20076624268,
+      "NOMBRE": "POLO JORGE A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 3395,
+      "CUIT": 20333049873,
+      "NOMBRE": "PEDOTTI GUIDO",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "gpcars@live.com",
+      "PASSW_WEB": "2033"
+    },
+    {
+      "CODIGO": 3477,
+      "CUIT": 20925852245,
+      "NOMBRE": "IGOA RUBEN MIGUEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "tallerig@entrerios.net",
+      "PASSW_WEB": "2092"
+    },
+    {
+      "CODIGO": 3529,
+      "CUIT": 20290976465,
+      "NOMBRE": "DE LELLIS ALFONSO JAVIER",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "autoboutique@live.com.ar",
+      "PASSW_WEB": "2029"
+    },
+    {
+      "CODIGO": 3591,
+      "CUIT": 20261052521,
+      "NOMBRE": "PRIOTTO CRISTIAN OMAR",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "cristianpriotto@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 3597,
+      "CUIT": 23238721199,
+      "NOMBRE": "AGUERO FABIAN ALEJANDRO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "equipamientos.4x4@hotmail.com",
+      "PASSW_WEB": "2323"
+    },
+    {
+      "CODIGO": 3606,
+      "CUIT": 23242616839,
+      "NOMBRE": "FERREYRA CHRISTIAN",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "jaco_leguiza@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 3748,
+      "CUIT": 20218079270,
+      "NOMBRE": "LOPEZ NESTOR FABIAN",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "ventas@autopartesmendoza.com.ar",
+      "PASSW_WEB": "1243"
+    },
+    {
+      "CODIGO": 3844,
+      "CUIT": 27181771661,
+      "NOMBRE": "GRAMAJO MARIELA ANDREA",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "info@americaparts4x4.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 3902,
+      "CUIT": 30711621624,
+      "NOMBRE": "STIMOLO REPUESTOS S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 3943,
+      "CUIT": 0,
+      "NOMBRE": "MESAS JOSE MIGUEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 3977,
+      "CUIT": 20309242549,
+      "NOMBRE": "FEMENI CARLOS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "lubricenterpaso@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 4028,
+      "CUIT": 20084396258,
+      "NOMBRE": "COOREMAN ADOLFO OSVALDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 4077,
+      "CUIT": 20331710254,
+      "NOMBRE": "FARIAS MAXIMILIANO  JESUS",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "chemaxfullcar@gmail.com",
+      "PASSW_WEB": "2034"
+    },
+    {
+      "CODIGO": 4094,
+      "CUIT": 20242818998,
+      "NOMBRE": "SURT ANGEL MARCELO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "surtauto@sta.arnetbiz.com.ar",
+      "PASSW_WEB": "2024"
+    },
+    {
+      "CODIGO": 4153,
+      "CUIT": 20221566964,
+      "NOMBRE": "SOLINAS CHRISTIAN JOSE",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "info@rumbosur4x4.com.ar",
+      "PASSW_WEB": "2022"
+    },
+    {
+      "CODIGO": 4164,
+      "CUIT": 30713637307,
+      "NOMBRE": "NEXPRINT S.R.L.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 4184,
+      "CUIT": 33709419639,
+      "NOMBRE": "YACOPINI MOTORS S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "testaaccesorios@itc.com.ar",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 4220,
+      "CUIT": 20121974119,
+      "NOMBRE": "ALVES RAUL DANIEL",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "cynthiapatriciao@yahoo.com.ar",
+      "PASSW_WEB": "2012"
+    },
+    {
+      "CODIGO": 4267,
+      "CUIT": 14132246,
+      "NOMBRE": "ESCAPES SABATINI",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "marcosromanc@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 4324,
+      "CUIT": 30712174079,
+      "NOMBRE": "PIRINEOS S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 4405,
+      "CUIT": 30640251936,
+      "NOMBRE": "ALLEX S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "ventas@neumacentro.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 4421,
+      "CUIT": 20330887703,
+      "NOMBRE": "GIMENEZ DAMIAN MARCELO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "santiagoautomotores_16@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 4456,
+      "CUIT": 30682275266,
+      "NOMBRE": "DA COL JUAN",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 4490,
+      "CUIT": 20341097453,
+      "NOMBRE": "ROMERO FRANCISCO JOSE",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "pecor2910@hotmail.com",
+      "PASSW_WEB": "2034"
+    },
+    {
+      "CODIGO": 4550,
+      "CUIT": 27123436275,
+      "NOMBRE": "SANDOVAL AMALIA DEL ROSARIO",
+      "CATEGORIA": "LISTA 3",
+      "EMAIL": "conejo954@gmail.com",
+      "PASSW_WEB": "1234"
+    },
+    {
+      "CODIGO": 4669,
+      "CUIT": 30714192465,
+      "NOMBRE": "JOWAL  SRL (WALTER AUTOMOTORES",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 4676,
+      "CUIT": 23261287749,
+      "NOMBRE": "BISOUND",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "bisound@yahoo.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 4677,
+      "CUIT": 20260060172,
+      "NOMBRE": "GALLIANO GUILLERMO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 4683,
+      "CUIT": 20248029693,
+      "NOMBRE": "MARTIN MARCELO VICTOR FIDEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "mvfmartin@yahoo.com.ar",
+      "PASSW_WEB": "2024"
+    },
+    {
+      "CODIGO": 4689,
+      "CUIT": 30708395885,
+      "NOMBRE": "NEUMATRANS S.A.",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "cgaldeano@parraneumaticos.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 4694,
+      "CUIT": 39884741,
+      "NOMBRE": "LOPEZ DARIO (GITANO)",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 4704,
+      "CUIT": 30535665687,
+      "NOMBRE": "GULLE HERMANOS Y CIA S.R.L.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "carmusic_lojack_vm@yahoo.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 4730,
+      "CUIT": 30714076821,
+      "NOMBRE": "KAI SERVICIOS INTEGRALES S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "ventas@toyocity.com.ar/ carinagannam@hotmail.com / servicios@toyocity.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 4748,
+      "CUIT": 25984586,
+      "NOMBRE": "AZCURRA AUTOMOTORES",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 4877,
+      "CUIT": 30710511272,
+      "NOMBRE": "GMAK S.A.",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": "5555"
+    },
+    {
+      "CODIGO": 5000,
+      "CUIT": 20226316451,
+      "NOMBRE": "MOYANO DANIEL ALEJANDRO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "oeste_neumaticos@yahoo.com.ar",
+      "PASSW_WEB": "5554"
+    },
+    {
+      "CODIGO": 5194,
+      "CUIT": 23059893874,
+      "NOMBRE": "TERRILE LIDIA BEATRIZ",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "info",
+      "PASSW_WEB": "2305"
+    },
+    {
+      "CODIGO": 5200,
+      "CUIT": 20162610822,
+      "NOMBRE": "DI BASTIANO DANIEL ALBERTO",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "",
+      "PASSW_WEB": "2016"
+    },
+    {
+      "CODIGO": 5253,
+      "CUIT": 20319364316,
+      "NOMBRE": "TARABINI FACUNDO RAMON",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "",
+      "PASSW_WEB": "2031"
+    },
+    {
+      "CODIGO": 5271,
+      "CUIT": 20181229641,
+      "NOMBRE": "DI PALMA LUIS JOSE",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "jldipalmarepuestos@yahoo.com.ar",
+      "PASSW_WEB": "2018"
+    },
+    {
+      "CODIGO": 5296,
+      "CUIT": 33712495109,
+      "NOMBRE": "GAMA CENTER S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "rvillasante@gamacenter.com.ar",
+      "PASSW_WEB": "3371"
+    },
+    {
+      "CODIGO": 5304,
+      "CUIT": 20122588921,
+      "NOMBRE": "MINGORANCE DANIEL ALBERTO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "galovenadotuerto@hotmail.com",
+      "PASSW_WEB": "1225"
+    },
+    {
+      "CODIGO": 5309,
+      "CUIT": 29056917,
+      "NOMBRE": "VECCHIETTI JUAN PABLO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 5312,
+      "CUIT": 20264986959,
+      "NOMBRE": "CATINELLO LEONARDO ARIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "lecatracing@hotmail.com",
+      "PASSW_WEB": "2026"
+    },
+    {
+      "CODIGO": 5351,
+      "CUIT": 20262512232,
+      "NOMBRE": "CASTILLO MAURICIO JAVIER",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "brothers.sf@gmail.com",
+      "PASSW_WEB": "2026"
+    },
+    {
+      "CODIGO": 5352,
+      "CUIT": 27287768392,
+      "NOMBRE": "*DIAZ SILVIA VIVIANA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "tierranegra4x4pilar@gmail.com",
+      "PASSW_WEB": "2728"
+    },
+    {
+      "CODIGO": 5430,
+      "CUIT": 30643947729,
+      "NOMBRE": "NORTHVILLE S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "mbazan@northville.com.ar",
+      "PASSW_WEB": "3064"
+    },
+    {
+      "CODIGO": 5465,
+      "CUIT": 30710301367,
+      "NOMBRE": "RED SER S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "nikattorepuestosyservicios@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 5468,
+      "CUIT": 30542219560,
+      "NOMBRE": "ADASA ACC. DEL AUTOM. SACIF",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "adasa1@speedy.com.ar",
+      "PASSW_WEB": "3054"
+    },
+    {
+      "CODIGO": 5475,
+      "CUIT": 30711957614,
+      "NOMBRE": "AMD S.R.L.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "centro.ford.mza@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 5477,
+      "CUIT": 20268554751,
+      "NOMBRE": "MACHO GABRIEL EDUARDO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 5488,
+      "CUIT": 20139957955,
+      "NOMBRE": "GRONICH CLAUDIO MARCELO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "warneswork@hotmail.com",
+      "PASSW_WEB": "2013"
+    },
+    {
+      "CODIGO": 5516,
+      "CUIT": 20210666983,
+      "NOMBRE": "GIMENEZ PABLO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 5533,
+      "CUIT": 30707589864,
+      "NOMBRE": "YACOPINI INVERSORA S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "dakar@yacopinisa.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 5557,
+      "CUIT": 30708778903,
+      "NOMBRE": "EL TALLER S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "accesorios@fredy4x4.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 5566,
+      "CUIT": 20246441759,
+      "NOMBRE": "MICHELLI JORGE LUIS",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "distribuidorajlm@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 5569,
+      "CUIT": 30709693669,
+      "NOMBRE": "LLANCANELO MININ SERVIS S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "gonzalo_freestyle@hotmail.com",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 5584,
+      "CUIT": 30713814306,
+      "NOMBRE": "FEDERICO Y MIGUEL S.A.",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "federicoymiguel87@hotmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 5596,
+      "CUIT": 30708362057,
+      "NOMBRE": "DVR S.A.",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "dvrsa@speedy.com.ar",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 5606,
+      "CUIT": 30688599780,
+      "NOMBRE": "PEREYRA JORGE A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "info@mp4x4.com.ar",
+      "PASSW_WEB": "3068"
+    },
+    {
+      "CODIGO": 5627,
+      "CUIT": 30579489177,
+      "NOMBRE": "VESPASIANI AUTOMOTORES S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "berenice.curet@vespasianiautomotores.com",
+      "PASSW_WEB": "3057"
+    },
+    {
+      "CODIGO": 5651,
+      "CUIT": 20221210019,
+      "NOMBRE": "OLECH JORGE DANIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "jorge.olech@gmail.com",
+      "PASSW_WEB": "2022"
+    },
+    {
+      "CODIGO": 5657,
+      "CUIT": 20146562338,
+      "NOMBRE": "CASTELLO JOSE",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 5784,
+      "CUIT": 20277523613,
+      "NOMBRE": "MARTIN MARCOS FEDERICO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "m-pro@hotmail.com",
+      "PASSW_WEB": "2775"
+    },
+    {
+      "CODIGO": 5937,
+      "CUIT": 30684112178,
+      "NOMBRE": "AUTONORT S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ventas-accesorios@toyotadelpilar.com.ar",
+      "PASSW_WEB": "2039"
+    },
+    {
+      "CODIGO": 5960,
+      "CUIT": 0,
+      "NOMBRE": "CASTELLO FABIAN (LLANCANELO)",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "castello4x4@gmail.com",
+      "PASSW_WEB": "5555"
+    },
+    {
+      "CODIGO": 5973,
+      "CUIT": 0,
+      "NOMBRE": "CASTELLO CARLOS (LLANCANELO)",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 5974,
+      "CUIT": 0,
+      "NOMBRE": "CASTELLO GONZALO (LLANCANELO)",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "llancanelloms@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 5975,
+      "CUIT": 30557961743,
+      "NOMBRE": "RUDY NEUMATICOS S.R.L.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "info@rudyneumaticos.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 6005,
+      "CUIT": 23241902919,
+      "NOMBRE": "BUBNIAK BENJAMIN NORBERTO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "celi4x4@hotmail.com",
+      "PASSW_WEB": "5556"
+    },
+    {
+      "CODIGO": 6042,
+      "CUIT": 30714790672,
+      "NOMBRE": "MARTINO J.P. Y IRUNGARAY R.M.",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "jp.martino@hotmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 6049,
+      "CUIT": 20233616479,
+      "NOMBRE": "CRESPO LEONARDO MARIANO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "leocrespo56@gmail.com",
+      "PASSW_WEB": "2023"
+    },
+    {
+      "CODIGO": 6076,
+      "CUIT": 30710203721,
+      "NOMBRE": "EAT ARG S.A.",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "info@lming.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 6079,
+      "CUIT": 0,
+      "NOMBRE": "FABIAN AUTOMOTORES",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 6119,
+      "CUIT": 20226255851,
+      "NOMBRE": "GRIFFOULIERE LEO FACUNDO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 6123,
+      "CUIT": 20309372612,
+      "NOMBRE": "RAPOSO ZUCCARO ARIEL JESUS",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "ventas.guiar@gmail.com",
+      "PASSW_WEB": "1122"
+    },
+    {
+      "CODIGO": 6138,
+      "CUIT": 20209916879,
+      "NOMBRE": "LOSSINO CARLOS ALBERTO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "carloslossino@gmail.com",
+      "PASSW_WEB": "2020"
+    },
+    {
+      "CODIGO": 6140,
+      "CUIT": 27268913098,
+      "NOMBRE": "DIAZ PATRICIA ADRIANA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "raptosequipamientos4x4@gmail.com",
+      "PASSW_WEB": "2729"
+    },
+    {
+      "CODIGO": 6187,
+      "CUIT": 20216016468,
+      "NOMBRE": "MELON SERGIO GABRIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "sgm_highperformance@hotmail.com.ar",
+      "PASSW_WEB": "2021"
+    },
+    {
+      "CODIGO": 6196,
+      "CUIT": 20272472352,
+      "NOMBRE": "ZABALA MARCOS GABRIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "planetacamionlr@hotmail.com",
+      "PASSW_WEB": "2027"
+    },
+    {
+      "CODIGO": 6232,
+      "CUIT": 20140348202,
+      "NOMBRE": "LANCETTI JORGE",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "escapesjorge@hotmail.com",
+      "PASSW_WEB": "2014"
+    },
+    {
+      "CODIGO": 6242,
+      "CUIT": 30691571188,
+      "NOMBRE": "EQUIPAMIENTOS Y ACC QUIQUE SA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "accesoriosquique@speedy.com.ar",
+      "PASSW_WEB": "3069"
+    },
+    {
+      "CODIGO": 6255,
+      "CUIT": 27121649042,
+      "NOMBRE": "LUNA ESTELA MARGARITA",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "comercialbelen@hotmail.com",
+      "PASSW_WEB": "2712"
+    },
+    {
+      "CODIGO": 6287,
+      "CUIT": 30713713909,
+      "NOMBRE": "MOTORVILLE S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 6312,
+      "CUIT": 0,
+      "NOMBRE": "AUTOMOTORES AVENDAÑO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 6360,
+      "CUIT": 20083994313,
+      "NOMBRE": "BIAGGINI JORGE R.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "laconsola@gmail.com",
+      "PASSW_WEB": "2008"
+    },
+    {
+      "CODIGO": 6415,
+      "CUIT": 30708742933,
+      "NOMBRE": "CHAPA MERCEDES S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "jboragno@chapamercedes.com.ar",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 6518,
+      "CUIT": 30714907324,
+      "NOMBRE": "AUTOPARTES EL PACU S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "autopartes_elpacu@yahoo.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 6557,
+      "CUIT": 27264632574,
+      "NOMBRE": "CANCIANI VERONICA",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 6662,
+      "CUIT": 22569534,
+      "NOMBRE": "PIVAS PABLO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "mora.linda@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 6713,
+      "CUIT": 20139555954,
+      "NOMBRE": "RIVERO GUILLERMO ALFREDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "autoimperio@smandes.com.ar",
+      "PASSW_WEB": "2013"
+    },
+    {
+      "CODIGO": 6716,
+      "CUIT": 30708442263,
+      "NOMBRE": "LAFUENTE MUEBLES S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "gonzalo@lafuentemuebles.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 6805,
+      "CUIT": 20304483637,
+      "NOMBRE": "AMORUSO EDUARDO ANDRES",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "amoruso.dna@gmail.com",
+      "PASSW_WEB": "2030"
+    },
+    {
+      "CODIGO": 6902,
+      "CUIT": 20146365206,
+      "NOMBRE": "STADLER JUAN CARLOS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "accstadler@hotmail.com",
+      "PASSW_WEB": "2014"
+    },
+    {
+      "CODIGO": 7055,
+      "CUIT": 30707052275,
+      "NOMBRE": "AVANT S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 7225,
+      "CUIT": 20216946147,
+      "NOMBRE": "MOLINA SERGIO OSCAR",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "somvisual@hotmail.com",
+      "PASSW_WEB": "2169"
+    },
+    {
+      "CODIGO": 7249,
+      "CUIT": 20065584949,
+      "NOMBRE": "CANCELLI NESTOR ALBERTO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "cancellirepuestos@hotmail.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 7315,
+      "CUIT": 30707830642,
+      "NOMBRE": "ESCAPES Y CATALIZADORES S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "escapesycatalizadores@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 7350,
+      "CUIT": 23243306019,
+      "NOMBRE": "COGNETTA MARTIN ALEJANDRO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "autorayo@hotmail.com",
+      "PASSW_WEB": "2324"
+    },
+    {
+      "CODIGO": 7396,
+      "CUIT": 20301068213,
+      "NOMBRE": "LENCINA ALBORNOZ LEANDRO MARTI",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "leolenci_@hotmail.com",
+      "PASSW_WEB": "2030"
+    },
+    {
+      "CODIGO": 7439,
+      "CUIT": 20130870121,
+      "NOMBRE": "GEREZ MIGUEL ANGEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "amacc2@yahoo.com.ar",
+      "PASSW_WEB": "2013"
+    },
+    {
+      "CODIGO": 7474,
+      "CUIT": 30538055391,
+      "NOMBRE": "SIMONE GUILLERMO S.A. CIFYA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "yamauchi@simone.com.ar>lyamauchi@simone.com.ar>A:\t<accesorios@simone.com.ar>lyamauchi@simone.com.ar>A:\t<accesorios@simone.com.ar>",
+      "PASSW_WEB": "3053"
+    },
+    {
+      "CODIGO": 7476,
+      "CUIT": 30679819751,
+      "NOMBRE": "TALLERES BARBAGALLO S.R.L.",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "administracion@talleresbarbagallo.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 7501,
+      "CUIT": 20234910109,
+      "NOMBRE": "RAMIREZ SEBASTIAN MARCELO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ramirez.seba@outlook.com",
+      "PASSW_WEB": "2023"
+    },
+    {
+      "CODIGO": 7558,
+      "CUIT": 20266717831,
+      "NOMBRE": "PERALTA FACUNDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "kontioequipamientos@gmail.com",
+      "PASSW_WEB": "2026"
+    },
+    {
+      "CODIGO": 7561,
+      "CUIT": 30715124064,
+      "NOMBRE": "SOLENROD S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "administracion@solenrod.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 7570,
+      "CUIT": 20279491301,
+      "NOMBRE": "BENITO FERNANDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "bftrailers@live.com",
+      "PASSW_WEB": "2027"
+    },
+    {
+      "CODIGO": 7644,
+      "CUIT": 33710545559,
+      "NOMBRE": "LA NAUTICA S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 7666,
+      "CUIT": 20209716950,
+      "NOMBRE": "BALDESSARI MARCELO GUSTAVO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "marcelojkar@gmail.com",
+      "PASSW_WEB": "2020"
+    },
+    {
+      "CODIGO": 7674,
+      "CUIT": 30712520112,
+      "NOMBRE": "AYCA SERVICIOS GENERALES SRL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ldelcarril@aycaservicios.net",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 7683,
+      "CUIT": 23261031299,
+      "NOMBRE": "GUTIERREZ MARIANO MIGUEL",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "escapcor@gmail.com",
+      "PASSW_WEB": "2326"
+    },
+    {
+      "CODIGO": 7701,
+      "CUIT": 30709793841,
+      "NOMBRE": "ALFA MONDO SA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "lgaona@novocars.com.ar  lgaona@novocars.com.ar  lgaona@novocars.com.ar  lgaona@novocars.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 7774,
+      "CUIT": 30715193686,
+      "NOMBRE": "CARS EQUIPAMIENTOS S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 7782,
+      "CUIT": 20316342532,
+      "NOMBRE": "HERAS PABLO JAVIER",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "pjheras@hotmail.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 7796,
+      "CUIT": 30714161365,
+      "NOMBRE": "EL AUDAZ S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "jfigueroa@toyotalasheras.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 7807,
+      "CUIT": 30712520082,
+      "NOMBRE": "EXPRESION VISUAL S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "ventas@thor4x4.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 7856,
+      "CUIT": 20246550361,
+      "NOMBRE": "GIORGELLI MARTIN JAVIER",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "modenasport@fibertel.com.ar",
+      "PASSW_WEB": "2024"
+    },
+    {
+      "CODIGO": 7860,
+      "CUIT": 33707100139,
+      "NOMBRE": "CASA QUICO DE QUIROGA AMERICO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "casaquico@speedy.com.ar",
+      "PASSW_WEB": "7071"
+    },
+    {
+      "CODIGO": 7883,
+      "CUIT": 30641803681,
+      "NOMBRE": "PANAMER S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3064"
+    },
+    {
+      "CODIGO": 7912,
+      "CUIT": 20299299970,
+      "NOMBRE": "* SEIJA GUILLERMO SEBASATIAN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2029"
+    },
+    {
+      "CODIGO": 7989,
+      "CUIT": 30708805722,
+      "NOMBRE": "LANDESA S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "landesa_sa@yahoo.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 7991,
+      "CUIT": 30648474012,
+      "NOMBRE": "LESTANI ARIEL Y BALDEZAR NELSO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ventas@totalaccesorio.com.ar",
+      "PASSW_WEB": "3064"
+    },
+    {
+      "CODIGO": 8019,
+      "CUIT": 22218489,
+      "NOMBRE": "BONETTO FELIPE",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "felipebonetto@live.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 8205,
+      "CUIT": 20313889654,
+      "NOMBRE": "AUGER FEDERICO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "federicoauger@hotmail.com.ar",
+      "PASSW_WEB": "5553"
+    },
+    {
+      "CODIGO": 8227,
+      "CUIT": 30710063164,
+      "NOMBRE": "PERSONALIZACIONES GROUP S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "boxeszn@hotmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 8314,
+      "CUIT": 30715302469,
+      "NOMBRE": "RANA TORO S.A.",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "cristian@ranatoro.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 8334,
+      "CUIT": 30711265488,
+      "NOMBRE": "BIG TOYS S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "info@big-toys.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 8437,
+      "CUIT": 20288069329,
+      "NOMBRE": "PONCE JAVIER",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 8515,
+      "CUIT": 20327140079,
+      "NOMBRE": "GALAN LEANDRO ERNESTO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "sp_polarizados@hotmail.com",
+      "PASSW_WEB": "3271"
+    },
+    {
+      "CODIGO": 8570,
+      "CUIT": 20216298226,
+      "NOMBRE": "CELI GUSTAVO DANIEL",
+      "CATEGORIA": "LISTA 3",
+      "EMAIL": "",
+      "PASSW_WEB": "2021"
+    },
+    {
+      "CODIGO": 8574,
+      "CUIT": 30714816884,
+      "NOMBRE": "MUG4X4 S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "santiago@mug4x4.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 8622,
+      "CUIT": 20374145038,
+      "NOMBRE": "GATTARI SANTIAGO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "audioshop_mza@hotmail.com",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 8890,
+      "CUIT": 30543028556,
+      "NOMBRE": "MONTIRONI AUTOMOTORES S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3054"
+    },
+    {
+      "CODIGO": 8971,
+      "CUIT": 20237368534,
+      "NOMBRE": "ACUÑA FERNANDO RODOLFO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ventas@instalcor.com",
+      "PASSW_WEB": "2023"
+    },
+    {
+      "CODIGO": 8972,
+      "CUIT": 30709136719,
+      "NOMBRE": "PINEROLO S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "MROSA@MONTIRONI.COM",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 8973,
+      "CUIT": 20264804346,
+      "NOMBRE": "OULTON FEDERICO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "fedeoulton@hotmail.com",
+      "PASSW_WEB": "2026"
+    },
+    {
+      "CODIGO": 8981,
+      "CUIT": 20215045758,
+      "NOMBRE": "LAMI SERGIO ALEJANDRO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "repuestosford@speedy.com.ar",
+      "PASSW_WEB": "2021"
+    },
+    {
+      "CODIGO": 9045,
+      "CUIT": 20213729080,
+      "NOMBRE": "GUARESCHI CARLOS HUGO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 9046,
+      "CUIT": 20169925357,
+      "NOMBRE": "GARCIA JULIO CESAR",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "repuestosjuliocesar@hotmail.com",
+      "PASSW_WEB": "2016"
+    },
+    {
+      "CODIGO": 9080,
+      "CUIT": 20291722408,
+      "NOMBRE": "ROBIN ALFREDO HERNAN MARCOS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "alfhernanm@hotmail.com",
+      "PASSW_WEB": "2029"
+    },
+    {
+      "CODIGO": 9082,
+      "CUIT": 30708269286,
+      "NOMBRE": "JRM S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "jrmiliottisa@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 9241,
+      "CUIT": 20174340537,
+      "NOMBRE": "RODRIGUEZ RUBEN OSVALDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "Accesorios_tato@hotmail.com",
+      "PASSW_WEB": "2017"
+    },
+    {
+      "CODIGO": 9263,
+      "CUIT": 24705431,
+      "NOMBRE": "BERRIOS MARCELO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 9276,
+      "CUIT": 20318446246,
+      "NOMBRE": "FORMIGONI GUSTAVO",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "fgtoyotajesusmaria@gmail.com",
+      "PASSW_WEB": "2031"
+    },
+    {
+      "CODIGO": 9324,
+      "CUIT": 20245272120,
+      "NOMBRE": "ARDETI GUSTAVO EMANUEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "tallerardeti@gmail.com",
+      "PASSW_WEB": "2024"
+    },
+    {
+      "CODIGO": 9369,
+      "CUIT": 35472256,
+      "NOMBRE": "STEFANINI EZEQUIEL",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 9395,
+      "CUIT": 20284833199,
+      "NOMBRE": "LEIS JULIO CESAR",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "",
+      "PASSW_WEB": "2028"
+    },
+    {
+      "CODIGO": 9415,
+      "CUIT": 30698843957,
+      "NOMBRE": "SANCHEZ VIRGILIO Y ESTEBAN SOC",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "garageuno@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 9424,
+      "CUIT": 30708571535,
+      "NOMBRE": "SCHONSTATT WAGEN S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "repuestos@macwagen.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 9453,
+      "CUIT": 20232124823,
+      "NOMBRE": "SASSON MARTIN ALBERTO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "localcabrera@carsclub.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 9482,
+      "CUIT": 27068901699,
+      "NOMBRE": "TELLO LUCIO HECTOR HUGO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 9489,
+      "CUIT": 30714302120,
+      "NOMBRE": "BERTOLOTTO S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "bertolottocba@hotmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 9493,
+      "CUIT": 30711967067,
+      "NOMBRE": "SHUBERT TECHNIK S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "sound_quest@hotmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 9587,
+      "CUIT": 20123346921,
+      "NOMBRE": "SCHOU EDUARDO ALEJANDRO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2012"
+    },
+    {
+      "CODIGO": 9621,
+      "CUIT": 20266784768,
+      "NOMBRE": "JAUCK IVAN ARIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 9622,
+      "CUIT": 20238217742,
+      "NOMBRE": "VERNET DARIO JULIO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "VERNETNEUMATICO@HOTMAIL.COM",
+      "PASSW_WEB": "2023"
+    },
+    {
+      "CODIGO": 9657,
+      "CUIT": 30715166603,
+      "NOMBRE": "GUTIERREZ S.R.L.",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 9700,
+      "CUIT": 23357853869,
+      "NOMBRE": "CARONATTO SALAS NICOLAS GUILLE",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "warnestuning@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 9734,
+      "CUIT": 20261785928,
+      "NOMBRE": "PALOMO AGUSTIN",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "axiscaraudio@gmail.com",
+      "PASSW_WEB": "2026"
+    },
+    {
+      "CODIGO": 9740,
+      "CUIT": 20162741862,
+      "NOMBRE": "VILLEGAS FABRICIO CARLOS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "flymotors@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 9772,
+      "CUIT": 27131759180,
+      "NOMBRE": "MEDINA LILIANA BEATRIZ",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "carlymedina@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 9800,
+      "CUIT": 20245224371,
+      "NOMBRE": "LUDUEÑA MARIANO PEDRO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "carsaudioarroyito@hotmail.com",
+      "PASSW_WEB": "2024"
+    },
+    {
+      "CODIGO": 9809,
+      "CUIT": 20334654592,
+      "NOMBRE": "CRUZ JONATHAN EXEQUIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2033"
+    },
+    {
+      "CODIGO": 9811,
+      "CUIT": 20342290966,
+      "NOMBRE": "ZARAIK MARTIN GONZALO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "mzequipamiento4x4@gmail.com",
+      "PASSW_WEB": "2034"
+    },
+    {
+      "CODIGO": 9863,
+      "CUIT": 20224124776,
+      "NOMBRE": "PLUCHINO CARLOS EDUARDO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "carlospluchino@yahoo.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 9864,
+      "CUIT": 20359583703,
+      "NOMBRE": "BOCIAN NICOLAS ELIAS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ventas@carroceriaspavon.com",
+      "PASSW_WEB": "2035"
+    },
+    {
+      "CODIGO": 9866,
+      "CUIT": 30669400167,
+      "NOMBRE": "TURIN S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": "3066"
+    },
+    {
+      "CODIGO": 9874,
+      "CUIT": 30707834222,
+      "NOMBRE": "NEUMATICOS MYD S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "administracion@neumaticosmyd.com.ar",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 9921,
+      "CUIT": 20249736121,
+      "NOMBRE": "ILARI GUILLERMO FABIAN",
+      "CATEGORIA": "LISTA 1",
+      "EMAIL": "administracion@ilari.com.ar",
+      "PASSW_WEB": "2497"
+    },
+    {
+      "CODIGO": 9952,
+      "CUIT": 30709336270,
+      "NOMBRE": "MERCURIO S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "mercurioaccesorios@hotmail.com",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 10064,
+      "CUIT": 20273428098,
+      "NOMBRE": "CRAVERO GERARDO DEL VALLE",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 10066,
+      "CUIT": 23220444619,
+      "NOMBRE": "FERNANDEZ HECTOR PABLO",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "",
+      "PASSW_WEB": "2322"
+    },
+    {
+      "CODIGO": 10125,
+      "CUIT": 30710749600,
+      "NOMBRE": "LUBRIALVEAR S.R.L.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "lubrialvear@yahoo.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 10141,
+      "CUIT": 30714213659,
+      "NOMBRE": "MEZHER MOTOR S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "jorgemezher@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 10153,
+      "CUIT": 20130345426,
+      "NOMBRE": "DI PIETRO ANGEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "autosdipietro@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 10156,
+      "CUIT": 20122197442,
+      "NOMBRE": "NANZER CARLOS EUGENIO",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "ventas@caraudio.com",
+      "PASSW_WEB": "2012"
+    },
+    {
+      "CODIGO": 10184,
+      "CUIT": 30717551482,
+      "NOMBRE": "FIX CENTER SAS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": "5555"
+    },
+    {
+      "CODIGO": 10210,
+      "CUIT": 27277875611,
+      "NOMBRE": "RAMOS SOFIA LORENA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2727"
+    },
+    {
+      "CODIGO": 10235,
+      "CUIT": 33711378389,
+      "NOMBRE": "TECNICA BOUZA S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 10330,
+      "CUIT": 30712520287,
+      "NOMBRE": "FULL MUSIC S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 10342,
+      "CUIT": 31715680,
+      "NOMBRE": "ORTIZ MIGUEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 10357,
+      "CUIT": 30710610343,
+      "NOMBRE": "NORVIAL SERVICIOS S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "norvialcompras@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 10359,
+      "CUIT": 30709541788,
+      "NOMBRE": "LEADRI AUTOMOTORES S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "leadri@netium.com.ar",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 10374,
+      "CUIT": 20131529547,
+      "NOMBRE": "LOVROVICH JOSE LUIS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "centralargenticocordoba@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 10380,
+      "CUIT": 20164098940,
+      "NOMBRE": "BOCHI ALDO JOSE",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "maxibochi1@outlook.com",
+      "PASSW_WEB": "2016"
+    },
+    {
+      "CODIGO": 10386,
+      "CUIT": 20319797999,
+      "NOMBRE": "BOTAS DIEGO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "diegobotas@gmail.com",
+      "PASSW_WEB": "5564"
+    },
+    {
+      "CODIGO": 10388,
+      "CUIT": 27057010,
+      "NOMBRE": "GUIRAO FACUNDO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 10394,
+      "CUIT": 30715239740,
+      "NOMBRE": "D&D SERVICIO OFICIAL CHEVROLET",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "dydserviciochevrolet@gmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 10420,
+      "CUIT": 30560230482,
+      "NOMBRE": "WENLEN SOCIEDAD ANONIMA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "macosta@wenlen.com",
+      "PASSW_WEB": "3056"
+    },
+    {
+      "CODIGO": 10526,
+      "CUIT": 30711864942,
+      "NOMBRE": "PANAMERICANA NEUMATICOS S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 10534,
+      "CUIT": 20219789271,
+      "NOMBRE": "BORDET HUGO RAMON",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "emilce0306@hotmail.com",
+      "PASSW_WEB": "2021"
+    },
+    {
+      "CODIGO": 10551,
+      "CUIT": 20235258944,
+      "NOMBRE": "MARINSALDA GUSTAVO RENE",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "tallermarinsalda@hotmail.com.ar",
+      "PASSW_WEB": "2023"
+    },
+    {
+      "CODIGO": 10596,
+      "CUIT": 23204212279,
+      "NOMBRE": "BORDET VICTOR ALBERTO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "victorbordet@hotmail.com",
+      "PASSW_WEB": "2320"
+    },
+    {
+      "CODIGO": 10597,
+      "CUIT": 20230806609,
+      "NOMBRE": "SALUZZO SIVIERO HECTOR FABIAN",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "saluzzoescapes@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 10598,
+      "CUIT": 27228509545,
+      "NOMBRE": "BORDET DANIELA RAQUEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "casabordet@yahoo.com.ar",
+      "PASSW_WEB": "2722"
+    },
+    {
+      "CODIGO": 10611,
+      "CUIT": 30689393310,
+      "NOMBRE": "CHESTER SOCIEDAD ANONIMA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 10637,
+      "CUIT": 20346721694,
+      "NOMBRE": "PICHETTI SANTIAGO",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "grupopigar@hotmail.com",
+      "PASSW_WEB": "2034"
+    },
+    {
+      "CODIGO": 10652,
+      "CUIT": 20287759682,
+      "NOMBRE": "AVALTRONI SCRUGLI NICOLAS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2028"
+    },
+    {
+      "CODIGO": 10653,
+      "CUIT": 30714315044,
+      "NOMBRE": "FERRARI JUAN L. Y HNOS. S.H.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "casaferrarigchu@hotmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 10671,
+      "CUIT": 20324076744,
+      "NOMBRE": "PONCE PAULO DAVID",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "davidponce86@outlook.com",
+      "PASSW_WEB": "2032"
+    },
+    {
+      "CODIGO": 10718,
+      "CUIT": 20305078701,
+      "NOMBRE": "BETTIOL CRISTIAN DANIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "black_music_music@hotmail.com",
+      "PASSW_WEB": "2030"
+    },
+    {
+      "CODIGO": 10833,
+      "CUIT": 20257176801,
+      "NOMBRE": "RAMIREZ CESAR ARIEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "arsolarglass@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 10847,
+      "CUIT": 20239316582,
+      "NOMBRE": "KOTTLER SEBASTIAN",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "info@sebakottler.arnetbiz.com.ar",
+      "PASSW_WEB": "2023"
+    },
+    {
+      "CODIGO": 10848,
+      "CUIT": 20275459616,
+      "NOMBRE": "SANCHEZ EDUARDO ALFONSO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "edu.4x4_79@yahoo.com.ar",
+      "PASSW_WEB": "2027"
+    },
+    {
+      "CODIGO": 10866,
+      "CUIT": 20253078961,
+      "NOMBRE": "CONTIN GIISPERT SANTIAGO MAXIM",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "continrepuestosnogoya@live.com",
+      "PASSW_WEB": "2025"
+    },
+    {
+      "CODIGO": 10872,
+      "CUIT": 30715792504,
+      "NOMBRE": "EL PUMA ESCAPES S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "info@escapeselpuma.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 10887,
+      "CUIT": 20277664268,
+      "NOMBRE": "COLUCCI JUAN PABLO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 10888,
+      "CUIT": 20319899546,
+      "NOMBRE": "BULACIO ALEJANDRO DAVID",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "nacho_bulacio_77@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 10959,
+      "CUIT": 23106551529,
+      "NOMBRE": "REITANO HECTOR JOSE",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 10970,
+      "CUIT": 20296619567,
+      "NOMBRE": "BOBIO CRISTIAN DAVID",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "oscarautopartes@hotmail.com",
+      "PASSW_WEB": "2029"
+    },
+    {
+      "CODIGO": 10971,
+      "CUIT": 20937177624,
+      "NOMBRE": "ALDO MAGLIONE NICOLAS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "info@chapilar.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 11003,
+      "CUIT": 20145503761,
+      "NOMBRE": "GULLINO RICARDO LUIS",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "gullinorepuestos@redcoop.com.ar",
+      "PASSW_WEB": "2014"
+    },
+    {
+      "CODIGO": 11004,
+      "CUIT": 20290840520,
+      "NOMBRE": "MORIMANNO JOSE LUIS",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "",
+      "PASSW_WEB": "2029"
+    },
+    {
+      "CODIGO": 11027,
+      "CUIT": 20348155289,
+      "NOMBRE": "CHIAVASSA IGNACIO JAVIER",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "cgcars@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 11044,
+      "CUIT": 20283742726,
+      "NOMBRE": "AMANTINI CRISTIAN ARIEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "ab_tuning@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 11058,
+      "CUIT": 30710414412,
+      "NOMBRE": "LEWIS OLDANI NEUMATICOS SRL",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "levisoldani@oncativo.net.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 11111,
+      "CUIT": 20250426241,
+      "NOMBRE": "CAMPAGNOLO DIEGO FRANCISCO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 11138,
+      "CUIT": 30707311564,
+      "NOMBRE": "QUILMES PLAS SA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "quilmesplas@hotmail.com",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 11141,
+      "CUIT": 20264837147,
+      "NOMBRE": "TORRES RAMIRO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "torrerami@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 11262,
+      "CUIT": 27244358298,
+      "NOMBRE": "DOPCHIZ FERNANDA VALERIA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "info@electronicaalberto.com.ar",
+      "PASSW_WEB": "2724"
+    },
+    {
+      "CODIGO": 11269,
+      "CUIT": 10271912,
+      "NOMBRE": "FERRI ORACIO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 11345,
+      "CUIT": 30712261818,
+      "NOMBRE": "BARBAGALLO RENTALPICK UP TRUCK",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 11374,
+      "CUIT": 20289076973,
+      "NOMBRE": "ZAWADZKI NESTOR MARCELO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "nestor.soundhousegmaill.com",
+      "PASSW_WEB": "2028"
+    },
+    {
+      "CODIGO": 11388,
+      "CUIT": 30715473328,
+      "NOMBRE": "AGUIRRE NICOLAS EDUARDO Y ALCA",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "roa_aguirre_253@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 11405,
+      "CUIT": 30714101443,
+      "NOMBRE": "BELGRANO CARGAS Y LOGISTICA S.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 11526,
+      "CUIT": 20229566939,
+      "NOMBRE": "LISAK FABIAN OMAR",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "faysa06@yahoo.com.ar",
+      "PASSW_WEB": "2029"
+    },
+    {
+      "CODIGO": 11577,
+      "CUIT": 27169406230,
+      "NOMBRE": "ROMANO CLAUDIA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "claudiaromanohotmail.com",
+      "PASSW_WEB": "2716"
+    },
+    {
+      "CODIGO": 11600,
+      "CUIT": 20308499597,
+      "NOMBRE": "FERRERO JULIAN ABEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "chueco11.cf@gmail.com",
+      "PASSW_WEB": "2030"
+    },
+    {
+      "CODIGO": 11652,
+      "CUIT": 23269863889,
+      "NOMBRE": "CAPPIELLO PATRICIO ANDRES",
+      "CATEGORIA": "LISTA 1",
+      "EMAIL": "nehemiasrena@cappiellodistribucion.com",
+      "PASSW_WEB": "2698"
+    },
+    {
+      "CODIGO": 11671,
+      "CUIT": 20322397845,
+      "NOMBRE": "CURVINO AGUSTIN",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": "2032"
+    },
+    {
+      "CODIGO": 11727,
+      "CUIT": 23225088209,
+      "NOMBRE": "RIPOLL JUAN BAUTISTA",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "info@abratools.com.ar",
+      "PASSW_WEB": "2322"
+    },
+    {
+      "CODIGO": 11733,
+      "CUIT": 20336994633,
+      "NOMBRE": "TORANZO JOSE ADRIAN",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "josetoranzo33@outlook.com",
+      "PASSW_WEB": "2033"
+    },
+    {
+      "CODIGO": 11737,
+      "CUIT": 20333713765,
+      "NOMBRE": "VERA WALTER NICOLAS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "nicolas.veracat@gmail.com",
+      "PASSW_WEB": "2033"
+    },
+    {
+      "CODIGO": 11738,
+      "CUIT": 30715862774,
+      "NOMBRE": "KASTEN S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 11742,
+      "CUIT": 30715106384,
+      "NOMBRE": "NEUMATICOS RODEO SRL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 11743,
+      "CUIT": 30711213410,
+      "NOMBRE": "LA ROTONDA DE OLMOS S.R.L.",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "larotondadeolmos4881@outlook.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 11861,
+      "CUIT": 23313182479,
+      "NOMBRE": "AGRI RODRIGO NICOLAS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "rscarshop@hotmail.com",
+      "PASSW_WEB": "5555"
+    },
+    {
+      "CODIGO": 11864,
+      "CUIT": 30709497398,
+      "NOMBRE": "GAVOSTO DARIO FABIAN Y GAVOSTO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "electrogavosto@hetcom.com.ar",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 11873,
+      "CUIT": 20271965231,
+      "NOMBRE": "ONTIVERO DANIEL EMILIO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": "5555"
+    },
+    {
+      "CODIGO": 11903,
+      "CUIT": 27409414848,
+      "NOMBRE": "INCICCO PASTEN FLORENCIA AGUS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "ventas.granaderos@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 11931,
+      "CUIT": 30716007673,
+      "NOMBRE": "PIRAÑA 4X4 S.R.L. EN FORMACION",
+      "CATEGORIA": "LISTA 2",
+      "EMAIL": "",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 11932,
+      "CUIT": 27100504885,
+      "NOMBRE": "FRANCO NELIDA MARIA",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "lacasadelescape@gmail.com",
+      "PASSW_WEB": "1005"
+    },
+    {
+      "CODIGO": 11940,
+      "CUIT": 30681026386,
+      "NOMBRE": "CHEXA SA.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3068"
+    },
+    {
+      "CODIGO": 11961,
+      "CUIT": 33714944229,
+      "NOMBRE": "P&M S.R.L.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "pelandino@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 11972,
+      "CUIT": 20321306285,
+      "NOMBRE": "GONZALEZ JULIO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "juliogonzalez_14@yahoo.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 11978,
+      "CUIT": 20308489419,
+      "NOMBRE": "DALMASSO MARIANO ANDRES",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": "2030"
+    },
+    {
+      "CODIGO": 12022,
+      "CUIT": 27062194443,
+      "NOMBRE": "GARRIDO MIRTA GRACIELA",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "",
+      "PASSW_WEB": "2706"
+    },
+    {
+      "CODIGO": 12039,
+      "CUIT": 20264904588,
+      "NOMBRE": "CENTANNI OMAR ALEJANDRO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "alerep@live.com.ar",
+      "PASSW_WEB": "2026"
+    },
+    {
+      "CODIGO": 12045,
+      "CUIT": 20180864378,
+      "NOMBRE": "BEKER GUSTAVO OSCAR",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "grilloautopartes@infinet.com.ar",
+      "PASSW_WEB": "2018"
+    },
+    {
+      "CODIGO": 12063,
+      "CUIT": 20085628195,
+      "NOMBRE": "ALBERTO GUILLERMO GUSTAVO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "escapesconcordia@gmail.com",
+      "PASSW_WEB": "2008"
+    },
+    {
+      "CODIGO": 12066,
+      "CUIT": 23204578559,
+      "NOMBRE": "BLITMAN MARCOS MARIO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "mario_blitman@hotmail.com",
+      "PASSW_WEB": "2320"
+    },
+    {
+      "CODIGO": 12074,
+      "CUIT": 29402483,
+      "NOMBRE": "SPERNANZONI MARIANA ANABEL",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "distribuidorambr4@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12118,
+      "CUIT": 30711036195,
+      "NOMBRE": "RUDAS S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "lisandroleiva@rudas.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 12130,
+      "CUIT": 20320718113,
+      "NOMBRE": "ARROQUI CARLOS MARTIN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "martinarroqui27@gmail.com",
+      "PASSW_WEB": "2032"
+    },
+    {
+      "CODIGO": 12180,
+      "CUIT": 23297939564,
+      "NOMBRE": "PRATO HEBE ROMOINA",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "enzohcuello@hotmail.com",
+      "PASSW_WEB": "2329"
+    },
+    {
+      "CODIGO": 12197,
+      "CUIT": 20255123891,
+      "NOMBRE": "DALMAU CLAUDIO DANIEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "dalmauclaudio_76@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12213,
+      "CUIT": 20275407144,
+      "NOMBRE": "SCARMAGNAN NICOLAS RAUL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "todorepuestos@coopmorteros.com.ar",
+      "PASSW_WEB": "2027"
+    },
+    {
+      "CODIGO": 12230,
+      "CUIT": 30626460794,
+      "NOMBRE": "DEHNOS S.A",
+      "CATEGORIA": "LISTA 3",
+      "EMAIL": "compras@deyroautopartes.com.ar",
+      "PASSW_WEB": "6264"
+    },
+    {
+      "CODIGO": 12251,
+      "CUIT": 20214101263,
+      "NOMBRE": "ANDREANI HECTOR ARIEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "serviciosaym@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12279,
+      "CUIT": 30618400529,
+      "NOMBRE": "LA SORPRESA S A AGROPECUARIA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12306,
+      "CUIT": 30712473270,
+      "NOMBRE": "RECTI NORTE DNB SRL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "dani862@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12307,
+      "CUIT": 20351030292,
+      "NOMBRE": "GIMENEZ MARTIN EZEQUIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "danivianco@hotmail.com",
+      "PASSW_WEB": "2035"
+    },
+    {
+      "CODIGO": 12324,
+      "CUIT": 30712482784,
+      "NOMBRE": "DON GOYO S.R.L.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "lubricentrodongoyo@gmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 12350,
+      "CUIT": 20167674985,
+      "NOMBRE": "MARTINEZ LUIS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12376,
+      "CUIT": 30709150169,
+      "NOMBRE": "TOTAL CAR S.R.L.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "totalcar@daparte.com.ar",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 12403,
+      "CUIT": 20302984744,
+      "NOMBRE": "LOPEZ JUAN JOSE",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12424,
+      "CUIT": 30716016036,
+      "NOMBRE": "AUTOMOTORES LA TORTUGA S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "servicioslatortuga@gmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 12474,
+      "CUIT": 30708965096,
+      "NOMBRE": "LUBRICENTRO TIRASSO SRL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12484,
+      "CUIT": 27142794727,
+      "NOMBRE": "REYNOSO NANCY DEL VALLE",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "mcece.2712@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12571,
+      "CUIT": 20299442560,
+      "NOMBRE": "CASIVA CARLOS ALBERTO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "carloscasiva92@hotmail.com",
+      "PASSW_WEB": "2029"
+    },
+    {
+      "CODIGO": 12572,
+      "CUIT": 30710286872,
+      "NOMBRE": "BALFER S.R.L.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "rf_alineado@yahoo.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12575,
+      "CUIT": 30698438483,
+      "NOMBRE": "CALAMUCHITA TOURS S.R.L.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "calamuchita tours@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12577,
+      "CUIT": 20205245120,
+      "NOMBRE": "REYES CARLOS ALBERTO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "carlosreyes091168@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12578,
+      "CUIT": 23102128559,
+      "NOMBRE": "OLIVERA JORGE FELIPE",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "casa-olivera@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12579,
+      "CUIT": 30692735281,
+      "NOMBRE": "ANDINA AUTOMOTRES S.A.",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "ricardo.coll@andinalr.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12580,
+      "CUIT": 30708406631,
+      "NOMBRE": "ANDINA MOTORS S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ricardo.coll@andinalr.com.ar",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 12581,
+      "CUIT": 20288962139,
+      "NOMBRE": "RAMALLO PARCO PARISI ERNESTO M",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "er3241@hotmail.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12584,
+      "CUIT": 20340946988,
+      "NOMBRE": "CERVANTES JOSE JEREMIAS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "jeremias cervantes@gmail.com",
+      "PASSW_WEB": "2034"
+    },
+    {
+      "CODIGO": 12585,
+      "CUIT": 20303257676,
+      "NOMBRE": "AVILA JOSE CARLOS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "nivela.compras@yahoo.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12586,
+      "CUIT": 20312219159,
+      "NOMBRE": "LECUONA FEDERICO MARTIN",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "fedelecu@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12587,
+      "CUIT": 30715559125,
+      "NOMBRE": "EDGAR MIRANDA SRL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "emiranda@edgamirandasrl.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12598,
+      "CUIT": 20295514362,
+      "NOMBRE": "ROSA HERNAN DARIO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "hrnandario@hotmail.com",
+      "PASSW_WEB": "2029"
+    },
+    {
+      "CODIGO": 12628,
+      "CUIT": 20347748669,
+      "NOMBRE": "baja  JAVIER",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "larotondaservicios@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12637,
+      "CUIT": 30715999087,
+      "NOMBRE": "NASUTI AUTOPARTES Y EQUIP. SRL",
+      "CATEGORIA": "LISTA 3",
+      "EMAIL": "administracion@nasutiautopartes.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 12660,
+      "CUIT": 20329285058,
+      "NOMBRE": "GUTIERREZ JOSE IGNACIO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2032"
+    },
+    {
+      "CODIGO": 12661,
+      "CUIT": 27289178614,
+      "NOMBRE": "SCAGLIONI SIRLEY JACQUELINA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2728"
+    },
+    {
+      "CODIGO": 12704,
+      "CUIT": 20292384999,
+      "NOMBRE": "FILOSA PABLO IGNACIO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "pifilosa@yahoo.com.ar",
+      "PASSW_WEB": "2029"
+    },
+    {
+      "CODIGO": 12726,
+      "CUIT": 30533553245,
+      "NOMBRE": "ENIO CHAPINI SA",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "echapinisa@speedy.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 12730,
+      "CUIT": 20269923475,
+      "NOMBRE": "CORDI LEONIDAS GSTON",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "cordileo@hotmail.com",
+      "PASSW_WEB": "2026"
+    },
+    {
+      "CODIGO": 12751,
+      "CUIT": 23172904629,
+      "NOMBRE": "CINELLO FRANCISCO BARTOLOME",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "automotoreszurbriggen@hotmail.com",
+      "PASSW_WEB": "2317"
+    },
+    {
+      "CODIGO": 12755,
+      "CUIT": 20225571814,
+      "NOMBRE": "PEREZ MARCELO RICARDO",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "marcelo3mp@gmail.com",
+      "PASSW_WEB": "2022"
+    },
+    {
+      "CODIGO": 12810,
+      "CUIT": 30712099638,
+      "NOMBRE": "VENEZIA AUTO S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "alberto.pozo@venezia-auto.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 12831,
+      "CUIT": 20260801628,
+      "NOMBRE": "PICATTO ROBERT WALTER ANTONIO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "robertpicatto@hotmail.com",
+      "PASSW_WEB": "2026"
+    },
+    {
+      "CODIGO": 12853,
+      "CUIT": 27942956377,
+      "NOMBRE": "GIMENEZ ESCOBAR FERNANDO ARIEL",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "",
+      "PASSW_WEB": "2794"
+    },
+    {
+      "CODIGO": 12906,
+      "CUIT": 20347750868,
+      "NOMBRE": "PEZZUTTI MIGUEL ANGEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 12960,
+      "CUIT": 20183724593,
+      "NOMBRE": "ZAYA GUSTAVO ANGEL",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "pablomaceda79@hotmail.com",
+      "PASSW_WEB": "Steel123"
+    },
+    {
+      "CODIGO": 13014,
+      "CUIT": 23226261419,
+      "NOMBRE": "LOPEZ DIEGO LEANDRO",
+      "CATEGORIA": "LISTA 1",
+      "EMAIL": "",
+      "PASSW_WEB": "2322"
+    },
+    {
+      "CODIGO": 13015,
+      "CUIT": 20311961161,
+      "NOMBRE": "LOPEZ HECTOR MARTIN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "enganchesferreyra@hotmail.com",
+      "PASSW_WEB": "3119"
+    },
+    {
+      "CODIGO": 13029,
+      "CUIT": 30715985930,
+      "NOMBRE": "RUBIC S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "eneas.lopez@autocity.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 13119,
+      "CUIT": 20316753362,
+      "NOMBRE": "CORDARY GONZALO ANTONIO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 13134,
+      "CUIT": 20313814506,
+      "NOMBRE": "MARTINEZ ALEJANDRO DAVID",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "proequiper@gmail.com",
+      "PASSW_WEB": "2031"
+    },
+    {
+      "CODIGO": 13141,
+      "CUIT": 20105757655,
+      "NOMBRE": "PUGLIESE MIGUEL ANGEL",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "miguelpubliese08@yahoo.com.ar",
+      "PASSW_WEB": "1057"
+    },
+    {
+      "CODIGO": 13143,
+      "CUIT": 20237195788,
+      "NOMBRE": "SORIA ALDO ERNESTO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "soriaernerstohotmail.com",
+      "PASSW_WEB": "2023"
+    },
+    {
+      "CODIGO": 13194,
+      "CUIT": 30716176882,
+      "NOMBRE": "ARRIETA SOC.DE RESP.LIMITADA",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "arrietaautomotores@hotmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 13201,
+      "CUIT": 20324592416,
+      "NOMBRE": "SCALORA GASTON",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "Gunternplast@gmail.com",
+      "PASSW_WEB": "2032"
+    },
+    {
+      "CODIGO": 13209,
+      "CUIT": 20322568836,
+      "NOMBRE": "URCHUEGUIA ALEJANDRO EDUARDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "rpm.autopartes@hotmail.com",
+      "PASSW_WEB": "2032"
+    },
+    {
+      "CODIGO": 13225,
+      "CUIT": 20237321120,
+      "NOMBRE": "FRANCOMANO MARIO ARIEL",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "francomanoariel@gmail.com",
+      "PASSW_WEB": "2023"
+    },
+    {
+      "CODIGO": 13227,
+      "CUIT": 30718324609,
+      "NOMBRE": "AUTOSTILO SAS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 13246,
+      "CUIT": 33533328119,
+      "NOMBRE": "COOP LA GANDERA G RAMIREZ LTDA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "nwilhelm@laganadera.com.ar",
+      "PASSW_WEB": "3353"
+    },
+    {
+      "CODIGO": 13288,
+      "CUIT": 20294964461,
+      "NOMBRE": "ALANIS CAMILO EDUARDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "nextsound@hotmail.com",
+      "PASSW_WEB": "2029"
+    },
+    {
+      "CODIGO": 13313,
+      "CUIT": 20140927199,
+      "NOMBRE": "MENDOZA EDGARDO RAUL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "mach_accesorios@hotmail.com",
+      "PASSW_WEB": "2014"
+    },
+    {
+      "CODIGO": 13336,
+      "CUIT": 20276678796,
+      "NOMBRE": "MATIAS JUAN MARCELO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "juanmarcelomatrias@hotmail.com",
+      "PASSW_WEB": "2027"
+    },
+    {
+      "CODIGO": 13374,
+      "CUIT": 30708257881,
+      "NOMBRE": "LUMA S.A",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "repuestos@lumasa.com.ar",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 13534,
+      "CUIT": 20149444786,
+      "NOMBRE": "MEDINA CARLOS PETRONILO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "carlymedina@hotmail.com",
+      "PASSW_WEB": "2014"
+    },
+    {
+      "CODIGO": 13539,
+      "CUIT": 20223770887,
+      "NOMBRE": "GARNIER RICARDO JOSE",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2022"
+    },
+    {
+      "CODIGO": 13551,
+      "CUIT": 30715903578,
+      "NOMBRE": "AL LIMITE ACCESORIOS S.A.S.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "estudio.fernando.fernandez@gmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 13560,
+      "CUIT": 30715980742,
+      "NOMBRE": "ROLEN S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 13577,
+      "CUIT": 30709386952,
+      "NOMBRE": "CRESPO NEUMATICOS SRL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ventascrespo@cresponeumaticos.com.ar",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 13590,
+      "CUIT": 20331009025,
+      "NOMBRE": "STRANGIS ADRIAN RUBEN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2033"
+    },
+    {
+      "CODIGO": 13592,
+      "CUIT": 36184324,
+      "NOMBRE": "ALASIA DIEGO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "diealasiaaa@gmail.com",
+      "PASSW_WEB": "3618"
+    },
+    {
+      "CODIGO": 13599,
+      "CUIT": 20390082674,
+      "NOMBRE": "BUENAVENTURA PABLO IGNACIO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "ignacio9514@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 13650,
+      "CUIT": 33710073959,
+      "NOMBRE": "EL NUEVO FARO S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "7100"
+    },
+    {
+      "CODIGO": 13662,
+      "CUIT": 28466694,
+      "NOMBRE": "SCHAAL DANIEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 13688,
+      "CUIT": 27292415899,
+      "NOMBRE": "JAKIMCZUK  ROMINA SOLEDAD",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 13697,
+      "CUIT": 30711274789,
+      "NOMBRE": "GERARDO VISCA",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "gerardo.visca@viscaneumaticos.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 13751,
+      "CUIT": 26178506,
+      "NOMBRE": "DE LEON JUAN",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 13771,
+      "CUIT": 30715239392,
+      "NOMBRE": "SOLIDPRO SA",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "victoriaguenier@solidpro.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 13792,
+      "CUIT": 30716558726,
+      "NOMBRE": "KAMALA SAS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 13795,
+      "CUIT": 30588312212,
+      "NOMBRE": "HAUSWAGEN PILAR S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "rclaude@hauswagen.com",
+      "PASSW_WEB": "3058"
+    },
+    {
+      "CODIGO": 13850,
+      "CUIT": 20258713088,
+      "NOMBRE": "MAIDANA HNOS SAS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2587"
+    },
+    {
+      "CODIGO": 13851,
+      "CUIT": 20119677417,
+      "NOMBRE": "LUZNEY JUAN CARLOS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "tallercacho@yahoo.com.ar",
+      "PASSW_WEB": "1196"
+    },
+    {
+      "CODIGO": 13854,
+      "CUIT": 30716312905,
+      "NOMBRE": "IVSA S.R.L.",
+      "CATEGORIA": "LISTA 3",
+      "EMAIL": "rodrigosantiago@grupoptimiza.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 13869,
+      "CUIT": 30576721710,
+      "NOMBRE": "SULLAIR ARGENTINA S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "jgiustozzi@sullair.com.ar",
+      "PASSW_WEB": "3057"
+    },
+    {
+      "CODIGO": 13879,
+      "CUIT": 30715296531,
+      "NOMBRE": "LETTMA AUTOPIEZAS S.A.",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "ventas@joserepuestos.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 13901,
+      "CUIT": 30716493217,
+      "NOMBRE": "JCV  S.S",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "jcvchacras@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 13943,
+      "CUIT": 33716674059,
+      "NOMBRE": "DOBLE TRACCION SRL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ventas@forwell.com.ar",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 13944,
+      "CUIT": 20328082528,
+      "NOMBRE": "BUSTOS OSCAR ANDRES",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "pulpobustos@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 13948,
+      "CUIT": 30708271647,
+      "NOMBRE": "HAIMOVICH PARANA S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 14070,
+      "CUIT": 30715772171,
+      "NOMBRE": "NEUMATICOS SAN MIGUEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": "5561"
+    },
+    {
+      "CODIGO": 14081,
+      "CUIT": 20215330088,
+      "NOMBRE": "ARRIETA CARLOS",
+      "CATEGORIA": "LISTA 3",
+      "EMAIL": "",
+      "PASSW_WEB": "5555"
+    },
+    {
+      "CODIGO": 14092,
+      "CUIT": 20320854998,
+      "NOMBRE": "TUZI LEANDRO MARIANO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "2laudiocar@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 14125,
+      "CUIT": 30716427621,
+      "NOMBRE": "BATERIAS RALLY SRL",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "baterias.rally.srl@gmail.com",
+      "PASSW_WEB": "5563"
+    },
+    {
+      "CODIGO": 14228,
+      "CUIT": 20201966737,
+      "NOMBRE": "GONZALEZ CLAUDIO JAVIER",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": "2019"
+    },
+    {
+      "CODIGO": 14274,
+      "CUIT": 20302734640,
+      "NOMBRE": "RIVERO VIÑOTTI OSCAR ESTEBAN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 14293,
+      "CUIT": 30714546666,
+      "NOMBRE": "ABINGTON S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 14305,
+      "CUIT": 30716764091,
+      "NOMBRE": "SIPEGRALES SRL",
+      "CATEGORIA": "LISTA 3",
+      "EMAIL": "",
+      "PASSW_WEB": "5552"
+    },
+    {
+      "CODIGO": 14308,
+      "CUIT": 30716172364,
+      "NOMBRE": "CHAPERIO URQUIZA S.A.S. EN FOR",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "chaperiourquiza@gmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 14377,
+      "CUIT": 30716655349,
+      "NOMBRE": "WORK UNIT S.A.S",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "lucasperezmaxi@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 14412,
+      "CUIT": 33361234,
+      "NOMBRE": "MEGALE AUTOMOTORES",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 14416,
+      "CUIT": 20125086889,
+      "NOMBRE": "RICARDO A. FISSORE",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": "1250"
+    },
+    {
+      "CODIGO": 14443,
+      "CUIT": 23282238829,
+      "NOMBRE": "KOTTLER MARIANO",
+      "CATEGORIA": "LISTA 3",
+      "EMAIL": "tucsonequipamiento4x4@gmail.com",
+      "PASSW_WEB": "2328"
+    },
+    {
+      "CODIGO": 14464,
+      "CUIT": 20274329360,
+      "NOMBRE": "DALLA AUTOMOTORES",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 14480,
+      "CUIT": 20168177586,
+      "NOMBRE": "VILLA JAVIER HORACIO",
+      "CATEGORIA": "LISTA 1",
+      "EMAIL": "villajavier@hotmail.com.ar",
+      "PASSW_WEB": "1681"
+    },
+    {
+      "CODIGO": 14606,
+      "CUIT": 20231911767,
+      "NOMBRE": "COCIANCICH JORGE EDUARDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2023"
+    },
+    {
+      "CODIGO": 14609,
+      "CUIT": 21378902,
+      "NOMBRE": "RUNDO ADRIAN",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 14647,
+      "CUIT": 20218240691,
+      "NOMBRE": "PABLO GODOY AUTOMOTORES",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 14666,
+      "CUIT": 30718112032,
+      "NOMBRE": "GRUPO CALPER SA",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 14674,
+      "CUIT": 20184517893,
+      "NOMBRE": "BRAVI CARLOS FLAVIO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 14682,
+      "CUIT": 30711166102,
+      "NOMBRE": "AGROSERVICIOS SERVITER SA",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 14690,
+      "CUIT": 20294204319,
+      "NOMBRE": "SPORT SILENS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "sportsilensbritos@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 14698,
+      "CUIT": 30715912038,
+      "NOMBRE": "SASEY S.A.S.",
+      "CATEGORIA": "LISTA 1",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 14720,
+      "CUIT": 23957728,
+      "NOMBRE": "GRANADOS JOSE MIGUEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 14767,
+      "CUIT": 20351336073,
+      "NOMBRE": "PRO TOYS",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "PABLO",
+      "PASSW_WEB": "5560"
+    },
+    {
+      "CODIGO": 14810,
+      "CUIT": 0,
+      "NOMBRE": "RAINA GASTON",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 14829,
+      "CUIT": 30711281041,
+      "NOMBRE": "PRACTICA DISEÑOS Y FABRICACION",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 14831,
+      "CUIT": 30716598752,
+      "NOMBRE": "GOYITO S.A.S.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "lubricentrogoyo@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 14863,
+      "CUIT": 20221369077,
+      "NOMBRE": "ROSSO WALTER DUILIO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "lubricentrorosso@coop5.com.ar",
+      "PASSW_WEB": "2022"
+    },
+    {
+      "CODIGO": 14884,
+      "CUIT": 30715744941,
+      "NOMBRE": "YACOPINI MIRAI SA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 14936,
+      "CUIT": 28410298,
+      "NOMBRE": "TORRES LUIS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 14938,
+      "CUIT": 30714606219,
+      "NOMBRE": "JAPAN CAR S.A",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "wfiguerero@sendai.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 15070,
+      "CUIT": 20218092269,
+      "NOMBRE": "CABELLO SERGIO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "cabellosergio@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 15135,
+      "CUIT": 23176739924,
+      "NOMBRE": "M. MULTIPARTES",
+      "CATEGORIA": "LISTA 3",
+      "EMAIL": "multipartesvluro@gmail.com",
+      "PASSW_WEB": "1767"
+    },
+    {
+      "CODIGO": 15181,
+      "CUIT": 33538766769,
+      "NOMBRE": "IGARRETA S.A.C.I",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "dveiga@igarreta.com.ar",
+      "PASSW_WEB": "3353"
+    },
+    {
+      "CODIGO": 15314,
+      "CUIT": 20308558941,
+      "NOMBRE": "OLMEDO LUCAS JAVIER",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 15460,
+      "CUIT": 20220331351,
+      "NOMBRE": "GANGOSO PABLO MARTIN",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "ljgangui09@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 15471,
+      "CUIT": 30715570617,
+      "NOMBRE": "OLEPA SRL",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": "1234"
+    },
+    {
+      "CODIGO": 15552,
+      "CUIT": 27524659,
+      "NOMBRE": "AUDISIO AUTOMOTORES",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 15628,
+      "CUIT": 33715579079,
+      "NOMBRE": "GRAN MARIA S.A",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 15692,
+      "CUIT": 30714298905,
+      "NOMBRE": "PROFIX SA",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 15750,
+      "CUIT": 30716869195,
+      "NOMBRE": "PUNTO CENTRAL EQUIPAMIENTOS S.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "gonzalesgyg@hotmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 15753,
+      "CUIT": 20285427267,
+      "NOMBRE": "ACOSTA DIEGO MARTIN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "paradisecarsss@gmail.com",
+      "PASSW_WEB": "2028"
+    },
+    {
+      "CODIGO": 15801,
+      "CUIT": 20407908431,
+      "NOMBRE": "BORDET MATIAS EZEQUIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "matiasbordet@gmail.com",
+      "PASSW_WEB": "2040"
+    },
+    {
+      "CODIGO": 15868,
+      "CUIT": 30693276760,
+      "NOMBRE": "CONCRET NOR SA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 15924,
+      "CUIT": 20200765711,
+      "NOMBRE": "SERRANO ANGEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2020"
+    },
+    {
+      "CODIGO": 15925,
+      "CUIT": 30710216289,
+      "NOMBRE": "DETROIT 1925 SA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "aruiz@giama.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 15939,
+      "CUIT": 30711250383,
+      "NOMBRE": "NEUMATICOS Y LLENTAS D L ANDES",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "andinolub@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 15948,
+      "CUIT": 31622066,
+      "NOMBRE": "NAVARRETE DARIO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 15979,
+      "CUIT": 33715436839,
+      "NOMBRE": "NUHOR SRL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "grequipamiento@hotmail.com",
+      "PASSW_WEB": "3371"
+    },
+    {
+      "CODIGO": 16001,
+      "CUIT": 20338878924,
+      "NOMBRE": "CORONEL AGUSTIN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "agustin_coronel@hotmail.com",
+      "PASSW_WEB": "2033"
+    },
+    {
+      "CODIGO": 16022,
+      "CUIT": 30708115920,
+      "NOMBRE": "CHACRA DON BENJAMIN SRL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16088,
+      "CUIT": 30545276417,
+      "NOMBRE": "MARIO GOLDSTEIN SA",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16090,
+      "CUIT": 33461364,
+      "NOMBRE": "N Y N PERFORMANCE",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16097,
+      "CUIT": 30716935147,
+      "NOMBRE": "GRUP. CAMIONETAS SA",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16131,
+      "CUIT": 30710952708,
+      "NOMBRE": "GF TRAILER SA",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16136,
+      "CUIT": 20223726454,
+      "NOMBRE": "FERNANDEZ GUSTAVO GABRIEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16293,
+      "CUIT": 20113524937,
+      "NOMBRE": "OTERO CARLOS GUILLERMO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "gabyottero@hotmail.com",
+      "PASSW_WEB": "2011"
+    },
+    {
+      "CODIGO": 16310,
+      "CUIT": 30523304891,
+      "NOMBRE": "CAPILLITAS SA",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "nhernandes@mediterranero.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16314,
+      "CUIT": 20280241335,
+      "NOMBRE": "MIRSCHEGGE BALENTIN",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16384,
+      "CUIT": 23441384459,
+      "NOMBRE": "TOLEDO JUAN CRUZ",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16426,
+      "CUIT": 20307821266,
+      "NOMBRE": "GONZALO GOMEZ",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3078"
+    },
+    {
+      "CODIGO": 16472,
+      "CUIT": 30717370747,
+      "NOMBRE": "* APESTEGUIA J. Y HERMANN C.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "libertyglassgchu@gmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 16484,
+      "CUIT": 30679777986,
+      "NOMBRE": "FRIOLATINA SA",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16501,
+      "CUIT": 23200873254,
+      "NOMBRE": "ROMERO BEATRIZ EDITH",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "autoparteselgarage@hotmail.com",
+      "PASSW_WEB": "2320"
+    },
+    {
+      "CODIGO": 16502,
+      "CUIT": 17317433,
+      "NOMBRE": "CARRIZO ALBERTO GUILLERMO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16549,
+      "CUIT": 20243923213,
+      "NOMBRE": "ARGAÑARAZ FEDERICO",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "fearagñaraz@gmail.com",
+      "PASSW_WEB": "2439"
+    },
+    {
+      "CODIGO": 16594,
+      "CUIT": 20062383616,
+      "NOMBRE": "ROMANESE JUAN CARLOS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "lacolocadoraneuquen@hotmail.com",
+      "PASSW_WEB": "0623"
+    },
+    {
+      "CODIGO": 16595,
+      "CUIT": 30717293440,
+      "NOMBRE": "MOM S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "itomarozzi@hotmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 16596,
+      "CUIT": 23417814809,
+      "NOMBRE": "MERCADO NAHUEL IVAN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "nahuelmercado9905@gmail.com",
+      "PASSW_WEB": "2341"
+    },
+    {
+      "CODIGO": 16597,
+      "CUIT": 20440517766,
+      "NOMBRE": "CIARI IGNACIO ERNESTO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "nachicia@icloud.com",
+      "PASSW_WEB": "2044"
+    },
+    {
+      "CODIGO": 16609,
+      "CUIT": 20283514316,
+      "NOMBRE": "AGUIRRE MARCELO ANDRES",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "escapesmarcelo@gmail.com",
+      "PASSW_WEB": "2028"
+    },
+    {
+      "CODIGO": 16645,
+      "CUIT": 20221178697,
+      "NOMBRE": "VALDEZ OMAR  DARIO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "Xsoundcar04@gmail.com",
+      "PASSW_WEB": "2022"
+    },
+    {
+      "CODIGO": 16650,
+      "CUIT": 27325887120,
+      "NOMBRE": "KURIGER LORENA PAOLA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "kurigelrlorena86@gmail.com",
+      "PASSW_WEB": "2732"
+    },
+    {
+      "CODIGO": 16659,
+      "CUIT": 28024133,
+      "NOMBRE": "HIRSCHEGGER VALENTIN",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16689,
+      "CUIT": 29974672,
+      "NOMBRE": "FADER GERMAN",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16699,
+      "CUIT": 33717311189,
+      "NOMBRE": "OSME S.A.S.",
+      "CATEGORIA": "LISTA 2",
+      "EMAIL": "chubut@autoekip.com.ar",
+      "PASSW_WEB": "pmerlos478"
+    },
+    {
+      "CODIGO": 16701,
+      "CUIT": 30709351539,
+      "NOMBRE": "AUTO NORTE S.A",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "autonortesa@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16706,
+      "CUIT": 30707534660,
+      "NOMBRE": "+",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": "7075"
+    },
+    {
+      "CODIGO": 16717,
+      "CUIT": 30717208516,
+      "NOMBRE": "ALL SERVICE",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16718,
+      "CUIT": 27871257,
+      "NOMBRE": "PICCIRILLI EZEQUIEL",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16719,
+      "CUIT": 20265983198,
+      "NOMBRE": "MORICCI MAURO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "nauticamorici@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16724,
+      "CUIT": 26349994,
+      "NOMBRE": "OLIVERA MAURICIO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16725,
+      "CUIT": 20273624180,
+      "NOMBRE": "MARIANETTI FERNANDO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16729,
+      "CUIT": 30715184350,
+      "NOMBRE": "C.M. MAQUINARIAS SRL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "cm_maquinarias@interya.net.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 16731,
+      "CUIT": 20326803058,
+      "NOMBRE": "SANCHEZ REPUESTOS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "sanchezrepuestos1944@hotmail.com",
+      "PASSW_WEB": "3268"
+    },
+    {
+      "CODIGO": 16734,
+      "CUIT": 20250942371,
+      "NOMBRE": "RAMOS ROBERTO PABLO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "pablogpsonidoextremo@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16744,
+      "CUIT": 20216251688,
+      "NOMBRE": "BLANC TRIULZI GASTON",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16754,
+      "CUIT": 27373424221,
+      "NOMBRE": "GAETAN ABIGAIL ARACELI",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "araceligaetan66@hotmail.com",
+      "PASSW_WEB": "2737"
+    },
+    {
+      "CODIGO": 16761,
+      "CUIT": 20200755384,
+      "NOMBRE": "BIGLINO JOSE LUIS",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "biglinoreparaciones@hotmail.com",
+      "PASSW_WEB": "2020"
+    },
+    {
+      "CODIGO": 16766,
+      "CUIT": 33714731659,
+      "NOMBRE": "IMPULSO S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3371"
+    },
+    {
+      "CODIGO": 16780,
+      "CUIT": 20233770702,
+      "NOMBRE": "BARRERA FERNANDO JAVIER",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "javier070070@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16785,
+      "CUIT": 30671676161,
+      "NOMBRE": "CAÑETE LEONARDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "6716"
+    },
+    {
+      "CODIGO": 16806,
+      "CUIT": 33644208139,
+      "NOMBRE": "CORPRACION DE INVERSIONES S.A",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "msigliano@egeoautomotores.com.ar",
+      "PASSW_WEB": "3364"
+    },
+    {
+      "CODIGO": 16807,
+      "CUIT": 30716905310,
+      "NOMBRE": "PUERTO SECO SAS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": "5555"
+    },
+    {
+      "CODIGO": 16810,
+      "CUIT": 33710167589,
+      "NOMBRE": "LEDIAN S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3371"
+    },
+    {
+      "CODIGO": 16837,
+      "CUIT": 30716997932,
+      "NOMBRE": "AZZURRA AUTO S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "manuel.bossa@azurraauto.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 16846,
+      "CUIT": 20172921036,
+      "NOMBRE": "CASTRO HECTOR MARIO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16860,
+      "CUIT": 32193161,
+      "NOMBRE": "ORTIZ MARIO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16877,
+      "CUIT": 30717685659,
+      "NOMBRE": "GRUPO JV S. CAP I SECC IV",
+      "CATEGORIA": "LISTA 2",
+      "EMAIL": "villajavier@hotmail.com",
+      "PASSW_WEB": "7176"
+    },
+    {
+      "CODIGO": 16880,
+      "CUIT": 44222333,
+      "NOMBRE": "CLIENTE PRUEBA LISTA 1",
+      "CATEGORIA": "LISTA 1",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16881,
+      "CUIT": 44222334,
+      "NOMBRE": "CLIENTE PRUEBA LISTA 2",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16883,
+      "CUIT": 30712299424,
+      "NOMBRE": "MEGAFE SA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "leandromur@nordelbahn.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 16889,
+      "CUIT": 27367740073,
+      "NOMBRE": "ORECHIA YANINA ANDREA",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "yaninaorechina@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16907,
+      "CUIT": 33707222889,
+      "NOMBRE": "TRANTOR SA",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": "5567"
+    },
+    {
+      "CODIGO": 16908,
+      "CUIT": 23406815609,
+      "NOMBRE": "TRAICO DIEGO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16911,
+      "CUIT": 20261385261,
+      "NOMBRE": "MEDINA HECTOR DANIEL",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "lourdesbenedetti07@gmail.com",
+      "PASSW_WEB": "2026"
+    },
+    {
+      "CODIGO": 16913,
+      "CUIT": 20233951405,
+      "NOMBRE": "VERDUGO MAXIMILIANO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "trencor.repuestos@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16914,
+      "CUIT": 20321157034,
+      "NOMBRE": "SANTOS LUIS MIGUEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "Utilitariostucuman.21@gmail.com",
+      "PASSW_WEB": "2032"
+    },
+    {
+      "CODIGO": 16915,
+      "CUIT": 20223361235,
+      "NOMBRE": "MILMAN GUSTAVO MARCELO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "Carrosmilman@tucbbs.com.ar",
+      "PASSW_WEB": "2022"
+    },
+    {
+      "CODIGO": 16917,
+      "CUIT": 30691782502,
+      "NOMBRE": "LEON ALPEROVICH DE TUCUMAN S.A",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "Gingio@alperovichsa.com.arGingio@alperovichsa.com.ar",
+      "PASSW_WEB": "3069"
+    },
+    {
+      "CODIGO": 16918,
+      "CUIT": 30675424574,
+      "NOMBRE": "GEMSA AUTOMOTORES S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "Compras@gemsasa",
+      "PASSW_WEB": "3067"
+    },
+    {
+      "CODIGO": 16921,
+      "CUIT": 30709590835,
+      "NOMBRE": "RUIZ AUTOMOTORES S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "Danielnaranjo@ruizsa.com.ar",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 16931,
+      "CUIT": 27394032005,
+      "NOMBRE": "JUAREZ AGUSTINA MARIEL",
+      "CATEGORIA": "LISTA 1",
+      "EMAIL": "",
+      "PASSW_WEB": "3940"
+    },
+    {
+      "CODIGO": 16932,
+      "CUIT": 30715075853,
+      "NOMBRE": "DYFSA SA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ventas@cinziavehiculos.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16933,
+      "CUIT": 30716806088,
+      "NOMBRE": "DE GOKU SAS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16938,
+      "CUIT": 20279610777,
+      "NOMBRE": "PORZIO PASTINANTE NICOLAS JOSE",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "Nicoporzio@gmail.com",
+      "PASSW_WEB": "2032"
+    },
+    {
+      "CODIGO": 16939,
+      "CUIT": 20377273339,
+      "NOMBRE": "LIBERATORE NICOLAS EDUARDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "reparacionesplasticastuc@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16945,
+      "CUIT": 20939115219,
+      "NOMBRE": "KAYSER ARNULPHI FABIANO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "kayserneumaticos@hotmail.com",
+      "PASSW_WEB": "2093"
+    },
+    {
+      "CODIGO": 16951,
+      "CUIT": 33707011799,
+      "NOMBRE": "NEUMATICOS MARTIN S.A",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "rodrigo.martin@neumaticosmartin.com.ar",
+      "PASSW_WEB": "3370"
+    },
+    {
+      "CODIGO": 16952,
+      "CUIT": 27250723305,
+      "NOMBRE": "PELOZO MYRIAM ALEJANDRA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "lubridaniel@hotmail.com",
+      "PASSW_WEB": "2725"
+    },
+    {
+      "CODIGO": 16954,
+      "CUIT": 30712194568,
+      "NOMBRE": "NISSCAR S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "dolivera@nisscar.con.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 16955,
+      "CUIT": 20378515239,
+      "NOMBRE": "ZAVATTA FACUNDO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "ferza2055@gmail.com",
+      "PASSW_WEB": "2037"
+    },
+    {
+      "CODIGO": 16969,
+      "CUIT": 30712467971,
+      "NOMBRE": "MARTINEZ DEL SEL S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 16975,
+      "CUIT": 20312355370,
+      "NOMBRE": "CAMPORA BARBOZA PABLO RICARDO",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "sol_acc@hotmail.es",
+      "PASSW_WEB": "2031"
+    },
+    {
+      "CODIGO": 16977,
+      "CUIT": 20175316273,
+      "NOMBRE": "CELI MARCELO GUSTAVO",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "marcegus.celi@gmail.com",
+      "PASSW_WEB": "2017"
+    },
+    {
+      "CODIGO": 16980,
+      "CUIT": 20355883095,
+      "NOMBRE": "MARTINEZ GONZALO DANIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "lubricentrosdelnorte@gmail.com",
+      "PASSW_WEB": "2035"
+    },
+    {
+      "CODIGO": 16981,
+      "CUIT": 30602118084,
+      "NOMBRE": "DANIELE OMAR Y DANIELE  ARIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "danieleaccesorios@gmail.com",
+      "PASSW_WEB": "3060"
+    },
+    {
+      "CODIGO": 16992,
+      "CUIT": 30711716374,
+      "NOMBRE": "FERRADAS GONZALO  IBALBORDE J",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "losjuriesrepuestos@gmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 16993,
+      "CUIT": 20162216245,
+      "NOMBRE": "CHEIN ALEJANDRO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "alejandrochein@yahoo.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 16998,
+      "CUIT": 30717333574,
+      "NOMBRE": "DOMO 4X4  S.A.S.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17000,
+      "CUIT": 30717655997,
+      "NOMBRE": "ANVIRA SAS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": "5555"
+    },
+    {
+      "CODIGO": 17004,
+      "CUIT": 20287791837,
+      "NOMBRE": "CEJAS HERNAN ANTONIO",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "Hernancejas81@hotmal.com",
+      "PASSW_WEB": "2028"
+    },
+    {
+      "CODIGO": 17008,
+      "CUIT": 27056888700,
+      "NOMBRE": "MUJICA ZULEMA",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "Caresihnos1@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17010,
+      "CUIT": 30711148805,
+      "NOMBRE": "SHIMRAI SRL",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "paula.perez@shimrai.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17016,
+      "CUIT": 20206032260,
+      "NOMBRE": "RUNDIO ALBERTO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "banibalrun68@gmail.com",
+      "PASSW_WEB": "2020"
+    },
+    {
+      "CODIGO": 17018,
+      "CUIT": 20373680231,
+      "NOMBRE": "GARCIA IGNACIO NICOLAS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "garciaignacio@gmail.com",
+      "PASSW_WEB": "2037"
+    },
+    {
+      "CODIGO": 17021,
+      "CUIT": 30716883317,
+      "NOMBRE": "ESTANCIA LA RAMADA SRL",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17033,
+      "CUIT": 20298437814,
+      "NOMBRE": "TOBARES FRANCO EZEQUIEL",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": "2029"
+    },
+    {
+      "CODIGO": 17037,
+      "CUIT": 30714837148,
+      "NOMBRE": "EL CANAL SRL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "sergionicolas720@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17042,
+      "CUIT": 27135483457,
+      "NOMBRE": "ROSSO VILMA ROSA",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17075,
+      "CUIT": 20125606629,
+      "NOMBRE": "TRABUCCO CARLOS PEDRO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "adm.cptrabucco@hotmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17076,
+      "CUIT": 30714532142,
+      "NOMBRE": "D Y D  AUTOMOTORES S.A.",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "Danielgarlisi.dg@gmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 17084,
+      "CUIT": 20080710802,
+      "NOMBRE": "AMBROSIG AMADO LUIS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "saulambrosig@gmail.com",
+      "PASSW_WEB": "0807"
+    },
+    {
+      "CODIGO": 17090,
+      "CUIT": 30717509419,
+      "NOMBRE": "ILARI ACCESORIOS INOX S.A.",
+      "CATEGORIA": "LISTA 2",
+      "EMAIL": "administracion@ilari.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17106,
+      "CUIT": 33715450459,
+      "NOMBRE": "MECANICA BALZARINI S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "mecanicabalzarini@yahoo.com.ar",
+      "PASSW_WEB": "3371"
+    },
+    {
+      "CODIGO": 17108,
+      "CUIT": 30522015292,
+      "NOMBRE": "CHARATA COMBUSTIBLES S.A.C.I.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3052"
+    },
+    {
+      "CODIGO": 17121,
+      "CUIT": 30714127051,
+      "NOMBRE": "SENSOR SRL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "glsensor1@gmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 17129,
+      "CUIT": 33708565119,
+      "NOMBRE": "AUTOS IMPORTADOS S.R.L.",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17137,
+      "CUIT": 30716775638,
+      "NOMBRE": "AG NOA S.A",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "djabif@agnoa.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 17146,
+      "CUIT": 30668229073,
+      "NOMBRE": "R Y O VALLE S.A",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "edestefanis@valle.com.ar",
+      "PASSW_WEB": "3066"
+    },
+    {
+      "CODIGO": 17172,
+      "CUIT": 31318112,
+      "NOMBRE": "CARRIZO MANUEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17183,
+      "CUIT": 30707162305,
+      "NOMBRE": "MULTILUB S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "multilubembarcacion@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17189,
+      "CUIT": 20280192989,
+      "NOMBRE": "AMBROSIG SAUL AMADO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "saulambrosig@gmail.com",
+      "PASSW_WEB": "2801"
+    },
+    {
+      "CODIGO": 17204,
+      "CUIT": 30717323102,
+      "NOMBRE": "LUCIANO REPUESTOS S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "lucianorepuestossrl@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17208,
+      "CUIT": 20277659183,
+      "NOMBRE": "FERRER IVA",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17218,
+      "CUIT": 30710762259,
+      "NOMBRE": "CONCE MZA SA",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17219,
+      "CUIT": 20357459096,
+      "NOMBRE": "GODOY WALTER MATIAS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "maty_f100@hotmail.com",
+      "PASSW_WEB": "0123"
+    },
+    {
+      "CODIGO": 17221,
+      "CUIT": 30715855220,
+      "NOMBRE": "JC LORENZO INVERSORA SA",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17222,
+      "CUIT": 20144899181,
+      "NOMBRE": "LEMES JUAN CARLOS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "lemes.juan00@gmail.com",
+      "PASSW_WEB": "2014"
+    },
+    {
+      "CODIGO": 17230,
+      "CUIT": 20347748669,
+      "NOMBRE": "GOMEZ MOLL ANTONIO JAVIER",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "larotondaservicios@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17244,
+      "CUIT": 20130061835,
+      "NOMBRE": "DAVID GERARDO ITALO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17265,
+      "CUIT": 30528071925,
+      "NOMBRE": "CASA JUAN FEMENIA SRL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17285,
+      "CUIT": 30502245399,
+      "NOMBRE": "ESUCO S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "amanno@esucosa.com",
+      "PASSW_WEB": "3050"
+    },
+    {
+      "CODIGO": 17347,
+      "CUIT": 20295975327,
+      "NOMBRE": "SPINELLI MARCELO OSCAR",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2029"
+    },
+    {
+      "CODIGO": 17365,
+      "CUIT": 33717236349,
+      "NOMBRE": "CORDOBA ADVENTURE S.A.S.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "soportedeventascba@smmotos.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17376,
+      "CUIT": 30543181680,
+      "NOMBRE": "KARAM AUTOMOTORES S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "repuestos@karamsa.com",
+      "PASSW_WEB": "3054"
+    },
+    {
+      "CODIGO": 17380,
+      "CUIT": 27261629661,
+      "NOMBRE": "GONZALES MARIA ESTER",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "autopartesjuancito@hotmail.com",
+      "PASSW_WEB": "2726"
+    },
+    {
+      "CODIGO": 17392,
+      "CUIT": 30717058190,
+      "NOMBRE": "VIDRIOS RAMASCO LEON  S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "vidriosleonsrl@gmail.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 17442,
+      "CUIT": 20286501177,
+      "NOMBRE": "RODRIGUEZ NONINO FERNANDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17446,
+      "CUIT": 37844019,
+      "NOMBRE": "SALINAS LAUTARO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "lautarosalinaszieseniss@gmail.com",
+      "PASSW_WEB": "5555"
+    },
+    {
+      "CODIGO": 17447,
+      "CUIT": 33717678139,
+      "NOMBRE": "NORTHSTELLA S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3371"
+    },
+    {
+      "CODIGO": 17530,
+      "CUIT": 27206444563,
+      "NOMBRE": "MORENO AYDA GABRIELA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "betcarrepuestos@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17539,
+      "CUIT": 25628281,
+      "NOMBRE": "ASTECIANO MARTIN",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17540,
+      "CUIT": 20237823932,
+      "NOMBRE": "FRANCO GABRIEL ANTONIO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "contacto.fg4x4@gmail.com",
+      "PASSW_WEB": "2023"
+    },
+    {
+      "CODIGO": 17543,
+      "CUIT": 36712408,
+      "NOMBRE": "NEVIRU GARAGE(NENE)",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17546,
+      "CUIT": 20223513981,
+      "NOMBRE": "ROHR CLAUDIO GABRIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2022"
+    },
+    {
+      "CODIGO": 17547,
+      "CUIT": 20245619317,
+      "NOMBRE": "GAGLIARDI ARIEL LEONARDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "gagliardiariel@hotmail.com",
+      "PASSW_WEB": "2024"
+    },
+    {
+      "CODIGO": 17572,
+      "CUIT": 30715920502,
+      "NOMBRE": "CABALLITO CARS S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "mdegeronimi@nissancapital.com",
+      "PASSW_WEB": "7130"
+    },
+    {
+      "CODIGO": 17610,
+      "CUIT": 33716783109,
+      "NOMBRE": "LIT58 S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "litcanning@gmail.com",
+      "PASSW_WEB": "3371"
+    },
+    {
+      "CODIGO": 17628,
+      "CUIT": 30716212927,
+      "NOMBRE": "PECILE EQUIPAMIENTOS S.A.S.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "INFO@PECILESA.COM.AR",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 17629,
+      "CUIT": 20344992968,
+      "NOMBRE": "JEREZ ABEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17649,
+      "CUIT": 30707388745,
+      "NOMBRE": "LORENZO AUTOMOTORES SA",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17650,
+      "CUIT": 30716124297,
+      "NOMBRE": "JLP S.R.L",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "eltrio@c:truseltrio.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 17654,
+      "CUIT": 20209959926,
+      "NOMBRE": "CASAS SERGIO DAVID",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "autoradiosergio@yahoo.com.ar",
+      "PASSW_WEB": "2020"
+    },
+    {
+      "CODIGO": 17657,
+      "CUIT": 20307821266,
+      "NOMBRE": "",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17666,
+      "CUIT": 27268933889,
+      "NOMBRE": "MUSSO BETTIANA ELIZABETH",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "PRIMERODIESEL@GMAIL.COM",
+      "PASSW_WEB": "2726"
+    },
+    {
+      "CODIGO": 17668,
+      "CUIT": 20270738894,
+      "NOMBRE": "BRUNO PABLO JAVIER",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "laferreteria_lapara@hotmail.com",
+      "PASSW_WEB": "2027"
+    },
+    {
+      "CODIGO": 17669,
+      "CUIT": 30717037789,
+      "NOMBRE": "RUTA 34 S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "automotoresruta34@hotmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 17674,
+      "CUIT": 30716690152,
+      "NOMBRE": "MARETTO SOCIEDAD ANONIMA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ADMGRUPOMARETTO@GMAIL.COM",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 17677,
+      "CUIT": 23233909319,
+      "NOMBRE": "FRANCOIS GUSTAVO ADOLFO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "mgpolarizados@yahoo.com.ar",
+      "PASSW_WEB": "2323"
+    },
+    {
+      "CODIGO": 17678,
+      "CUIT": 20405032342,
+      "NOMBRE": "LIMIA RAMIRO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": "2040"
+    },
+    {
+      "CODIGO": 17681,
+      "CUIT": 30714496634,
+      "NOMBRE": "COLZANI MAQUINARIAS S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 17682,
+      "CUIT": 20181143399,
+      "NOMBRE": "GRASSO ALEJANDRO CESAR",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2018"
+    },
+    {
+      "CODIGO": 17699,
+      "CUIT": 27125866951,
+      "NOMBRE": "FLORES LILIANA RUTH ROSALBA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "JIMECOMPETICION@HOTMAIL.COM",
+      "PASSW_WEB": "2712"
+    },
+    {
+      "CODIGO": 17700,
+      "CUIT": 30711009775,
+      "NOMBRE": "AUTOMEKANIKA S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 17702,
+      "CUIT": 30709454370,
+      "NOMBRE": "FAVARO SERVICIOS AGROPECUARIOS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "FAVAROHORACIO@GMAIL.COM",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 17703,
+      "CUIT": 27222094688,
+      "NOMBRE": "PLAZA MIRTHA NORMA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "CENTROCAR.CHILECITO@GMAIL.COM",
+      "PASSW_WEB": "2722"
+    },
+    {
+      "CODIGO": 17705,
+      "CUIT": 30709638412,
+      "NOMBRE": "CLUB DE CAMPO ALTOS DEL CORRAL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17706,
+      "CUIT": 20292264713,
+      "NOMBRE": "PELAEZ NOGUERA DAVID",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "DAVIDPELAEZ66@GMAIL.COM",
+      "PASSW_WEB": "2029"
+    },
+    {
+      "CODIGO": 17712,
+      "CUIT": 20301503327,
+      "NOMBRE": "MALDONADO MARTIN SEBASTIAN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ELTINSHO.83@GMAIL.COM",
+      "PASSW_WEB": "2030"
+    },
+    {
+      "CODIGO": 17724,
+      "CUIT": 20337050116,
+      "NOMBRE": "GUIDOLIN FRANCO ABEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17728,
+      "CUIT": 20211064065,
+      "NOMBRE": "SARTORI PEDRO ALEJANDRO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "sartori_alejandro@hotmail.com",
+      "PASSW_WEB": "2021"
+    },
+    {
+      "CODIGO": 17729,
+      "CUIT": 20357668280,
+      "NOMBRE": "IEZZI NICOLAS EBEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "NICOLASIEZZI95@GMAIL.COM",
+      "PASSW_WEB": "2035"
+    },
+    {
+      "CODIGO": 17730,
+      "CUIT": 27246357795,
+      "NOMBRE": "ROSALES MARIA LUZ",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "JORGESERET@GMAIL.COM",
+      "PASSW_WEB": "2724"
+    },
+    {
+      "CODIGO": 17734,
+      "CUIT": 20164045693,
+      "NOMBRE": "ERRECALDE RAUL ALBERTO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "OLNEY4X4PARTS@GMAIL.COM",
+      "PASSW_WEB": "2016"
+    },
+    {
+      "CODIGO": 17737,
+      "CUIT": 23395853449,
+      "NOMBRE": "GERLACH ALEXIS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "gerlachalexis10@gmail.com",
+      "PASSW_WEB": "3958"
+    },
+    {
+      "CODIGO": 17740,
+      "CUIT": 30707562125,
+      "NOMBRE": "EL PRODUCTOR S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ROXANA.CAMPOS@ELPRODUCTOR-SA.COM.AR",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 17741,
+      "CUIT": 30717500950,
+      "NOMBRE": "PELCAT S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "CATAMARCAHIDRAULICA@LIVE.COM.AR",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 17743,
+      "CUIT": 20222194564,
+      "NOMBRE": "SARTOR HUGO DANIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "VEROASSAD@HOTMAIL.COM",
+      "PASSW_WEB": "2022"
+    },
+    {
+      "CODIGO": 17744,
+      "CUIT": 30717543129,
+      "NOMBRE": "GUIJARRO REPUESTOS S.A.S.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 17768,
+      "CUIT": 20264457506,
+      "NOMBRE": "SUERO MIGUEL ALEJANDRO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "sergiotucu@outlook.com",
+      "PASSW_WEB": "2026"
+    },
+    {
+      "CODIGO": 17769,
+      "CUIT": 20108834510,
+      "NOMBRE": "ORQUERA BLAS EDGARDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2010"
+    },
+    {
+      "CODIGO": 17770,
+      "CUIT": 20272558850,
+      "NOMBRE": "DE LA FUENTE LUIS DAVID",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2027"
+    },
+    {
+      "CODIGO": 17772,
+      "CUIT": 33668123649,
+      "NOMBRE": "AUTO VIA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "autovia@acara.org.ar",
+      "PASSW_WEB": "3366"
+    },
+    {
+      "CODIGO": 17782,
+      "CUIT": 30715658522,
+      "NOMBRE": "METALURGICA INTEGRAL SUDAMERIC",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "info@dmtrailers.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 17802,
+      "CUIT": 20322372273,
+      "NOMBRE": "MAC CADDON JONATHAN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2032"
+    },
+    {
+      "CODIGO": 17803,
+      "CUIT": 20175734016,
+      "NOMBRE": "GUTIERREZ OSVALDO LUIS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "gammalubricantes@yahoo.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17815,
+      "CUIT": 20296952274,
+      "NOMBRE": "FERRONATO ADRIAN MAURO A.",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "lonaferronato@hotmail.com",
+      "PASSW_WEB": "2029"
+    },
+    {
+      "CODIGO": 17816,
+      "CUIT": 30717121690,
+      "NOMBRE": "INSTALCOR ACCESORIOS S.A.S.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 17852,
+      "CUIT": 20300247610,
+      "NOMBRE": "SALADINO MARTIN",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17855,
+      "CUIT": 20266513233,
+      "NOMBRE": "MEZA PABLO DARIO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "equipamientos4x4m2@gmail.com",
+      "PASSW_WEB": "2026"
+    },
+    {
+      "CODIGO": 17858,
+      "CUIT": 30716447711,
+      "NOMBRE": "ANAND ARGENTINA S.A.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17863,
+      "CUIT": 30717747166,
+      "NOMBRE": "ROMAR JEMA SAS",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "fgtoyotajesusmaria@gmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 17870,
+      "CUIT": 20347930262,
+      "NOMBRE": "KALIN MARIO ANDRES",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "kalinautomotoreslb@gmail.com",
+      "PASSW_WEB": "2034"
+    },
+    {
+      "CODIGO": 17892,
+      "CUIT": 23257374319,
+      "NOMBRE": "MERCADO JAVIER EDUARDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2325"
+    },
+    {
+      "CODIGO": 17893,
+      "CUIT": 27321632675,
+      "NOMBRE": "ORMEÑO SILVANA ALEJANDRA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2732"
+    },
+    {
+      "CODIGO": 17895,
+      "CUIT": 20360355471,
+      "NOMBRE": "LLABOT GARCIA ARIIEL ALEXIS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "arielllabot900@gmail.com",
+      "PASSW_WEB": "2036"
+    },
+    {
+      "CODIGO": 17902,
+      "CUIT": 27248378749,
+      "NOMBRE": "DIAZ CLAUDIA ALEJANDRA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "4x4tierranegra@gmail.com",
+      "PASSW_WEB": "2724"
+    },
+    {
+      "CODIGO": 17904,
+      "CUIT": 30716540495,
+      "NOMBRE": "SUPROMET S.A.S.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ventas@supromet.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 17934,
+      "CUIT": 30716762528,
+      "NOMBRE": "ALMAPE SAS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17948,
+      "CUIT": 27325052835,
+      "NOMBRE": "BALDESSARI LUCIANA NOEMI",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "marcelojkar@gmail.com",
+      "PASSW_WEB": "2732"
+    },
+    {
+      "CODIGO": 17958,
+      "CUIT": 20337141847,
+      "NOMBRE": "VILCA DANIEL ABRAHAM",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "danielvilcakobe@gmail.com",
+      "PASSW_WEB": "2033"
+    },
+    {
+      "CODIGO": 17968,
+      "CUIT": 27349150935,
+      "NOMBRE": "LUNA CONSTANZA  ANGELICA DEL V",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2734"
+    },
+    {
+      "CODIGO": 17971,
+      "CUIT": 30717935272,
+      "NOMBRE": "PILARITALYAUTO SA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 17975,
+      "CUIT": 20315492867,
+      "NOMBRE": "RODRIGUEZ FACUNDO SEBASTIAN",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 17998,
+      "CUIT": 20232925583,
+      "NOMBRE": "NEIRA MARIANO JORGE",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 18003,
+      "CUIT": 30716672464,
+      "NOMBRE": "ESPECO SRL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 18005,
+      "CUIT": 30633697260,
+      "NOMBRE": "REPUESTOS LA ESTRELLA S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "6336"
+    },
+    {
+      "CODIGO": 18049,
+      "CUIT": 30714616613,
+      "NOMBRE": "NUEVOS EMPRENDIMIENTOS  S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "neumaticosylubricantesantiago@gmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 18060,
+      "CUIT": 20221427638,
+      "NOMBRE": "MARTIN PABLO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 18062,
+      "CUIT": 5085898,
+      "NOMBRE": "BEDOYA MIGUEL RUBEN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "5085"
+    },
+    {
+      "CODIGO": 18068,
+      "CUIT": 30716958651,
+      "NOMBRE": "FAPA REPUESTOS SAS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 18096,
+      "CUIT": 23368389609,
+      "NOMBRE": "SALADO ROSTAN RICARDO FEDERICO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "COPERNICO1592@GMAIL.COM",
+      "PASSW_WEB": "2336"
+    },
+    {
+      "CODIGO": 18097,
+      "CUIT": 20333013186,
+      "NOMBRE": "VAZQUE DIEGO HERNAN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "HERNANDIEGO320@GMAIL",
+      "PASSW_WEB": "2033"
+    },
+    {
+      "CODIGO": 18098,
+      "CUIT": 20320819238,
+      "NOMBRE": "QUINTEROS JUAN PABLO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "PABLOQUINTEROS378@GMAIL.COM",
+      "PASSW_WEB": "2032"
+    },
+    {
+      "CODIGO": 18109,
+      "CUIT": 20216362129,
+      "NOMBRE": "FIORE ANGEL FORTUNATO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "thecarstortuguitas@gmail.com",
+      "PASSW_WEB": "2021"
+    },
+    {
+      "CODIGO": 18110,
+      "CUIT": 27274555829,
+      "NOMBRE": "FEDERIK MARIA DANIELA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "RPMTUNINGTUCUMAN@HOTMAIL.COM",
+      "PASSW_WEB": "2727"
+    },
+    {
+      "CODIGO": 18111,
+      "CUIT": 20392972553,
+      "NOMBRE": "ALCARAZ RUBEN EMILIO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2039"
+    },
+    {
+      "CODIGO": 18118,
+      "CUIT": 30709799475,
+      "NOMBRE": "DOMINGUEZ REPUESTOS S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "dominguezr_srl@hotmail.com",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 18127,
+      "CUIT": 30708298316,
+      "NOMBRE": "AG NAUM S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 18128,
+      "CUIT": 30709608270,
+      "NOMBRE": "CEDE SRL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "adelacolina@cedesrl.com.ar",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 18129,
+      "CUIT": 20399693684,
+      "NOMBRE": "MONASTEROLO RIOS JEREMIAS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "MYREQUIPAMIENTO4X4@OUTLOOK.COM",
+      "PASSW_WEB": "2039"
+    },
+    {
+      "CODIGO": 18138,
+      "CUIT": 20257546498,
+      "NOMBRE": "GIMENEZ WALTER ADRIAN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2025"
+    },
+    {
+      "CODIGO": 18139,
+      "CUIT": 20428373368,
+      "NOMBRE": "CARABAJAL MARIANO JOSE",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "marianocarabajal@gmail.com",
+      "PASSW_WEB": "2042"
+    },
+    {
+      "CODIGO": 18143,
+      "CUIT": 30716741474,
+      "NOMBRE": "GPSMUNDO S.R.L",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "j-palacio@aimg.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 18154,
+      "CUIT": 30709575593,
+      "NOMBRE": "KEINER AUTOMOTORES SRL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "keinerautomotores@hotmail.com",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 18171,
+      "CUIT": 30708993073,
+      "NOMBRE": "EL CRUCE S.A",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 18173,
+      "CUIT": 20339669660,
+      "NOMBRE": "MELGAREJO RICARDO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 18174,
+      "CUIT": 30711243549,
+      "NOMBRE": "CELSUS SRL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 18199,
+      "CUIT": 20237661762,
+      "NOMBRE": "LISANTI GASTON ANGEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "glsensor1@gmail",
+      "PASSW_WEB": "2023"
+    },
+    {
+      "CODIGO": 18244,
+      "CUIT": 20224713917,
+      "NOMBRE": "SIERRA JULIAN",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": "2022"
+    },
+    {
+      "CODIGO": 18260,
+      "CUIT": 20361845499,
+      "NOMBRE": "FARIAS FRANCO RICARDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "LASERDEANFUNES@GMAIL.COM",
+      "PASSW_WEB": "2036"
+    },
+    {
+      "CODIGO": 18261,
+      "CUIT": 33716491299,
+      "NOMBRE": "EL TORNADO S.A.S.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3371"
+    },
+    {
+      "CODIGO": 18263,
+      "CUIT": 30710544316,
+      "NOMBRE": "DANSI S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "agronortemq@hotmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 18269,
+      "CUIT": 30718347501,
+      "NOMBRE": "KONTIO SAS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "kontioequipamientos@gmail.com",
+      "PASSW_WEB": "2026"
+    },
+    {
+      "CODIGO": 18271,
+      "CUIT": 20359579633,
+      "NOMBRE": "LETONAI  LASLO EZEQUIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "lasloleto91@gmail.com",
+      "PASSW_WEB": "2035"
+    },
+    {
+      "CODIGO": 18273,
+      "CUIT": 20328533775,
+      "NOMBRE": "PORZIO PASTINANTE  FACUNDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2032"
+    },
+    {
+      "CODIGO": 18281,
+      "CUIT": 20243835667,
+      "NOMBRE": "TORRES CLAUDIO ARMANDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "claudioarmandotorres@yahoo.com.ar",
+      "PASSW_WEB": "2438"
+    },
+    {
+      "CODIGO": 18293,
+      "CUIT": 20371723642,
+      "NOMBRE": "VIOLA ALEXIS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "aviola1308@gmail.com",
+      "PASSW_WEB": "3717"
+    },
+    {
+      "CODIGO": 18310,
+      "CUIT": 20391187585,
+      "NOMBRE": "MOLINARI DAVID DARIO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "molinaridavid779@gmail.com",
+      "PASSW_WEB": "2039"
+    },
+    {
+      "CODIGO": 18312,
+      "CUIT": 20356507089,
+      "NOMBRE": "MONJES RAMIRO LIONEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ramiromonjes28@gmail.com",
+      "PASSW_WEB": "2035"
+    },
+    {
+      "CODIGO": 18314,
+      "CUIT": 23117638669,
+      "NOMBRE": "SUCESION DE BRUNO MIGUEL ANGEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "brunoretificaciones90@gmail.com",
+      "PASSW_WEB": "2311"
+    },
+    {
+      "CODIGO": 18315,
+      "CUIT": 30108059,
+      "NOMBRE": "BUSTOS RODRIGO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 18341,
+      "CUIT": 20300161406,
+      "NOMBRE": "LEDANTES MAURICIO MIGUEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "MIGUELLEDANTES03@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 18365,
+      "CUIT": 20252799339,
+      "NOMBRE": "MILESI ADRIAN ALBERTO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "milesirepuestos@gmail.com",
+      "PASSW_WEB": "2025"
+    },
+    {
+      "CODIGO": 18390,
+      "CUIT": 20354454964,
+      "NOMBRE": "BALDESSARI GABRIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "gabrielbaldesari41@gmail.com",
+      "PASSW_WEB": "2035"
+    },
+    {
+      "CODIGO": 18399,
+      "CUIT": 20356994281,
+      "NOMBRE": "LEIVA LISANDRO NICOLAS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "lisandrioleiva@gmail.com",
+      "PASSW_WEB": "2035"
+    },
+    {
+      "CODIGO": 18405,
+      "CUIT": 30716699702,
+      "NOMBRE": "PARL S.R.L.",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "parequipamientos.compras@gmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 18413,
+      "CUIT": 30716682095,
+      "NOMBRE": "GOLE SA",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 18424,
+      "CUIT": 30580988713,
+      "NOMBRE": "PUSSETTO SALTA  S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "pcastro@fordpussetto.com.ar",
+      "PASSW_WEB": "3058"
+    },
+    {
+      "CODIGO": 18425,
+      "CUIT": 30710843569,
+      "NOMBRE": "WARNER REPUESTOS NOA S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 18427,
+      "CUIT": 30707111344,
+      "NOMBRE": "AUTOLUX S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 18434,
+      "CUIT": 30681273219,
+      "NOMBRE": "BORIGEN BETZEL SRL S.R.L",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "repuestosjujuy@dicar.com.ar",
+      "PASSW_WEB": "3068"
+    },
+    {
+      "CODIGO": 18436,
+      "CUIT": 27383060015,
+      "NOMBRE": "RIOS YANINA NATALI",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "enganchesyequipamientos@hotmail.com",
+      "PASSW_WEB": "3830"
+    },
+    {
+      "CODIGO": 18452,
+      "CUIT": 30711415366,
+      "NOMBRE": "TOYOJUY-CHEVROJUY S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "MAURICIOVAGO@YAHOO.COM",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 18453,
+      "CUIT": 20293768103,
+      "NOMBRE": "CORONEL MILTON ENZO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "parabrisasdelestero@gmail.com",
+      "PASSW_WEB": "2029"
+    },
+    {
+      "CODIGO": 18454,
+      "CUIT": 20259122229,
+      "NOMBRE": "SAMEZ PABLO SEBASTIAN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "pablosamez@gmail.com",
+      "PASSW_WEB": "2025"
+    },
+    {
+      "CODIGO": 18455,
+      "CUIT": 30717785009,
+      "NOMBRE": "ARDAG S.A.S.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ardagautomotores@gmail.com",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 18461,
+      "CUIT": 23102959949,
+      "NOMBRE": "CALIVA ALEJANDRO ADOLFO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "Lubricentro168@gmail.com",
+      "PASSW_WEB": "2310"
+    },
+    {
+      "CODIGO": 18463,
+      "CUIT": 30710147473,
+      "NOMBRE": "FURTH AUTOMOTORES S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "pablo.achaval@furth.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 18464,
+      "CUIT": 30708348348,
+      "NOMBRE": "FADUA S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "lrobles@faduasa.com.ar",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 18467,
+      "CUIT": 20215154263,
+      "NOMBRE": "GARCIA JOSE ALEJANDRO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2021"
+    },
+    {
+      "CODIGO": 18471,
+      "CUIT": 20267412589,
+      "NOMBRE": "SALUZZO CARLOS ALBERTO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "saluzzorepuestos@gmail.com",
+      "PASSW_WEB": "2026"
+    },
+    {
+      "CODIGO": 18472,
+      "CUIT": 20416304948,
+      "NOMBRE": "TISOCCO SANTIAGO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "santiago28tisocco@gmail.com",
+      "PASSW_WEB": "2041"
+    },
+    {
+      "CODIGO": 18481,
+      "CUIT": 27426411402,
+      "NOMBRE": "SOSA JULIETA VALENTINA",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "NICOKABALIN1@GMAIL.COM",
+      "PASSW_WEB": "2742"
+    },
+    {
+      "CODIGO": 18514,
+      "CUIT": 27217405284,
+      "NOMBRE": "SUAREZ ADRIANA MARIELA",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 18516,
+      "CUIT": 27271699188,
+      "NOMBRE": "BONO ROMINA CARLA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "caautopartesfreyre@hoymail.com",
+      "PASSW_WEB": "2727"
+    },
+    {
+      "CODIGO": 18520,
+      "CUIT": 20436446404,
+      "NOMBRE": "CIPOLATTI LORENZO SEBASTIAN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "lorenzocipollatisebas33@gmail.com",
+      "PASSW_WEB": "2043"
+    },
+    {
+      "CODIGO": 18522,
+      "CUIT": 20403586294,
+      "NOMBRE": "JUAREZ EDGARDO EMILIANO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "lavictorias@gmail.com",
+      "PASSW_WEB": "2040"
+    },
+    {
+      "CODIGO": 18528,
+      "CUIT": 30712363009,
+      "NOMBRE": "ROSSI ESPERANZA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "rossiesperanza@hotmail.com",
+      "PASSW_WEB": "7123"
+    },
+    {
+      "CODIGO": 18543,
+      "CUIT": 30714167320,
+      "NOMBRE": "LA ESTACION SRL",
+      "CATEGORIA": "LISTA 2",
+      "EMAIL": "laestacionsrl10@hotmail.com",
+      "PASSW_WEB": "7141"
+    },
+    {
+      "CODIGO": 18545,
+      "CUIT": 30716587599,
+      "NOMBRE": "EUROENVASES SA",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": "54581"
+    },
+    {
+      "CODIGO": 18566,
+      "CUIT": 20140425681,
+      "NOMBRE": "CARABALLO RUBEN",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "MARTINCARABALLO705@GMAIL.COM",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 18572,
+      "CUIT": 30714480940,
+      "NOMBRE": "GIORDANO SRL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "giordano.admi@gmail.com",
+      "PASSW_WEB": "7144"
+    },
+    {
+      "CODIGO": 18575,
+      "CUIT": 33712286259,
+      "NOMBRE": "RO-CA SRL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "juanpacapra@hotmail.com",
+      "PASSW_WEB": "7122"
+    },
+    {
+      "CODIGO": 18580,
+      "CUIT": 20289563963,
+      "NOMBRE": "OHIGGINS FERNANDO MARIO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "parabisastea@gmail.com",
+      "PASSW_WEB": "2895"
+    },
+    {
+      "CODIGO": 18581,
+      "CUIT": 33708095309,
+      "NOMBRE": "SUDAMERICAN AUTO S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ruswell.robles@gruporobayna.com.ar",
+      "PASSW_WEB": "3370"
+    },
+    {
+      "CODIGO": 18586,
+      "CUIT": 20361981244,
+      "NOMBRE": "LUQUE GUZMAN MATIAS LUIS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "seleccionadospowercar@gmail.com",
+      "PASSW_WEB": "3619"
+    },
+    {
+      "CODIGO": 18587,
+      "CUIT": 20174183261,
+      "NOMBRE": "NOIR ALEJANDRO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "1741"
+    },
+    {
+      "CODIGO": 18592,
+      "CUIT": 20240007569,
+      "NOMBRE": "CARRIZO RODOLFO JOSE",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "carrizorodolfo510@gmail.com",
+      "PASSW_WEB": "2024"
+    },
+    {
+      "CODIGO": 18593,
+      "CUIT": 27123915416,
+      "NOMBRE": "TREJO ROSA DEL VALLE",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "wuerconsa@hotmail.com",
+      "PASSW_WEB": "2712"
+    },
+    {
+      "CODIGO": 18595,
+      "CUIT": 20321091653,
+      "NOMBRE": "VILLARROEL PALMAS HECTOR LUIS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "hecmarrepuestos@gmail.com",
+      "PASSW_WEB": "2032"
+    },
+    {
+      "CODIGO": 18598,
+      "CUIT": 20132252859,
+      "NOMBRE": "VOITINA RAMON HUGO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "hugovoitina@hotmail.com",
+      "PASSW_WEB": "2013"
+    },
+    {
+      "CODIGO": 18600,
+      "CUIT": 23322775989,
+      "NOMBRE": "SANCHEZ WILSON ALBERTO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "repuestosdonlelo@hotmail.com",
+      "PASSW_WEB": "2332"
+    },
+    {
+      "CODIGO": 18601,
+      "CUIT": 27333526889,
+      "NOMBRE": "CHAMORRO MARIANA ELIZABETH",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "danielmadona389@gmail.com",
+      "PASSW_WEB": "2733"
+    },
+    {
+      "CODIGO": 18602,
+      "CUIT": 20405846706,
+      "NOMBRE": "ANTENUCHI BESTANCA JERAHMEEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "jeray.a97@gmail.com",
+      "PASSW_WEB": "2040"
+    },
+    {
+      "CODIGO": 18611,
+      "CUIT": 30711738831,
+      "NOMBRE": "MUNDO LAMINA S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "rd@mundolamina.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 18612,
+      "CUIT": 27291681552,
+      "NOMBRE": "VAZQUEZ BENITEZ MARIA VICTORIA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "tulumautomoviles@gmail.com.ar",
+      "PASSW_WEB": "2729"
+    },
+    {
+      "CODIGO": 18613,
+      "CUIT": 20275594173,
+      "NOMBRE": "ROSSI DARIO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "dadito20@gmail.com",
+      "PASSW_WEB": "2755"
+    },
+    {
+      "CODIGO": 18617,
+      "CUIT": 20241902804,
+      "NOMBRE": "PESCIO COMERCIO EXTERIOR",
+      "CATEGORIA": "LISTA 1",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 18619,
+      "CUIT": 20287753951,
+      "NOMBRE": "ARANDA DANIEL PABLO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2028"
+    },
+    {
+      "CODIGO": 18620,
+      "CUIT": 20375440661,
+      "NOMBRE": "CRESPI LUCAS GUILLERMO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "lucas_crespi@hotmail.com",
+      "PASSW_WEB": "2037"
+    },
+    {
+      "CODIGO": 18623,
+      "CUIT": 20449107285,
+      "NOMBRE": "FLORES ERICK SEBASTIAN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "mundorepuesto_jv@hotmail.com",
+      "PASSW_WEB": "2044"
+    },
+    {
+      "CODIGO": 18625,
+      "CUIT": 20360106722,
+      "NOMBRE": "MUJICA LUCAS NICOLAS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "lucas@mlpower.com.ar",
+      "PASSW_WEB": "3601"
+    },
+    {
+      "CODIGO": 18636,
+      "CUIT": 20233274217,
+      "NOMBRE": "SALAR EMILIO DIEGO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "info@wild4x4.com.ar",
+      "PASSW_WEB": "2023"
+    },
+    {
+      "CODIGO": 18651,
+      "CUIT": 20258623372,
+      "NOMBRE": "GUZMAN MARIO GABRIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "marito-1087@hotmail.com",
+      "PASSW_WEB": "2586"
+    },
+    {
+      "CODIGO": 18652,
+      "CUIT": 30718404750,
+      "NOMBRE": "POLAR CAR SAS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "5562"
+    },
+    {
+      "CODIGO": 18656,
+      "CUIT": 27210722462,
+      "NOMBRE": "GIARDINO SANDRA EDITH",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "dantegauna@hotmail.com",
+      "PASSW_WEB": "2721"
+    },
+    {
+      "CODIGO": 18660,
+      "CUIT": 30708648643,
+      "NOMBRE": "LOS FIERROS S.R.L",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "fierro33@hotmail.com",
+      "PASSW_WEB": "7086"
+    },
+    {
+      "CODIGO": 18661,
+      "CUIT": 30707144749,
+      "NOMBRE": "ECO METAN S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ECOMETANSRL@GMAIL.COM",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 18665,
+      "CUIT": 20284992726,
+      "NOMBRE": "RIVARA FRANCO GERMAN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "repuesteranorte@gmail.com",
+      "PASSW_WEB": "2028"
+    },
+    {
+      "CODIGO": 18684,
+      "CUIT": 27244101017,
+      "NOMBRE": "SINGH SILVIA GRICELDA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "fernandofenoglio@jahoo.com.ar",
+      "PASSW_WEB": "2724"
+    },
+    {
+      "CODIGO": 18685,
+      "CUIT": 23295772999,
+      "NOMBRE": "ESPINOSA JUAN PABLO",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "juanpespinosa23@hotmail.com",
+      "PASSW_WEB": "2329"
+    },
+    {
+      "CODIGO": 18686,
+      "CUIT": 20277947669,
+      "NOMBRE": "ESPINOSA SANTIAGO RODOLFO RAUL",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "santiagoequipa@gmail.com",
+      "PASSW_WEB": "2027"
+    },
+    {
+      "CODIGO": 18687,
+      "CUIT": 20318997048,
+      "NOMBRE": "BIANCHI TARQUINO FERNANDO",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "info@fbtequipamientos.com.ar",
+      "PASSW_WEB": "2031"
+    },
+    {
+      "CODIGO": 18699,
+      "CUIT": 33717335169,
+      "NOMBRE": "TREFFEN FC SRL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "administracion@treffenfc.com",
+      "PASSW_WEB": "7173"
+    },
+    {
+      "CODIGO": 18717,
+      "CUIT": 20396603080,
+      "NOMBRE": "BUSTAMANTE RENZO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "integrolasrosas@gmail.com",
+      "PASSW_WEB": "3966"
+    },
+    {
+      "CODIGO": 18721,
+      "CUIT": 20259755213,
+      "NOMBRE": "CABRERA ANDRES SILVIO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "Proton.info@gmail.com",
+      "PASSW_WEB": "2597"
+    },
+    {
+      "CODIGO": 18727,
+      "CUIT": 27372291104,
+      "NOMBRE": "MEDIAVILLA DEBORA SOLEDAD",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "DEBORA279@HOTMAIL.COM",
+      "PASSW_WEB": "2737"
+    },
+    {
+      "CODIGO": 18728,
+      "CUIT": 23390494629,
+      "NOMBRE": "STRINGHINI  LEONARDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "stringhinileo@gmail.com",
+      "PASSW_WEB": "2339"
+    },
+    {
+      "CODIGO": 18731,
+      "CUIT": 27255131732,
+      "NOMBRE": "SABLICH PAULA GABRIELA",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "pasigi@pasigi.com.ar",
+      "PASSW_WEB": "2725"
+    },
+    {
+      "CODIGO": 18732,
+      "CUIT": 20358841687,
+      "NOMBRE": "QUIROGA JUAN  MARTIN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "autopartesquico@gmail.com",
+      "PASSW_WEB": "3588"
+    },
+    {
+      "CODIGO": 18740,
+      "CUIT": 20295366649,
+      "NOMBRE": "BUSTOS JORGE FERNANDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "lubricentrotuercas@hotmail.com",
+      "PASSW_WEB": "2953"
+    },
+    {
+      "CODIGO": 18742,
+      "CUIT": 30717859193,
+      "NOMBRE": "FAMA HERMANOS S.R.L",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "norterepuestosquines@gmail.com",
+      "PASSW_WEB": "7178"
+    },
+    {
+      "CODIGO": 18753,
+      "CUIT": 20187818126,
+      "NOMBRE": "CELLILLI ANGEL MARIA ROQUE",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2018"
+    },
+    {
+      "CODIGO": 18778,
+      "CUIT": 20349956757,
+      "NOMBRE": "CARRANZA JORGE DANIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "jorge55_4@hotmail.com",
+      "PASSW_WEB": "2034"
+    },
+    {
+      "CODIGO": 18779,
+      "CUIT": 30529611591,
+      "NOMBRE": "CACCIAVILLANI JAVIER EDUARDO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "cacciavillaniautopartes@gmail.com",
+      "PASSW_WEB": "5296"
+    },
+    {
+      "CODIGO": 18817,
+      "CUIT": 20335944101,
+      "NOMBRE": "PARRA GUIDO GABRIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "guidoparra4410@gmail.com",
+      "PASSW_WEB": "2033"
+    },
+    {
+      "CODIGO": 18819,
+      "CUIT": 33718381059,
+      "NOMBRE": "SERVICIOS GOL  S.R.L.",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "MOLIVA@SERVICIONGOLSRL.COM",
+      "PASSW_WEB": "3371"
+    },
+    {
+      "CODIGO": 18820,
+      "CUIT": 33715025499,
+      "NOMBRE": "NORTE GOMA S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "nortegoma@gmail.com",
+      "PASSW_WEB": "3371"
+    },
+    {
+      "CODIGO": 18827,
+      "CUIT": 30718579151,
+      "NOMBRE": "GRUPO VOGEL HD S.R.L",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "repuestoshd62@gmail.com",
+      "PASSW_WEB": "7185"
+    },
+    {
+      "CODIGO": 18837,
+      "CUIT": 30547188760,
+      "NOMBRE": "LONCO HUE SOC ANONIMA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3054"
+    },
+    {
+      "CODIGO": 18853,
+      "CUIT": 20315020760,
+      "NOMBRE": "SAEZ ANDRES",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "bullequipamientos@gmail.com",
+      "PASSW_WEB": "3150"
+    },
+    {
+      "CODIGO": 18858,
+      "CUIT": 20317463023,
+      "NOMBRE": "VENTRE HECTOR DANIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "gabrielventre@gmail.com",
+      "PASSW_WEB": "2031"
+    },
+    {
+      "CODIGO": 18860,
+      "CUIT": 27157580,
+      "NOMBRE": "FIGUEROA AMILCAR GASTON",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "Agaston1979@gmail.com",
+      "PASSW_WEB": "2715"
+    },
+    {
+      "CODIGO": 18862,
+      "CUIT": 20230223654,
+      "NOMBRE": "BAGLIONE ADRIAN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "aabaglione@gmail.com",
+      "PASSW_WEB": "2302"
+    },
+    {
+      "CODIGO": 18884,
+      "CUIT": 23318617929,
+      "NOMBRE": "FAUTRERO FEDERICO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "ffautrero@gmail.com",
+      "PASSW_WEB": "3186"
+    },
+    {
+      "CODIGO": 18894,
+      "CUIT": 23424411469,
+      "NOMBRE": "GALFRASCOLI FEDERICO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "federicogalfrascoli@gmail.com",
+      "PASSW_WEB": "4244"
+    },
+    {
+      "CODIGO": 18912,
+      "CUIT": 23272283729,
+      "NOMBRE": "FAVALE PABLO DAVID",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "boxespf@yahoo.com.ar",
+      "PASSW_WEB": "2722"
+    },
+    {
+      "CODIGO": 18913,
+      "CUIT": 23341671159,
+      "NOMBRE": "CHARA JORGE FELIPE",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "FELCHARA@HOTMAIL.COM",
+      "PASSW_WEB": "2334"
+    },
+    {
+      "CODIGO": 18920,
+      "CUIT": 20428006675,
+      "NOMBRE": "PITTAVINO RENZO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2042"
+    },
+    {
+      "CODIGO": 18930,
+      "CUIT": 23168689349,
+      "NOMBRE": "ROMERO ELIO ROLANDO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "mecanicaromerolr@hotmail.com",
+      "PASSW_WEB": "2316"
+    },
+    {
+      "CODIGO": 18931,
+      "CUIT": 27364895491,
+      "NOMBRE": "BORDON DANIELA ALEJANDRA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "DANIELAALEJANDRABORDON@GMAIL.COM",
+      "PASSW_WEB": "2736"
+    },
+    {
+      "CODIGO": 18936,
+      "CUIT": 20331249796,
+      "NOMBRE": "UBIÑA ALEJANDRO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 18939,
+      "CUIT": 33717554219,
+      "NOMBRE": "AUTO PARTS SRL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "k4rlitox26@gmail.com",
+      "PASSW_WEB": "3371"
+    },
+    {
+      "CODIGO": 18940,
+      "CUIT": 30714564249,
+      "NOMBRE": "CENTRO DE COMPRAS SANCHEZ SRL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 18954,
+      "CUIT": 24212348,
+      "NOMBRE": "LUNARDI SEBASTIAN",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 18962,
+      "CUIT": 30711818460,
+      "NOMBRE": "POWER MEDIA S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "7118"
+    },
+    {
+      "CODIGO": 18968,
+      "CUIT": 30717967298,
+      "NOMBRE": "ACCESORIOS EL NACHO S.A.S.",
+      "CATEGORIA": "LISTA 2",
+      "EMAIL": "accesorioselnacho.adm@gmail.com",
+      "PASSW_WEB": "7179"
+    },
+    {
+      "CODIGO": 18991,
+      "CUIT": 20081464627,
+      "NOMBRE": "AUTM. RICARDO PEREZ MARTI",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 18996,
+      "CUIT": 20290349738,
+      "NOMBRE": "VENTRICE VICTOR EMANUEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": "18996"
+    },
+    {
+      "CODIGO": 19019,
+      "CUIT": 30716165961,
+      "NOMBRE": "HANGAR 1138 SAS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 19023,
+      "CUIT": 30696051816,
+      "NOMBRE": "LA MANTOVANA DE SERVICIOS GENE",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "nicolas.h@lamantovana.con.ar",
+      "PASSW_WEB": "3069"
+    },
+    {
+      "CODIGO": 19024,
+      "CUIT": 30714647462,
+      "NOMBRE": "GRUB S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "nicolas.h@lamantovana.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 19048,
+      "CUIT": 20161158128,
+      "NOMBRE": "MALICKI JOSE OSVALO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "jose_malicki@hotmail.com",
+      "PASSW_WEB": "2016"
+    },
+    {
+      "CODIGO": 19056,
+      "CUIT": 23286583229,
+      "NOMBRE": "PORPORATTO GUSTAVO FEDERICO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "gporporatto@hotmail.com",
+      "PASSW_WEB": "2328"
+    },
+    {
+      "CODIGO": 19057,
+      "CUIT": 27269036252,
+      "NOMBRE": "HERRERA NOELIA EUGENIA",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "autopartesgem@gmail.com",
+      "PASSW_WEB": "2726"
+    },
+    {
+      "CODIGO": 19062,
+      "CUIT": 30717454681,
+      "NOMBRE": "CARBOYS S.A.S.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "carboys.cba@gmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 19069,
+      "CUIT": 20333144493,
+      "NOMBRE": "PREZ PANUNTIN PABLO NICOLAS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "prezyasociados@gmail.com",
+      "PASSW_WEB": "2033"
+    },
+    {
+      "CODIGO": 19072,
+      "CUIT": 33717648159,
+      "NOMBRE": "SL NEUMATICOS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 19099,
+      "CUIT": 30717506509,
+      "NOMBRE": "DISTRI RR S.A.S",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "proveedores@distrir.com.ar",
+      "PASSW_WEB": "7175"
+    },
+    {
+      "CODIGO": 19109,
+      "CUIT": 20441844094,
+      "NOMBRE": "MALDONADO IGNACIO ENRIQUE",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2044"
+    },
+    {
+      "CODIGO": 19120,
+      "CUIT": 23228164569,
+      "NOMBRE": "BRAVO ALDO ARIEL",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "ALDOBRAVO.BAL@GMAIL.COM",
+      "PASSW_WEB": "2322"
+    },
+    {
+      "CODIGO": 19134,
+      "CUIT": 30711144095,
+      "NOMBRE": "QUIDONOZ MIGUEL ANGEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "Accesorios.newbery@gmail.com",
+      "PASSW_WEB": "7111"
+    },
+    {
+      "CODIGO": 19179,
+      "CUIT": 20273512153,
+      "NOMBRE": "CARDOZO MIGUEL ANGEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "hernanmurua@mcm-servicios.com",
+      "PASSW_WEB": "2027"
+    },
+    {
+      "CODIGO": 19182,
+      "CUIT": 20292649267,
+      "NOMBRE": "LOPEZ VISCAINO GASTON ELIAS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 19183,
+      "CUIT": 20423340828,
+      "NOMBRE": "LEON LUBRICENTRO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 19185,
+      "CUIT": 20167631704,
+      "NOMBRE": "AMEDEO JOSE  CARLOS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "repuestospalermo.ventas@gmail.com",
+      "PASSW_WEB": "2016"
+    },
+    {
+      "CODIGO": 19204,
+      "CUIT": 20237364512,
+      "NOMBRE": "ROCAMUNDI DANIEL ALBERTO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "rocampro74@gmail.com",
+      "PASSW_WEB": "2023"
+    },
+    {
+      "CODIGO": 19228,
+      "CUIT": 27314350648,
+      "NOMBRE": "SAVIO MARIANA ANDREA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "totorascars@yahoo.com.ar",
+      "PASSW_WEB": "3143"
+    },
+    {
+      "CODIGO": 19244,
+      "CUIT": 20235715075,
+      "NOMBRE": "MOLINA SANTIAGO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 19248,
+      "CUIT": 20230678120,
+      "NOMBRE": "PLUCHINO FRANCISCO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 19259,
+      "CUIT": 30718741285,
+      "NOMBRE": "LOS ANDES SERVICE SAS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "nc4x4.ar@gmail.com",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 19266,
+      "CUIT": 20355596282,
+      "NOMBRE": "SEIJA JONATHAN DANIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "darwinautopartes@hotmail.com",
+      "PASSW_WEB": "2035"
+    },
+    {
+      "CODIGO": 19298,
+      "CUIT": 30707118896,
+      "NOMBRE": "NOALE S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "mgalante@nissanpergamino.cop.ar",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 19359,
+      "CUIT": 20273348329,
+      "NOMBRE": "ROSSI REPUESTOS Y ACCESORIOS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "Rosifranck@hotmail.com.ar",
+      "PASSW_WEB": "2733"
+    },
+    {
+      "CODIGO": 19362,
+      "CUIT": 30671096238,
+      "NOMBRE": "EDUARDO E MOSTTO LUIS O MOSTTO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 19383,
+      "CUIT": 20278513999,
+      "NOMBRE": "SANCHEZ ARIEL ANTONIO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 19436,
+      "CUIT": 20213473760,
+      "NOMBRE": "KULYK JUAN CARLOS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2134"
+    },
+    {
+      "CODIGO": 19449,
+      "CUIT": 20434145903,
+      "NOMBRE": "APESTEGUIA JOAQUIN",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2043"
+    },
+    {
+      "CODIGO": 19469,
+      "CUIT": 30708568178,
+      "NOMBRE": "S.TREPAT AUTOMOVILES SA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "francogeneroso@cardistrict.com.ar",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 19477,
+      "CUIT": 30712280928,
+      "NOMBRE": "AIKA S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "nespinoza@aikaneuquen.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 19487,
+      "CUIT": 20171530300,
+      "NOMBRE": "MERCADO GARCIA DANIEL OSVALDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2017"
+    },
+    {
+      "CODIGO": 19492,
+      "CUIT": 27267687884,
+      "NOMBRE": "PELOZO VANESA ARACELI",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2726"
+    },
+    {
+      "CODIGO": 19543,
+      "CUIT": 30718405242,
+      "NOMBRE": "HDR SERVICIOS Y REP. S.A.S.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "hdrserviciosyrepuestos@gmail.com",
+      "PASSW_WEB": "7184"
+    },
+    {
+      "CODIGO": 19558,
+      "CUIT": 30714979643,
+      "NOMBRE": "AW SRL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "dpino@aycaservicios.net",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 19570,
+      "CUIT": 30709724513,
+      "NOMBRE": "QUAD METRICAL BROKERS S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "MATEOSS1970@GMAIL.COM",
+      "PASSW_WEB": "3070"
+    },
+    {
+      "CODIGO": 19633,
+      "CUIT": 20242091605,
+      "NOMBRE": "SANTA CRUZ, WALTER ARIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "info@rodantesvra.com.ar",
+      "PASSW_WEB": "2024"
+    },
+    {
+      "CODIGO": 19662,
+      "CUIT": 27325841406,
+      "NOMBRE": "ALEGRE MARISOL ALEJANDRA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "mglogisticsur@gmail.com",
+      "PASSW_WEB": "2732"
+    },
+    {
+      "CODIGO": 19715,
+      "CUIT": 20132854085,
+      "NOMBRE": "MAYNAT DANIEL ANTONIO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "info@damay.com.ar",
+      "PASSW_WEB": "2013"
+    },
+    {
+      "CODIGO": 19717,
+      "CUIT": 20425805461,
+      "NOMBRE": "SAP ZAPATA NAHUEL NICOLAS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "nahuelsap.ns@gmail.com",
+      "PASSW_WEB": "2042"
+    },
+    {
+      "CODIGO": 19727,
+      "CUIT": 20366062778,
+      "NOMBRE": "FARIAS FACUNDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "facu,farias@icloud.com",
+      "PASSW_WEB": "3660"
+    },
+    {
+      "CODIGO": 19742,
+      "CUIT": 20319422138,
+      "NOMBRE": "AMOROS EMANUEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "amorosemanuelgmail.com",
+      "PASSW_WEB": "3194"
+    },
+    {
+      "CODIGO": 19757,
+      "CUIT": 20275700720,
+      "NOMBRE": "HUCK SERGIO ABEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "serhuck.4@gmail.com",
+      "PASSW_WEB": "2027"
+    },
+    {
+      "CODIGO": 19762,
+      "CUIT": 20325071843,
+      "NOMBRE": "REPETTO FACUNDO EMANUEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "frrelectronica@hotmail.com",
+      "PASSW_WEB": "2032"
+    },
+    {
+      "CODIGO": 19763,
+      "CUIT": 20221041594,
+      "NOMBRE": "LIAJ JOSE LUIS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 19775,
+      "CUIT": 20394460355,
+      "NOMBRE": "BORTOLOTTI LUCAS EZEQUIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "INDUSABOR@GMAIL.COM",
+      "PASSW_WEB": "2039"
+    },
+    {
+      "CODIGO": 19802,
+      "CUIT": 20240124816,
+      "NOMBRE": "MARCUZZI CARLOS JAVIER",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 19831,
+      "CUIT": 32879626,
+      "NOMBRE": "CIVIT FRANCISCO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 19849,
+      "CUIT": 30715989804,
+      "NOMBRE": "FOUR TECH S.A.S.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "mbelimartinez2@gmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 19881,
+      "CUIT": 20213633660,
+      "NOMBRE": "GOMEZ FRANCISCO ANIBAL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2021"
+    },
+    {
+      "CODIGO": 19928,
+      "CUIT": 30715862782,
+      "NOMBRE": "GOLD CARS SRL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "goldcars.empresa@gmail.com",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 19951,
+      "CUIT": 20328460972,
+      "NOMBRE": "RUSCH ROMAN ALEJANDRO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "romanalejandrorusch@hotmail.com",
+      "PASSW_WEB": "2032"
+    },
+    {
+      "CODIGO": 19960,
+      "CUIT": 27309512311,
+      "NOMBRE": "LEUCA MELINA",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": "3095"
+    },
+    {
+      "CODIGO": 19984,
+      "CUIT": 23285834589,
+      "NOMBRE": "FERRERO CRISTIAN GABRIEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 19985,
+      "CUIT": 20244809732,
+      "NOMBRE": "DOBRODZEJUNAS EDUARDO ALBERTO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 20015,
+      "CUIT": 27369769028,
+      "NOMBRE": "SUAREZ JOHANA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "johanajuarez92@icloud.com",
+      "PASSW_WEB": "3697"
+    },
+    {
+      "CODIGO": 20022,
+      "CUIT": 27261123601,
+      "NOMBRE": "FIOCCO MARIA FERNANDA",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "clmartinmonaco@gmail.com",
+      "PASSW_WEB": "2611"
+    },
+    {
+      "CODIGO": 20035,
+      "CUIT": 20237715579,
+      "NOMBRE": "DIAZ FACUNDO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "facundodiazavila@gmail.com",
+      "PASSW_WEB": "2023"
+    },
+    {
+      "CODIGO": 20036,
+      "CUIT": 20314900996,
+      "NOMBRE": "DURAN JOSE RAMON",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "coolcarteflonados@gmail.com",
+      "PASSW_WEB": "2031"
+    },
+    {
+      "CODIGO": 20053,
+      "CUIT": 20431310229,
+      "NOMBRE": "ESPINOZA SEGUEL CRISTIAN EZEQ",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "nocolasgespinoza@gmail.com",
+      "PASSW_WEB": "4313"
+    },
+    {
+      "CODIGO": 20068,
+      "CUIT": 20398279655,
+      "NOMBRE": "ISERNIO SANTIAGO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2039"
+    },
+    {
+      "CODIGO": 20084,
+      "CUIT": 30717840956,
+      "NOMBRE": "OH JUREMOS SAS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 20086,
+      "CUIT": 30674540511,
+      "NOMBRE": "AMIUN S.A.",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "mmicheloni@amiun.com.ar",
+      "PASSW_WEB": "6745"
+    },
+    {
+      "CODIGO": 20122,
+      "CUIT": 33710881249,
+      "NOMBRE": "PEYRE HECTOR Y MAURICIO SH",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "rologrimaux@gmail.com",
+      "PASSW_WEB": "3371"
+    },
+    {
+      "CODIGO": 20123,
+      "CUIT": 30710626142,
+      "NOMBRE": "MGC BLUEMOTORS S.R.L",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "lpextreme_car@hotmail.com",
+      "PASSW_WEB": "7106"
+    },
+    {
+      "CODIGO": 20127,
+      "CUIT": 30716756269,
+      "NOMBRE": "PLG GROUP S.R.L",
+      "CATEGORIA": "LISTA 4",
+      "EMAIL": "leofeldmann476@gmail.com",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 20153,
+      "CUIT": 20229875206,
+      "NOMBRE": "CHIOINO PABLO GARIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "pchioino@yahoo.com",
+      "PASSW_WEB": "2022"
+    },
+    {
+      "CODIGO": 20170,
+      "CUIT": 30715422669,
+      "NOMBRE": "BETO SERVICIO MECANICO SRL",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 20180,
+      "CUIT": 40204244,
+      "NOMBRE": "SAHR AUTOMOTORES",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 20197,
+      "CUIT": 20220445411,
+      "NOMBRE": "GIURIATI PABLO DARIO ABEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "pablogiuriati@yahoo.com.ar",
+      "PASSW_WEB": "2022"
+    },
+    {
+      "CODIGO": 20199,
+      "CUIT": 30718498674,
+      "NOMBRE": "LEONMA AUTOMOTORES",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 20246,
+      "CUIT": 20272620343,
+      "NOMBRE": "ANCANTEN JUAN CARLOS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "administracion@serviciosnahuel.com",
+      "PASSW_WEB": "2726"
+    },
+    {
+      "CODIGO": 20255,
+      "CUIT": 30718078020,
+      "NOMBRE": "CAR BUDDY S.R.L.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "franco@autopime.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 20258,
+      "CUIT": 30718837444,
+      "NOMBRE": "LA RIOJANA SAS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 20264,
+      "CUIT": 20201503443,
+      "NOMBRE": "STIMOLO PABLO DANIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "2020"
+    },
+    {
+      "CODIGO": 20268,
+      "CUIT": 20381102638,
+      "NOMBRE": "TESTA ERNESTO JOSE",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 20272,
+      "CUIT": 20161649148,
+      "NOMBRE": "PAOLUCCI JOSE LUIS",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "dinopaolucci@gmail.com",
+      "PASSW_WEB": "2016"
+    },
+    {
+      "CODIGO": 20302,
+      "CUIT": 30689294770,
+      "NOMBRE": "GOLDSTEIN AUTOMOTORES SACI",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 20346,
+      "CUIT": 20112290967,
+      "NOMBRE": "SANCHEZ ARIEL JOSE",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 20422,
+      "CUIT": 20128212060,
+      "NOMBRE": "CAPELLA RENE JOSE PEDRO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "",
+      "PASSW_WEB": "2012"
+    },
+    {
+      "CODIGO": 20480,
+      "CUIT": 20388578425,
+      "NOMBRE": "MATASSA PATRONE GIANFRANCO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "gianfrancomatassa@gmail.com",
+      "PASSW_WEB": "2038"
+    },
+    {
+      "CODIGO": 20487,
+      "CUIT": 27318143442,
+      "NOMBRE": "MARIA PAULA ALVAREZ PARME",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "paualvarezp@gmail.com",
+      "PASSW_WEB": "3181"
+    },
+    {
+      "CODIGO": 20537,
+      "CUIT": 20229581857,
+      "NOMBRE": "ESTEVEZ SAMUEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 20540,
+      "CUIT": 30716865068,
+      "NOMBRE": "HORMIGA ATOMICA SAS",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 20545,
+      "CUIT": 30711627959,
+      "NOMBRE": "GUARNIEL S.A.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "akasiel@autodrive.com.ar",
+      "PASSW_WEB": "3071"
+    },
+    {
+      "CODIGO": 20553,
+      "CUIT": 20384324577,
+      "NOMBRE": "FRANCO DANIEL COLADO",
+      "CATEGORIA": "LISTA 6",
+      "EMAIL": "Francocolado@gmail.com",
+      "PASSW_WEB": "3843"
+    },
+    {
+      "CODIGO": 20572,
+      "CUIT": 20183475798,
+      "NOMBRE": "NIETO CESAR DANIEL",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "danieto67@gmail.com",
+      "PASSW_WEB": "2018"
+    },
+    {
+      "CODIGO": 20603,
+      "CUIT": 20081590673,
+      "NOMBRE": "SAMPER BERNARDO ENRIQUE",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": "12345"
+    },
+    {
+      "CODIGO": 20663,
+      "CUIT": 33583311659,
+      "NOMBRE": "NOURA SA",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "mopar@ledian.com.ar",
+      "PASSW_WEB": "3358"
+    },
+    {
+      "CODIGO": 20664,
+      "CUIT": 20339059935,
+      "NOMBRE": "ALESSIO JONATAN NAHUEL E.",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "nahuelalessio@gmail.com",
+      "PASSW_WEB": "2033"
+    },
+    {
+      "CODIGO": 20672,
+      "CUIT": 20185777465,
+      "NOMBRE": "GUTIERREZ GREGORIO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "escapessanjose@hotmail.com",
+      "PASSW_WEB": "1857"
+    },
+    {
+      "CODIGO": 20680,
+      "CUIT": 20469250947,
+      "NOMBRE": "LOPEZ MAURICIO",
+      "CATEGORIA": "LISTA 5",
+      "EMAIL": "lopezmauri850@gmail,com",
+      "PASSW_WEB": "4692"
+    },
+    {
+      "CODIGO": 20726,
+      "CUIT": 32627859,
+      "NOMBRE": "ILLUMINATTI MAXIMILIANO",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "",
+      "PASSW_WEB": ""
+    },
+    {
+      "CODIGO": 20757,
+      "CUIT": 23376907589,
+      "NOMBRE": "ZORATTI FRANCO EZEQUIEL",
+      "CATEGORIA": "LISTA 7",
+      "EMAIL": "Francozoratti@gmail.com",
+      "PASSW_WEB": "3769"
+    }
+  ]
+}

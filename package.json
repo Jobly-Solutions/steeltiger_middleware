@@ -1,0 +1,28 @@
+{
+  "name": "steel-tiger-middleware",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Middleware service to sync Steel Tiger API data locally and expose search/AI endpoints on port 3008.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "NODE_ENV=development nodemon --watch src --ext js,json --exec \"node src/server.js\""
+  },
+  "dependencies": {
+    "fuse.js": "^7.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3",
+    "openai": "^4.60.0",
+    "pino": "^9.4.0",
+    "pino-pretty": "^11.2.2",
+    "undici": "^6.19.8",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
+
