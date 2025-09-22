@@ -83,7 +83,17 @@ app.post('/refresh', async (_req, res) => {
 
 app.post('/ai/query', async (req, res) => {
   try {
-    const { question, datasets, filters, limit } = req.body || {};
+    let { question, datasets, filters, limit } = req.body || {};
+    
+    // Handle Bravilo's nested JSON structure
+    if (req.body && req.body.body && req.body.body.body) {
+      const nestedBody = req.body.body.body;
+      question = nestedBody.question;
+      datasets = nestedBody.datasets;
+      limit = nestedBody.limit;
+      filters = nestedBody.filters;
+    }
+    
     if (!question || typeof question !== 'string') {
       return res.status(400).json({ error: 'question is required' });
     }
