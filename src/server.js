@@ -87,7 +87,30 @@ app.post('/ai/query', async (req, res) => {
     if (!question || typeof question !== 'string') {
       return res.status(400).json({ error: 'question is required' });
     }
-    const answer = await answerQuestion({ question, datasets, filters, limit });
+    
+    // Handle datasets as string or array
+    let processedDatasets = datasets;
+    if (typeof datasets === 'string') {
+      try {
+        processedDatasets = JSON.parse(datasets);
+      } catch (e) {
+        // If it's not valid JSON, treat as comma-separated string
+        processedDatasets = datasets.split(',').map(s => s.trim().replace(/['"]/g, ''));
+      }
+    }
+    
+    // Handle limit as string or number
+    let processedLimit = limit;
+    if (typeof limit === 'string') {
+      processedLimit = parseInt(limit, 10) || undefined;
+    }
+    
+    const answer = await answerQuestion({ 
+      question, 
+      datasets: processedDatasets, 
+      filters, 
+      limit: processedLimit 
+    });
     res.json(answer);
   } catch (err) {
     logger.error(err);
@@ -118,6 +141,25 @@ app.post('/auth', async (req, res) => {
     res.status(result.ok ? 200 : 400).json(result);
   } catch (err) {
     res.status(500).json({ ok: false, error: String(err?.message || err) });
+  }
+});
+
+// AI Query endpoint with GET support
+app.get('/ai/query-simple', async (req, res) => {
+  try {
+    const { question, datasets, limit } = req.query;
+    if (!question) {
+      return res.status(400).json({ error: 'question parameter is required' });
+    }
+    const answer = await answerQuestion({ 
+      question, 
+      datasets: datasets ? datasets.split(',') : undefined, 
+      limit: limit ? Number(limit) : undefined 
+    });
+    res.json(answer);
+  } catch (err) {
+    logger.error(err);
+    res.status(500).json({ error: 'AI query failed' });
   }
 });
 
