@@ -68,7 +68,12 @@ export async function syncContactsToBravilo(contacts) {
 
   if (transformedContacts.length === 0) {
     logger.warn('No valid contacts to sync (missing email and phone)');
-    return { success: true, synced: 0, errors: [] };
+    return { 
+      success: true, 
+      synced: 0, 
+      errors: [],
+      message: 'No valid contacts found to sync. Contacts must have either email or phone number.'
+    };
   }
 
   const payload = {

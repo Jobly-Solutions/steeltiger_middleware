@@ -40,9 +40,15 @@ export async function syncClientDataToBravilo() {
   try {
     logger.info('Syncing client data to Bravilo AI...');
     
-    // Fetch fresh client data
-    const clientData = await fetchDataset('clientes_ia');
-    const contacts = clientData.data || [];
+    // First try to get contacts from local dataset
+    let contacts = getContactsFromDataset({ getDataset: getDataset }, 'clientes_ia');
+    
+    // If no local data, fetch directly from Steel Tiger
+    if (contacts.length === 0) {
+      logger.info('No local client data found, fetching from Steel Tiger...');
+      const clientData = await fetchDataset('clientes_ia');
+      contacts = clientData.data || [];
+    }
     
     if (contacts.length === 0) {
       logger.info('No client contacts found to sync');

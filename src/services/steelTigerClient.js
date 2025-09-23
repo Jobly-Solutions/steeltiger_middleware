@@ -4,9 +4,9 @@ const STEEL_API_URL = process.env.STEEL_API_URL || 'https://www.apiarbro.xfoxnet
 const STEEL_AUTH_URL = 'https://www.apiarbro.xfoxnet.com/Api/Autorizacion';
 
 const STEEL_CREDENTIALS = {
-  _licencia: process.env.STEEL_LICENSE || '',
-  _usuario: process.env.STEEL_USER || '',
-  _password: process.env.STEEL_PASSWORD || '',
+  _licencia: process.env.STEEL_LICENSE || '9fe34943-a829-43fb-b9cc-87a63ec5aa53',
+  _usuario: process.env.STEEL_USER || 'UsuApiRest1',
+  _password: process.env.STEEL_PASSWORD || 'Usu@2025',
   _cuit: process.env.STEEL_CUIT || '0',
   _parametros: null,
   jsonPuro: true

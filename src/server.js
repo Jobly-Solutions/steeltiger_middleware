@@ -107,7 +107,16 @@ app.get('/clients', async (req, res) => {
 app.post('/sync/contacts', async (req, res) => {
   try {
     const { dataset = 'clientes_ia' } = req.body;
-    const contacts = getContactsFromDataset({ getDataset }, dataset);
+    
+    // First try to get contacts from local dataset
+    let contacts = getContactsFromDataset({ getDataset }, dataset);
+    
+    // If no local data, fetch directly from Steel Tiger
+    if (contacts.length === 0) {
+      logger.info(`No local data found for ${dataset}, fetching from Steel Tiger...`);
+      const data = await fetchDataset(dataset);
+      contacts = data.data || [];
+    }
     
     if (contacts.length === 0) {
       return res.json({
@@ -180,6 +189,68 @@ app.post('/sync/clients-to-bravilo', async (req, res) => {
     res.status(500).json({ 
       success: false, 
       error: 'Failed to sync client data to Bravilo AI',
+      message: err.message 
+    });
+  }
+});
+
+// Diagnostic endpoint to check authorization and data status
+app.get('/diagnostic', async (req, res) => {
+  try {
+    const results = {};
+    
+    // Check Steel Tiger authorization
+    try {
+      const authResult = await authorizeSteel(process.env.STEEL_EMAIL || process.env.STEEL_USER);
+      results.authorization = {
+        success: authResult.ok,
+        status: authResult.status,
+        message: authResult.response?.Respuesta || 'Authorization check completed'
+      };
+    } catch (err) {
+      results.authorization = {
+        success: false,
+        error: err.message
+      };
+    }
+    
+    // Check data availability for different datasets
+    const datasets = ['clientes', 'clientes_ia', 'productos', 'lista_precios'];
+    results.datasets = {};
+    
+    for (const dataset of datasets) {
+      try {
+        const data = await fetchDataset(dataset);
+        results.datasets[dataset] = {
+          success: true,
+          count: data.data?.length || 0,
+          hasData: (data.data?.length || 0) > 0,
+          lastFetched: data.meta?.fetchedAt
+        };
+      } catch (err) {
+        results.datasets[dataset] = {
+          success: false,
+          error: err.message
+        };
+      }
+    }
+    
+    // Check Bravilo AI token
+    results.bravilo = {
+      tokenConfigured: !!process.env.BRAVILO_TOKEN,
+      tokenLength: process.env.BRAVILO_TOKEN?.length || 0
+    };
+    
+    res.json({
+      success: true,
+      timestamp: new Date().toISOString(),
+      ...results
+    });
+  } catch (err) {
+    logger.error(err);
+    res.status(500).json({ 
+      success: false, 
+      error: 'Diagnostic failed',
       message: err.message 
     });
   }
