@@ -4,9 +4,10 @@ import cors from 'cors';
 import { createServer } from 'http';
 import pino from 'pino';
 import pretty from 'pino-pretty';
-import { scheduleRefresh, getAvailableDatasets, getDataset, refreshAllDatasets, searchDatasets, joinDatasets, getDataDir } from './services/datasetManager.js';
+import { scheduleRefresh, getAvailableDatasets, getDataset, refreshAllDatasets, searchDatasets, joinDatasets, getDataDir, syncClientDataToBravilo } from './services/datasetManager.js';
 import { fetchDataset, authorizeSteel } from './services/steelTigerClient.js';
 import { answerQuestion } from './services/ai.js';
+import { syncContactsToBravilo, getContactsFromDataset } from './services/braviloClient.js';
 
 const envPort = process.env.PORT ? Number(process.env.PORT) : 3008;
 const app = express();
@@ -81,6 +82,109 @@ app.post('/refresh', async (_req, res) => {
   }
 });
 
+// Endpoint to fetch client data from Steel Tiger API
+app.get('/clients', async (req, res) => {
+  try {
+    const { dataset = 'clientes_ia' } = req.query;
+    const data = await fetchDataset(dataset);
+    res.json({
+      success: true,
+      meta: data.meta,
+      count: data.data.length,
+      data: data.data
+    });
+  } catch (err) {
+    logger.error(err);
+    res.status(500).json({ 
+      success: false, 
+      error: 'Failed to fetch client data',
+      message: err.message 
+    });
+  }
+});
+
+// Endpoint to sync contacts to Bravilo AI
+app.post('/sync/contacts', async (req, res) => {
+  try {
+    const { dataset = 'clientes_ia' } = req.body;
+    const contacts = getContactsFromDataset({ getDataset }, dataset);
+    
+    if (contacts.length === 0) {
+      return res.json({
+        success: true,
+        message: 'No contacts found to sync',
+        synced: 0
+      });
+    }
+
+    const result = await syncContactsToBravilo(contacts);
+    res.json({
+      success: result.success,
+      synced: result.synced,
+      errors: result.errors,
+      message: result.success 
+        ? `Successfully synced ${result.synced} contacts to Bravilo AI`
+        : 'Failed to sync contacts to Bravilo AI'
+    });
+  } catch (err) {
+    logger.error(err);
+    res.status(500).json({ 
+      success: false, 
+      error: 'Failed to sync contacts',
+      message: err.message 
+    });
+  }
+});
+
+// Endpoint to manually trigger client data refresh and sync
+app.post('/sync/clients', async (req, res) => {
+  try {
+    // First refresh the client data
+    const data = await fetchDataset('clientes_ia');
+    
+    // Then sync to Bravilo AI
+    const contacts = data.data || [];
+    const syncResult = await syncContactsToBravilo(contacts);
+    
+    res.json({
+      success: syncResult.success,
+      refreshed: data.data.length,
+      synced: syncResult.synced,
+      errors: syncResult.errors,
+      message: `Refreshed ${data.data.length} clients and synced ${syncResult.synced} contacts`
+    });
+  } catch (err) {
+    logger.error(err);
+    res.status(500).json({ 
+      success: false, 
+      error: 'Failed to refresh and sync client data',
+      message: err.message 
+    });
+  }
+});
+
+// Endpoint to manually trigger client sync to Bravilo AI (using cached data)
+app.post('/sync/clients-to-bravilo', async (req, res) => {
+  try {
+    const result = await syncClientDataToBravilo();
+    res.json({
+      success: result.success,
+      synced: result.synced,
+      errors: result.errors,
+      message: result.success 
+        ? `Successfully synced ${result.synced} contacts to Bravilo AI`
+        : 'Failed to sync contacts to Bravilo AI'
+    });
+  } catch (err) {
+    logger.error(err);
+    res.status(500).json({ 
+      success: false, 
+      error: 'Failed to sync client data to Bravilo AI',
+      message: err.message 
+    });
+  }
+});
+
 app.post('/ai/query', async (req, res) => {
   try {
     let { question, datasets, filters, limit } = req.body || {};
@@ -132,8 +236,13 @@ app.post('/ai/query', async (req, res) => {
 app.get('/debug/steel', async (req, res) => {
   try {
     const q = typeof req.query.query === 'string' ? req.query.query : undefined;
-    if (!q) return res.status(400).json({ error: 'query param required (e.g., Productos, Clientes, ListaDePrecios)' });
-    const map = { Productos: 'productos', Clientes: 'clientes', ListaDePrecios: 'lista_precios' };
+    if (!q) return res.status(400).json({ error: 'query param required (e.g., Productos, Clientes, ClientesIA, ListaDePrecios)' });
+    const map = { 
+      Productos: 'productos', 
+      Clientes: 'clientes', 
+      ClientesIA: 'clientes_ia',
+      ListaDePrecios: 'lista_precios' 
+    };
     const datasetKey = map[q] || null;
     if (!datasetKey) return res.status(400).json({ error: 'Unsupported query' });
     const data = await fetchDataset(datasetKey);

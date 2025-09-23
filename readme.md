@@ -29,6 +29,7 @@ Ejecutar
 
 Datasets sincronizados
 - `clientes` (`_query: Clientes`)
+- `clientes_ia` (`_query: ClientesIA`) - Nuevo dataset para sincronización con Bravilo AI
 - `productos` (`_query: Productos`)
 - `lista_precios` (`_query: ListaDePrecios`)
 
@@ -49,11 +50,19 @@ Endpoints
 - `POST /ai/query` → Q&A con IA usando muestras del dataset local
   - Body JSON: `{ "question": string, "datasets?": string[], "filters?": { "q?": string, "fields?": string[] }, "limit?": number }`
 
+Nuevos endpoints para sincronización con Bravilo AI:
+- `GET /clients` → obtiene datos de clientes desde Steel Tiger API (query param: `dataset=clientes_ia`)
+- `POST /sync/contacts` → sincroniza contactos locales con Bravilo AI (body: `{ "dataset": "clientes_ia" }`)
+- `POST /sync/clients` → refresca datos de clientes y los sincroniza con Bravilo AI
+- `POST /sync/clients-to-bravilo` → sincroniza datos de clientes cacheados con Bravilo AI
+
 Notas de diseño
 - Se cachea localmente cada dataset como `data/<dataset>.json` con metadatos de última descarga.
 - Refresco automático con `node-cron` (configurable por `REFRESH_CRON`).
+- Sincronización automática de clientes con Bravilo AI cada hora (configurable por `CLIENT_SYNC_CRON`).
 - Cliente HTTP con `undici` y reintentos exponenciales.
 - IA opcional con `openai`; si no hay `OPENAI_API_KEY`, devuelve respuesta de cortesía.
+- Transformación automática de datos de Steel Tiger al formato de contactos de Bravilo AI.
 
 Steel Tiger API
 
@@ -68,6 +77,18 @@ clientes:
     "_password": "Usu@2025",
     "_cuit": "0",
     "_query": "Clientes",
+    "_parametros":null,
+    "jsonPuro":true
+}
+
+clientes_ia (nuevo):
+
+{
+    "_licencia": "9fe34943-a829-43fb-b9cc-87a63ec5aa53",
+    "_usuario": "UsuApiRest1",
+    "_password": "Usu@2025",
+    "_cuit": "0",
+    "_query": "ClientesIA",
     "_parametros":null,
     "jsonPuro":true
 }
@@ -121,6 +142,37 @@ Ejemplo respuesta para productos:
         ...
 
 }
+
+----------------------------------------------------
+
+Bravilo AI Integration
+
+El middleware ahora incluye sincronización automática con Bravilo AI:
+
+Configuración:
+- `BRAVILO_TOKEN`: Token de autorización para Bravilo AI (por defecto: dfa4f286-4371-436c-8372-d5b300c5eb3c)
+- `CLIENT_SYNC_CRON`: Cron para sincronización automática (por defecto: cada hora)
+
+Transformación de datos:
+Los datos de Steel Tiger se transforman automáticamente al formato de contactos de Bravilo AI:
+- `externalId`: CODIGO o COD_ALFABA del cliente
+- `email`: EMAIL, MAIL o CORREO del cliente
+- `phoneNumber`: TELEFONO, PHONE o CELULAR del cliente
+- `firstName`: NOMBRE, PRIMER_NOMBRE o FIRST_NAME del cliente
+- `lastName`: APELLIDO, SEGUNDO_NOMBRE o LAST_NAME del cliente
+- `metadata`: Información adicional como empresa, dirección, etc.
+
+Sincronización automática:
+- Se ejecuta cada hora por defecto
+- Solo sincroniza contactos que tengan email o teléfono
+- Incluye todos los campos del cliente en metadata
+- Logs detallados de éxito/error
+
+Endpoints de sincronización:
+- `GET /clients` - Obtener datos de clientes desde Steel Tiger
+- `POST /sync/contacts` - Sincronizar contactos locales con Bravilo AI
+- `POST /sync/clients` - Refrescar y sincronizar datos de clientes
+- `POST /sync/clients-to-bravilo` - Sincronizar datos cacheados con Bravilo AI
 
 ----------------------------------------------------
 

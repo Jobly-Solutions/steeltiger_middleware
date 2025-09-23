@@ -1,7 +1,7 @@
 {
   "meta": {
-    "dataset": "clientes",
-    "query": "Clientes",
+    "dataset": "clientes_ia",
+    "query": "ClientesIA",
     "count": 0,
     "fetchedAt": "2025-09-23T00:05:02.088Z"
   },

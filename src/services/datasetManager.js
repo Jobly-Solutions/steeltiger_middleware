@@ -3,7 +3,8 @@ import fsp from 'fs/promises';
 import path from 'path';
 import cron from 'node-cron';
 import pino from 'pino';
-import { fetchAllDatasets } from './steelTigerClient.js';
+import { fetchAllDatasets, fetchDataset } from './steelTigerClient.js';
+import { syncContactsToBravilo, getContactsFromDataset } from './braviloClient.js';
 
 const logger = pino();
 
@@ -34,16 +35,53 @@ export async function refreshAllDatasets() {
   return datasets;
 }
 
+// Function to sync client data to Bravilo AI
+export async function syncClientDataToBravilo() {
+  try {
+    logger.info('Syncing client data to Bravilo AI...');
+    
+    // Fetch fresh client data
+    const clientData = await fetchDataset('clientes_ia');
+    const contacts = clientData.data || [];
+    
+    if (contacts.length === 0) {
+      logger.info('No client contacts found to sync');
+      return { success: true, synced: 0 };
+    }
+    
+    // Sync to Bravilo AI
+    const result = await syncContactsToBravilo(contacts);
+    
+    if (result.success) {
+      logger.info(`Successfully synced ${result.synced} contacts to Bravilo AI`);
+    } else {
+      logger.error({ errors: result.errors }, 'Failed to sync contacts to Bravilo AI');
+    }
+    
+    return result;
+  } catch (err) {
+    logger.error({ err }, 'Failed to sync client data to Bravilo AI');
+    return { success: false, synced: 0, errors: [err.message] };
+  }
+}
+
 export async function scheduleRefresh() {
   ensureDir(dataDir);
   const cronExpr = process.env.REFRESH_CRON || '5 * * * *';
+  const clientSyncCron = process.env.CLIENT_SYNC_CRON || '0 * * * *'; // Every hour
+  
   try {
     // Initial refresh on boot
     await refreshAllDatasets();
     logger.info(`Initial datasets refreshed. Scheduling cron: ${cronExpr}`);
+    
+    // Initial client sync
+    await syncClientDataToBravilo();
   } catch (err) {
     logger.error({ err }, 'Initial refresh failed');
   }
+  
+  // Schedule regular dataset refresh
   cron.schedule(cronExpr, async () => {
     try {
       logger.info('Cron: refreshing datasets');
@@ -53,6 +91,18 @@ export async function scheduleRefresh() {
       logger.error({ err }, 'Cron refresh failed');
     }
   });
+  
+  // Schedule hourly client sync to Bravilo AI
+  cron.schedule(clientSyncCron, async () => {
+    try {
+      logger.info('Cron: syncing client data to Bravilo AI');
+      await syncClientDataToBravilo();
+    } catch (err) {
+      logger.error({ err }, 'Cron client sync failed');
+    }
+  });
+  
+  logger.info(`Client sync scheduled: ${clientSyncCron}`);
 }
 
 function readDatasetSync(datasetKey) {
@@ -146,5 +196,3 @@ function inferJoinKey(rows) {
   if (sample.COD_ALFABA !== undefined) return 'COD_ALFABA';
   return Object.keys(sample)[0];
 }
-
-

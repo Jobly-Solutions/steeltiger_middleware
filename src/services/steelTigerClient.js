@@ -14,6 +14,7 @@ const STEEL_CREDENTIALS = {
 
 export const DATASET_QUERIES = {
   clientes: 'Clientes',
+  clientes_ia: 'ClientesIA',
   productos: 'Productos',
   lista_precios: 'ListaDePrecios'
 };
