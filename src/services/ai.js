@@ -1,5 +1,6 @@
 import OpenAI from 'openai';
 import { getAvailableDatasets, getDataset, refreshAllDatasets } from './datasetManager.js';
+import { fetchDataset as fetchSteelDataset } from './steelTigerClient.js';
 import Fuse from 'fuse.js';
 
 const openai = process.env.OPENAI_API_KEY ? new OpenAI({ apiKey: process.env.OPENAI_API_KEY }) : null;
@@ -132,8 +133,24 @@ export async function answerQuestion({ question }) {
 
   const productosRes = getDataset('productos');
   const preciosRes = getDataset('lista_precios');
-  const productos = productosRes.data || [];
-  const precios = preciosRes.data || [];
+  let productos = productosRes.data || [];
+  let precios = preciosRes.data || [];
+
+  // Fallback: si no hay datos locales, intentar traer directo de Steel Tiger
+  try {
+    if ((!Array.isArray(productos) || productos.length === 0)) {
+      const remoteProd = await fetchSteelDataset('productos');
+      if (Array.isArray(remoteProd?.data) && remoteProd.data.length > 0) {
+        productos = remoteProd.data;
+      }
+    }
+    if ((!Array.isArray(precios) || precios.length === 0)) {
+      const remotePrices = await fetchSteelDataset('lista_precios');
+      if (Array.isArray(remotePrices?.data) && remotePrices.data.length > 0) {
+        precios = remotePrices.data;
+      }
+    }
+  } catch {}
 
   const tokens = [];
   if (intent?.keywords?.length) tokens.push(...intent.keywords);
