@@ -10,10 +10,14 @@ const BRAVILO_TOKEN = process.env.BRAVILO_TOKEN || 'dfa4f286-4371-436c-8372-d5b3
  * Transform Steel Tiger client data to Bravilo AI contact format
  */
 export function transformClientToContact(client) {
-  // Extract basic information
-  const externalId = client.CODIGO || client.COD_ALFABA || `cliente_${Date.now()}`;
-  const email = client.EMAIL || client.MAIL || client.CORREO || null;
-  const phoneNumber = client.TELEFONO || client.PHONE || client.CELULAR || null;
+  // Extract basic information - ensure externalId is always a string
+  const externalId = String(client.CODIGO || client.COD_ALFABA || `cliente_${Date.now()}`);
+  
+  // Extract email - ensure it's never null, use empty string if not found
+  const email = client.EMAIL || client.MAIL || client.CORREO || '';
+  
+  // Extract phone - ensure it's never null, use empty string if not found
+  const phoneNumber = client.TELEFONO || client.PHONE || client.CELULAR || '';
   
   // Extract name information
   const firstName = client.NOMBRE || client.PRIMER_NOMBRE || client.FIRST_NAME || '';
@@ -64,7 +68,7 @@ export async function syncContactsToBravilo(contacts) {
 
   const transformedContacts = contacts
     .map(transformClientToContact)
-    .filter(contact => contact.email || contact.phoneNumber); // Only sync contacts with email or phone
+    .filter(contact => contact.email.trim() || contact.phoneNumber.trim()); // Only sync contacts with email or phone
 
   if (transformedContacts.length === 0) {
     logger.warn('No valid contacts to sync (missing email and phone)');
