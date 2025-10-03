@@ -3,7 +3,9 @@ import { getAvailableDatasets, getDataset, refreshAllDatasets } from './datasetM
 import { fetchDataset as fetchSteelDataset } from './steelTigerClient.js';
 import { getBestPriceForClient } from './braviloClient.js';
 import Fuse from 'fuse.js';
+import pino from 'pino';
 
+const logger = pino();
 const openai = process.env.OPENAI_API_KEY ? new OpenAI({ apiKey: process.env.OPENAI_API_KEY }) : null;
 
 function normalizeText(str) {
@@ -170,10 +172,29 @@ function rankPriceRows(priceRows, tokens, sku) {
 }
 
 export async function answerQuestion({ question, _phoneNumber, productCode, limit }) {
+  // Log de entrada a la función
+  logger.info({
+    question,
+    _phoneNumber,
+    productCode,
+    limit,
+    phoneNumberType: typeof _phoneNumber,
+    productCodeType: typeof productCode
+  }, 'answerQuestion called');
+  
   // Si se proporciona _phoneNumber y productCode, usar consulta específica por teléfono
   if (_phoneNumber && productCode && _phoneNumber !== '_phoneNumber') {
+    logger.info({
+      _phoneNumber,
+      productCode
+    }, 'Using phone-based price lookup');
+    
     try {
       const result = getBestPriceForClient(productCode, _phoneNumber, { getDataset });
+      
+      logger.info({
+        result
+      }, 'Phone-based price lookup result');
       
       if (result.found) {
         const priceFormatted = result.price ? new Intl.NumberFormat('es-AR', { 
@@ -201,12 +222,15 @@ export async function answerQuestion({ question, _phoneNumber, productCode, limi
         };
       }
     } catch (error) {
+      logger.error({ error }, 'Error in phone-based price lookup');
       return {
         answer: 'Error al consultar precio por teléfono',
         matches: []
       };
     }
   }
+  
+  logger.info('Using standard AI search (no phone number provided)');
 
   const intent = await extractIntentWithAI(question);
 
@@ -215,21 +239,32 @@ export async function answerQuestion({ question, _phoneNumber, productCode, limi
   let productos = productosRes.data || [];
   let precios = preciosRes.data || [];
 
+  logger.info({
+    productosCount: productos.length,
+    preciosCount: precios.length
+  }, 'Local datasets loaded');
+
   // Fallback: si no hay datos locales, intentar traer directo de Steel Tiger
   try {
     if ((!Array.isArray(productos) || productos.length === 0)) {
+      logger.info('Fetching productos from Steel Tiger (local dataset empty)');
       const remoteProd = await fetchSteelDataset('productos');
       if (Array.isArray(remoteProd?.data) && remoteProd.data.length > 0) {
         productos = remoteProd.data;
+        logger.info({ count: productos.length }, 'Productos fetched from Steel Tiger');
       }
     }
     if ((!Array.isArray(precios) || precios.length === 0)) {
+      logger.info('Fetching precios from Steel Tiger (local dataset empty)');
       const remotePrices = await fetchSteelDataset('lista_precios');
       if (Array.isArray(remotePrices?.data) && remotePrices.data.length > 0) {
         precios = remotePrices.data;
+        logger.info({ count: precios.length }, 'Precios fetched from Steel Tiger');
       }
     }
-  } catch {}
+  } catch (err) {
+    logger.error({ err }, 'Error fetching from Steel Tiger');
+  }
 
   const tokens = [];
   if (intent?.keywords?.length) tokens.push(...intent.keywords);
@@ -254,9 +289,20 @@ export async function answerQuestion({ question, _phoneNumber, productCode, limi
   // Usar el límite proporcionado o traer TODOS los resultados por defecto
   const maxResults = limit || 100;
   
+  logger.info({
+    tokens: expandedTokens,
+    sku,
+    maxResults
+  }, 'Search parameters');
+  
   const candidates = rankProducts(productos, expandedTokens, sku).slice(0, maxResults);
   const priceOnlyCandidates = rankPriceRows(precios, expandedTokens, sku).slice(0, maxResults);
   const priceIdx = buildPriceIndex(precios);
+
+  logger.info({
+    candidatesCount: candidates.length,
+    priceOnlyCandidatesCount: priceOnlyCandidates.length
+  }, 'Search results');
 
   const answers = [];
   for (const prod of candidates) {
@@ -276,6 +322,8 @@ export async function answerQuestion({ question, _phoneNumber, productCode, limi
       listaCategoria: best.CATEGORIA || null
     });
   }
+
+  logger.info({ answersCount: answers.length }, 'Final answers count');
 
   // Si no hay match por productos, intentamos directo con lista de precios
   if (answers.length === 0 && priceOnlyCandidates.length > 0) {

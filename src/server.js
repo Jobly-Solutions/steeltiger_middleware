@@ -258,6 +258,13 @@ app.get('/diagnostic', async (req, res) => {
 
 app.post('/ai/query', async (req, res) => {
   try {
+    // Log completo de la request
+    logger.info({
+      body: req.body,
+      headers: req.headers,
+      query: req.query
+    }, 'AI Query Request Received');
+    
     let { question, datasets, filters, limit, _phoneNumber, productCode } = req.body || {};
     
     // Handle Bravilo's nested JSON structure
@@ -269,7 +276,21 @@ app.post('/ai/query', async (req, res) => {
       filters = nestedBody.filters;
       _phoneNumber = nestedBody._phoneNumber;
       productCode = nestedBody.productCode;
+      
+      logger.info({
+        nestedBody
+      }, 'Bravilo Nested Structure Detected');
     }
+    
+    // Log de parámetros extraídos
+    logger.info({
+      question,
+      datasets,
+      limit,
+      filters,
+      _phoneNumber,
+      productCode
+    }, 'AI Query Extracted Parameters');
     
     if (!question || typeof question !== 'string') {
       return res.status(400).json({ error: 'question is required' });
