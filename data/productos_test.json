@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "dataset": "productos_test",
+    "query": "Productos",
+    "count": 5,
+    "fetchedAt": "2025-09-23T13:20:00.000Z"
+  },
+  "data": [
+    {
+      "CODIGO": 1,
+      "COD_ALFABA": "ENG001",
+      "DETALLE1": "Enganche para Amarok 2010-2020",
+      "MARCA": "ACME",
+      "MODELO": "ENG-AMAROK-001",
+      "PRECIO": 15000
+    },
+    {
+      "CODIGO": 2,
+      "COD_ALFABA": "ENG002", 
+      "DETALLE1": "Enganche Universal Amarok",
+      "MARCA": "UNIVERSAL",
+      "MODELO": "ENG-UNI-AMAROK",
+      "PRECIO": 12000
+    },
+    {
+      "CODIGO": 3,
+      "COD_ALFABA": "PAR001",
+      "DETALLE1": "Paragolpes Delantero Amarok",
+      "MARCA": "ACME",
+      "MODELO": "PAR-AMAROK-DEL",
+      "PRECIO": 25000
+    },
+    {
+      "CODIGO": 4,
+      "COD_ALFABA": "FAR001",
+      "DETALLE1": "Faros LED Amarok",
+      "MARCA": "LEDPRO",
+      "MODELO": "FAR-LED-AMAROK",
+      "PRECIO": 18000
+    },
+    {
+      "CODIGO": 5,
+      "COD_ALFABA": "ENG003",
+      "DETALLE1": "Enganche Heavy Duty Amarok",
+      "MARCA": "HEAVY",
+      "MODELO": "ENG-HD-AMAROK",
+      "PRECIO": 20000
+    }
+  ]
+}

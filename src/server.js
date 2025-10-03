@@ -7,7 +7,7 @@ import pretty from 'pino-pretty';
 import { scheduleRefresh, getAvailableDatasets, getDataset, refreshAllDatasets, searchDatasets, joinDatasets, getDataDir, syncClientDataToBravilo } from './services/datasetManager.js';
 import { fetchDataset, authorizeSteel } from './services/steelTigerClient.js';
 import { answerQuestion } from './services/ai.js';
-import { syncContactsToBravilo, getContactsFromDataset } from './services/braviloClient.js';
+import { syncContactsToBravilo, getContactsFromDataset, getBestPriceForClient } from './services/braviloClient.js';
 
 const envPort = process.env.PORT ? Number(process.env.PORT) : 3008;
 const app = express();
@@ -300,6 +300,58 @@ app.post('/ai/query', async (req, res) => {
   } catch (err) {
     logger.error(err);
     res.status(500).json({ error: 'AI query failed' });
+  }
+});
+
+// Endpoint para consultar precios por teléfono del cliente
+app.post('/price/by-phone', async (req, res) => {
+  try {
+    const { _phoneNumber, productCode } = req.body || {};
+    
+    if (!_phoneNumber) {
+      return res.status(400).json({ 
+        success: false, 
+        error: 'Missing _phoneNumber parameter' 
+      });
+    }
+    
+    if (!productCode) {
+      return res.status(400).json({ 
+        success: false, 
+        error: 'Missing productCode parameter' 
+      });
+    }
+    
+    const result = getBestPriceForClient(productCode, _phoneNumber, { getDataset });
+    
+    if (result.found) {
+      res.json({
+        success: true,
+        productCode,
+        phoneNumber: _phoneNumber,
+        client: result.client,
+        clientList: result.clientList,
+        price: result.price,
+        priceDetails: result.priceDetails,
+        message: `Precio encontrado para ${result.client.nombre} (Lista: ${result.clientList})`
+      });
+    } else {
+      res.json({
+        success: false,
+        productCode,
+        phoneNumber: _phoneNumber,
+        error: result.error,
+        clientList: result.clientList,
+        message: result.error
+      });
+    }
+  } catch (err) {
+    logger.error({ err, body: req.body }, 'Price by phone query failed');
+    res.status(500).json({ 
+      success: false, 
+      error: 'Price query failed',
+      message: err.message 
+    });
   }
 });
 

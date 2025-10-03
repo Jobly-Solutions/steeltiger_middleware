@@ -168,6 +168,13 @@ Sincronización automática:
 - Incluye todos los campos del cliente en metadata
 - Logs detallados de éxito/error
 
+Consulta de precios por teléfono:
+- Endpoint: `POST /price/by-phone`
+- Parámetros: `_phoneNumber` y `productCode`
+- Busca el cliente por teléfono y obtiene su lista asignada
+- Devuelve el precio específico para esa lista
+- Normaliza números de teléfono automáticamente
+
 Endpoints de sincronización:
 - `GET /clients` - Obtener datos de clientes desde Steel Tiger
 - `POST /sync/contacts` - Sincronizar contactos locales con Bravilo AI
