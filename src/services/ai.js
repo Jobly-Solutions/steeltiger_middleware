@@ -132,6 +132,32 @@ function rankProducts(products, tokens, sku) {
   const query = normTokens.join(' ');
   let results = query ? fuse.search(query).map((r) => ({ row: r.item, score: 1 - (r.score ?? 0) })) : [];
   
+  // Boost por coincidencia exacta de palabras clave en DETALLE1/DETALLE
+  results = results.map((r) => {
+    let boost = 0;
+    const detalle = normalizeText((r.row.DETALLE1 || r.row.DETALLE || ''));
+    
+    // Boost por cada token que aparece en el detalle
+    for (const token of normTokens) {
+      if (token.length >= 3 && detalle.includes(token)) {
+        boost += 0.5; // Boost por cada palabra encontrada
+      }
+    }
+    
+    // Boost EXTRA si las primeras palabras del detalle coinciden
+    const primerasPalabras = detalle.split(' ').slice(0, 3).join(' ');
+    for (const token of normTokens) {
+      if (token.length >= 3 && primerasPalabras.includes(token)) {
+        boost += 1.0; // Boost grande si está al principio
+      }
+    }
+    
+    return {
+      row: r.row,
+      score: r.score + boost
+    };
+  });
+  
   // boost por SKU exacto
   if (sku) {
     results = results.map((r) => ({
@@ -214,6 +240,32 @@ function rankPriceRows(priceRows, tokens, sku) {
   });
   const query = normTokens.join(' ');
   let results = query ? fuse.search(query).map((r) => ({ row: r.item, score: 1 - (r.score ?? 0) })) : [];
+  
+  // Boost por coincidencia exacta de palabras clave
+  results = results.map((r) => {
+    let boost = 0;
+    const detalle = normalizeText((r.row.DETALLE || r.row.DETALLE1 || ''));
+    
+    // Boost por cada token que aparece en el detalle
+    for (const token of normTokens) {
+      if (token.length >= 3 && detalle.includes(token)) {
+        boost += 0.5;
+      }
+    }
+    
+    // Boost EXTRA si las primeras palabras del detalle coinciden
+    const primerasPalabras = detalle.split(' ').slice(0, 3).join(' ');
+    for (const token of normTokens) {
+      if (token.length >= 3 && primerasPalabras.includes(token)) {
+        boost += 1.0;
+      }
+    }
+    
+    return {
+      row: r.row,
+      score: r.score + boost
+    };
+  });
   
   if (sku) {
     results = results.map((r) => ({
