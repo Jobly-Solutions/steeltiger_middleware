@@ -361,11 +361,17 @@ export async function answerQuestion({ question, _phoneNumber, productCode, limi
   if (answers.length > 0) {
     // Si hay muchos resultados, devolver resumen con todos los matches
     if (answers.length > 5) {
-      const text = `Encontré ${answers.length} productos que coinciden con tu búsqueda. Aquí están los resultados:`;
+      const text = `Encontré ${answers.length} productos que coinciden con tu búsqueda. Nota: Los años se muestran como '16-21' (del 2016 al 2021), '22->' (del 2022 en adelante), etc. Aquí están los resultados ordenados por relevancia:`;
       return { answer: text, matches: answers };
     }
     const top = answers[0];
-    const text = `Precio ${top.sku ? `(${top.sku}) ` : ''}${top.producto}: ${top.precio}`;
+    let text = `Precio ${top.sku ? `(${top.sku}) ` : ''}${top.producto}: ${top.precio}`;
+    
+    // Agregar explicación de años si el producto contiene notación de año
+    if (/\d{2}[-|>]/.test(top.producto)) {
+      text += `. Nota: Los años se muestran como '16-21' (del 2016 al 2021), '22->' (del 2022 en adelante), etc.`;
+    }
+    
     return { answer: text, matches: answers };
   }
 
