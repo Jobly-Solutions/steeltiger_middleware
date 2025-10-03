@@ -36,20 +36,22 @@ function rankProducts(products, tokens, sku) {
   // Fuzzy: usar Fuse sobre TODOS los campos relevantes
   const fuse = new Fuse(products, {
     keys: [
-      { name: 'DETALLE1', weight: 0.4 },
-      { name: 'DETALLE', weight: 0.4 },
-      { name: 'MARCA', weight: 0.15 },
-      { name: 'MODELO', weight: 0.15 },
-      { name: 'RUBRO', weight: 0.1 },
-      { name: 'SUBRUBRO', weight: 0.1 },
-      { name: 'COD_ALFABA', weight: 0.05 },
-      { name: 'CODIGO', weight: 0.05 }
+      { name: 'DETALLE1', weight: 0.5 },      // Productos
+      { name: 'DETALLE', weight: 0.5 },       // Precios
+      { name: 'MARCA', weight: 0.2 },
+      { name: 'MODELO', weight: 0.2 },
+      { name: 'CATEGORIA', weight: 0.15 },    // Ambos
+      { name: 'RUBRO', weight: 0.1 },         // Precios
+      { name: 'SUBRUBRO', weight: 0.1 },      // Precios
+      { name: 'COD_ALFABA', weight: 0.1 }     // Ambos
     ],
     includeScore: true,
     threshold: 0.9, // MUY PERMISIVO - traer todos los resultados posibles
     ignoreLocation: true,
     distance: 1000, // Permitir coincidencias muy lejanas
-    minMatchCharLength: 2 // Mínimo 2 caracteres
+    minMatchCharLength: 2, // Mínimo 2 caracteres
+    shouldSort: true,
+    findAllMatches: true // IMPORTANTE: Encuentra TODAS las coincidencias
   });
   
   const query = normTokens.join(' ');
@@ -65,16 +67,17 @@ function rankProducts(products, tokens, sku) {
   
   // fallback más exhaustivo: buscar en TODOS los campos
   if (results.length === 0 && normTokens.length) {
+    logger.info('Using exhaustive fallback search (Fuse found nothing)');
     results = products.map((row) => {
       const searchText = normalizeText([
         row.DETALLE1 || '',
         row.DETALLE || '',
         row.MARCA || '',
         row.MODELO || '',
+        row.CATEGORIA || '',
         row.RUBRO || '',
         row.SUBRUBRO || '',
-        row.COD_ALFABA || '',
-        row.CODIGO || ''
+        row.COD_ALFABA || ''
       ].join(' '));
       
       let score = 0;
@@ -84,9 +87,13 @@ function rankProducts(products, tokens, sku) {
       if (sku && String(row.COD_ALFABA || '').toUpperCase() === sku) score += 5;
       return { row, score };
     }).filter((x) => x.score > 0);
+    
+    logger.info({ exhaustiveResultsCount: results.length }, 'Exhaustive search results');
   }
   
-  return results.sort((a, b) => b.score - a.score).map((x) => x.row);
+  const sortedResults = results.sort((a, b) => b.score - a.score).map((x) => x.row);
+  logger.info({ totalResultsReturned: sortedResults.length }, 'rankProducts final count');
+  return sortedResults;
 }
 
 function buildPriceIndex(priceRows) {
@@ -124,7 +131,9 @@ function rankPriceRows(priceRows, tokens, sku) {
     threshold: 0.9, // MUY PERMISIVO
     ignoreLocation: true,
     distance: 1000,
-    minMatchCharLength: 2
+    minMatchCharLength: 2,
+    shouldSort: true,
+    findAllMatches: true
   });
   const query = normTokens.join(' ');
   let results = query ? fuse.search(query).map((r) => ({ row: r.item, score: 1 - (r.score ?? 0) })) : [];
@@ -137,6 +146,7 @@ function rankPriceRows(priceRows, tokens, sku) {
   }
   
   if (results.length === 0 && normTokens.length) {
+    logger.info('Using exhaustive fallback for prices (Fuse found nothing)');
     results = priceRows.map((row) => {
       const searchText = normalizeText([
         row.DETALLE || '',
@@ -154,9 +164,13 @@ function rankPriceRows(priceRows, tokens, sku) {
       if (sku && String(row.COD_ALFABA || '').toUpperCase() === sku) score += 5;
       return { row, score };
     }).filter((x) => x.score > 0);
+    
+    logger.info({ exhaustivePriceResultsCount: results.length }, 'Exhaustive price search results');
   }
   
-  return results.sort((a, b) => b.score - a.score).map((x) => x.row);
+  const sortedResults = results.sort((a, b) => b.score - a.score).map((x) => x.row);
+  logger.info({ totalPriceResultsReturned: sortedResults.length }, 'rankPriceRows final count');
+  return sortedResults;
 }
 
 export async function answerQuestion({ question, _phoneNumber, productCode, limit }) {
