@@ -45,6 +45,7 @@ Los productos de Steel Tiger usan notación especial para años de compatibilida
 Ejemplo: "Defensa Baja Negra para Nissan Frontier 16-21" significa compatible con Nissan Frontier desde 2016 hasta 2021.
 
 Endpoints
+- `GET /test` → **Interfaz web de prueba** para hacer consultas en lenguaje natural (incluye debug info)
 - `GET /health` → estado del servicio, `dataDir`, datasets disponibles
 - `GET /datasets` → lista de datasets locales
 - `GET /data/:dataset` → devuelve datos de un dataset

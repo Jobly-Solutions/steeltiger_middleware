@@ -25,6 +25,486 @@ const logger = pino(
 app.use(cors());
 app.use(express.json({ limit: '2mb' }));
 
+// Test UI for AI queries
+app.get('/test', (_req, res) => {
+  res.send(`
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steel Tiger AI - Test Interface</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      color: white;
+      margin-bottom: 30px;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
+    }
+    .search-box {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .search-input {
+      flex: 1;
+      padding: 15px 20px;
+      border: 2px solid #e0e0e0;
+      border-radius: 12px;
+      font-size: 16px;
+      transition: all 0.3s;
+    }
+    .search-input:focus {
+      outline: none;
+      border-color: #667eea;
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+    .search-btn {
+      padding: 15px 40px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .search-btn:hover {
+      transform: translateY(-2px);
+    }
+    .search-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+    .options {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .option-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .option-group label {
+      font-weight: 500;
+      color: #333;
+    }
+    .option-group input[type="number"],
+    .option-group input[type="text"] {
+      padding: 8px 12px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      width: 150px;
+    }
+    .examples {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .example-btn {
+      padding: 8px 16px;
+      background: #f0f0f0;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+    .example-btn:hover {
+      background: #667eea;
+      color: white;
+      border-color: #667eea;
+    }
+    .loading {
+      text-align: center;
+      padding: 40px;
+      color: #667eea;
+      font-size: 18px;
+      display: none;
+    }
+    .spinner {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #667eea;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .results {
+      display: none;
+    }
+    .result-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #e0e0e0;
+    }
+    .result-header h2 {
+      color: #333;
+      font-size: 1.5rem;
+    }
+    .result-stats {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+    .stat {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .stat-value {
+      font-weight: 600;
+      color: #667eea;
+    }
+    .answer-box {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .products-grid {
+      display: grid;
+      gap: 15px;
+    }
+    .product-card {
+      border: 2px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 20px;
+      transition: all 0.3s;
+    }
+    .product-card:hover {
+      border-color: #667eea;
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+    }
+    .product-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      margin-bottom: 15px;
+    }
+    .product-title {
+      flex: 1;
+      font-weight: 600;
+      color: #333;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    .product-price {
+      font-size: 24px;
+      font-weight: 700;
+      color: #667eea;
+      margin-left: 20px;
+    }
+    .product-details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      margin-top: 15px;
+    }
+    .product-detail {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .detail-label {
+      font-size: 12px;
+      color: #666;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    .detail-value {
+      font-size: 14px;
+      color: #333;
+      font-weight: 500;
+    }
+    .sku-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: #f0f0f0;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #666;
+    }
+    .error {
+      background: #fee;
+      border: 2px solid #fcc;
+      color: #c33;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+    .debug-section {
+      margin-top: 20px;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 12px;
+      border: 2px solid #e0e0e0;
+    }
+    .debug-section h3 {
+      color: #333;
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+    .debug-content {
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      max-height: 400px;
+      overflow: auto;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🔍 Steel Tiger AI Search</h1>
+      <p>Interfaz de prueba para consultas en lenguaje natural</p>
+    </div>
+
+    <div class="card">
+      <div class="search-box">
+        <input 
+          type="text" 
+          class="search-input" 
+          id="searchInput" 
+          placeholder="Ej: tenes defensas para nissan 19, cuanto sale un enganche amarok, etc..."
+          autocomplete="off"
+        />
+        <button class="search-btn" id="searchBtn">Buscar</button>
+      </div>
+
+      <div class="options">
+        <div class="option-group">
+          <label>Límite:</label>
+          <input type="number" id="limitInput" value="10" min="1" max="100" />
+        </div>
+        <div class="option-group">
+          <label>Teléfono (opcional):</label>
+          <input type="text" id="phoneInput" placeholder="+54..." />
+        </div>
+        <div class="option-group">
+          <label>Código Producto (opcional):</label>
+          <input type="text" id="productCodeInput" placeholder="DBN114" />
+        </div>
+      </div>
+
+      <div class="examples">
+        <strong style="margin-right: 10px;">Ejemplos:</strong>
+        <button class="example-btn" data-query="tenes defensas para nissan 19">Defensas Nissan 19</button>
+        <button class="example-btn" data-query="cuanto sale enganche amarok">Enganche Amarok</button>
+        <button class="example-btn" data-query="lona maritima hilux">Lona Hilux</button>
+        <button class="example-btn" data-query="accesorios ranger">Accesorios Ranger</button>
+      </div>
+
+      <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Buscando productos...</p>
+      </div>
+
+      <div class="results" id="results">
+        <div class="result-header">
+          <h2>Resultados</h2>
+          <div class="result-stats">
+            <div class="stat">
+              <span>Encontrados:</span>
+              <span class="stat-value" id="resultCount">0</span>
+            </div>
+            <div class="stat">
+              <span>Tiempo:</span>
+              <span class="stat-value" id="resultTime">0ms</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="answer-box" id="answerBox"></div>
+        
+        <div class="products-grid" id="productsGrid"></div>
+
+        <div class="debug-section">
+          <h3>🔧 Debug Info</h3>
+          <div class="debug-content" id="debugInfo"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    const limitInput = document.getElementById('limitInput');
+    const phoneInput = document.getElementById('phoneInput');
+    const productCodeInput = document.getElementById('productCodeInput');
+    const loading = document.getElementById('loading');
+    const results = document.getElementById('results');
+    const answerBox = document.getElementById('answerBox');
+    const productsGrid = document.getElementById('productsGrid');
+    const resultCount = document.getElementById('resultCount');
+    const resultTime = document.getElementById('resultTime');
+    const debugInfo = document.getElementById('debugInfo');
+
+    // Example buttons
+    document.querySelectorAll('.example-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        searchInput.value = btn.dataset.query;
+        performSearch();
+      });
+    });
+
+    // Search on Enter
+    searchInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') performSearch();
+    });
+
+    // Search button
+    searchBtn.addEventListener('click', performSearch);
+
+    async function performSearch() {
+      const question = searchInput.value.trim();
+      if (!question) return;
+
+      const limit = parseInt(limitInput.value) || 10;
+      const phone = phoneInput.value.trim();
+      const productCode = productCodeInput.value.trim();
+
+      loading.style.display = 'block';
+      results.style.display = 'none';
+      searchBtn.disabled = true;
+
+      const startTime = Date.now();
+
+      try {
+        const body = {
+          question,
+          limit
+        };
+
+        if (phone) body._phoneNumber = phone;
+        if (productCode) body.productCode = productCode;
+
+        const response = await fetch('/ai/query', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body)
+        });
+
+        const endTime = Date.now();
+        const data = await response.json();
+
+        if (!response.ok) {
+          throw new Error(data.error || 'Error en la búsqueda');
+        }
+
+        displayResults(data, endTime - startTime);
+      } catch (error) {
+        loading.style.display = 'none';
+        results.style.display = 'block';
+        productsGrid.innerHTML = \`<div class="error"><strong>Error:</strong> \${error.message}</div>\`;
+        debugInfo.textContent = JSON.stringify({ error: error.message, stack: error.stack }, null, 2);
+      } finally {
+        searchBtn.disabled = false;
+      }
+    }
+
+    function displayResults(data, timeMs) {
+      loading.style.display = 'none';
+      results.style.display = 'block';
+
+      // Answer
+      answerBox.textContent = data.answer || 'Sin respuesta';
+
+      // Stats
+      const matches = data.matches || [];
+      resultCount.textContent = matches.length;
+      resultTime.textContent = timeMs + 'ms';
+
+      // Products
+      if (matches.length > 0) {
+        productsGrid.innerHTML = matches.map(product => \`
+          <div class="product-card">
+            <div class="product-header">
+              <div class="product-title">\${product.producto || 'Sin nombre'}</div>
+              <div class="product-price">\${product.precio || 'N/D'}</div>
+            </div>
+            <div class="product-details">
+              \${product.sku ? \`<div class="product-detail">
+                <span class="detail-label">SKU</span>
+                <span class="sku-badge">\${product.sku}</span>
+              </div>\` : ''}
+              \${product.marca ? \`<div class="product-detail">
+                <span class="detail-label">Marca</span>
+                <span class="detail-value">\${product.marca}</span>
+              </div>\` : ''}
+              \${product.modelo ? \`<div class="product-detail">
+                <span class="detail-label">Modelo</span>
+                <span class="detail-value">\${product.modelo}</span>
+              </div>\` : ''}
+              \${product.listaCategoria ? \`<div class="product-detail">
+                <span class="detail-label">Lista</span>
+                <span class="detail-value">\${product.listaCategoria}</span>
+              </div>\` : ''}
+            </div>
+          </div>
+        \`).join('');
+      } else {
+        productsGrid.innerHTML = '<div style="text-align: center; padding: 40px; color: #666;">No se encontraron productos</div>';
+      }
+
+      // Debug info
+      debugInfo.textContent = JSON.stringify(data, null, 2);
+    }
+  </script>
+</body>
+</html>
+  `);
+});
+
 app.get('/health', (_req, res) => {
   res.json({ ok: true, service: 'steel-tiger-middleware', dataDir: getDataDir(), datasets: getAvailableDatasets() });
 });
