@@ -21,27 +21,13 @@ function extractCandidateSku(question) {
 }
 
 async function extractIntentWithAI(question) {
-  if (!openai) {
-    return { intent: 'price_lookup', keywords: [], sku: extractCandidateSku(question) };
-  }
-  const sys = 'Devuelve UN JSON puro con: intent ("price_lookup" o "info_lookup"), keywords (array de palabras clave), sku (string o null), brand (string o null), model (string o null). Nada más.';
-  const user = `Texto: "${question}"`;
-  const resp = await openai.chat.completions.create({
-    model: process.env.OPENAI_MODEL || 'gpt-4o-mini',
-    messages: [ { role: 'system', content: sys }, { role: 'user', content: user } ],
-    temperature: 0,
-    max_tokens: 150
-  });
-  const raw = resp?.choices?.[0]?.message?.content || '{}';
-  try {
-    const jsonStart = raw.indexOf('{');
-    const jsonEnd = raw.lastIndexOf('}');
-    const sliced = jsonStart >= 0 ? raw.slice(jsonStart, jsonEnd + 1) : raw;
-    const parsed = JSON.parse(sliced);
-    return parsed;
-  } catch {
-    return { intent: 'price_lookup', keywords: [], sku: extractCandidateSku(question) };
-  }
+  // No usar IA, hacer búsqueda directa y exhaustiva
+  const words = question.toLowerCase().split(/\s+/).filter(w => w.length >= 2);
+  return { 
+    intent: 'price_lookup', 
+    keywords: words, 
+    sku: extractCandidateSku(question) 
+  };
 }
 
 function rankProducts(products, tokens, sku) {
@@ -60,9 +46,10 @@ function rankProducts(products, tokens, sku) {
       { name: 'CODIGO', weight: 0.05 }
     ],
     includeScore: true,
-    threshold: 0.6, // Aumentar threshold para traer más resultados
+    threshold: 0.9, // MUY PERMISIVO - traer todos los resultados posibles
     ignoreLocation: true,
-    distance: 200 // Permitir coincidencias más lejanas
+    distance: 1000, // Permitir coincidencias muy lejanas
+    minMatchCharLength: 2 // Mínimo 2 caracteres
   });
   
   const query = normTokens.join(' ');
@@ -134,9 +121,10 @@ function rankPriceRows(priceRows, tokens, sku) {
       { name: 'CATEGORIA', weight: 0.1 }
     ],
     includeScore: true,
-    threshold: 0.6,
+    threshold: 0.9, // MUY PERMISIVO
     ignoreLocation: true,
-    distance: 200
+    distance: 1000,
+    minMatchCharLength: 2
   });
   const query = normTokens.join(' ');
   let results = query ? fuse.search(query).map((r) => ({ row: r.item, score: 1 - (r.score ?? 0) })) : [];
@@ -286,23 +274,34 @@ export async function answerQuestion({ question, _phoneNumber, productCode, limi
   }
   const expandedTokens = Array.from(expanded);
   
-  // Usar el límite proporcionado o traer TODOS los resultados por defecto
-  const maxResults = limit || 100;
+  // NO APLICAR LÍMITE - Traer TODOS los resultados que coincidan
+  const maxResults = limit || 999999; // Sin límite efectivo
   
   logger.info({
     tokens: expandedTokens,
     sku,
-    maxResults
+    maxResults,
+    totalProductos: productos.length,
+    totalPrecios: precios.length
   }, 'Search parameters');
   
-  const candidates = rankProducts(productos, expandedTokens, sku).slice(0, maxResults);
-  const priceOnlyCandidates = rankPriceRows(precios, expandedTokens, sku).slice(0, maxResults);
+  // Buscar SIN LÍMITE - traer todos los que coincidan
+  const allCandidates = rankProducts(productos, expandedTokens, sku);
+  const allPriceCandidates = rankPriceRows(precios, expandedTokens, sku);
+  
+  // Solo aplicar límite si el usuario lo especificó explícitamente
+  const candidates = limit ? allCandidates.slice(0, limit) : allCandidates;
+  const priceOnlyCandidates = limit ? allPriceCandidates.slice(0, limit) : allPriceCandidates;
+  
   const priceIdx = buildPriceIndex(precios);
 
   logger.info({
+    allCandidatesCount: allCandidates.length,
+    allPriceCandidatesCount: allPriceCandidates.length,
     candidatesCount: candidates.length,
-    priceOnlyCandidatesCount: priceOnlyCandidates.length
-  }, 'Search results');
+    priceOnlyCandidatesCount: priceOnlyCandidates.length,
+    limitApplied: !!limit
+  }, 'Search results - ALL products found');
 
   const answers = [];
   for (const prod of candidates) {
@@ -387,22 +386,11 @@ export async function answerQuestion({ question, _phoneNumber, productCode, limi
     }
   } catch {}
 
-  // Si no hay candidatos, intentamos respuesta corta por IA con contexto ligero
-  if (openai && productos.length > 0) {
-    const sample = productos.slice(0, 50);
-    const system = 'Responde en una sola oración, breve. Si no hay coincidencias, sugiere buscar por código o palabras clave exactas.';
-    const user = `Pregunta: ${question}\nEjemplos de productos (JSON): ${JSON.stringify(sample).slice(0, 8000)}`;
-    const resp = await openai.chat.completions.create({
-      model: process.env.OPENAI_MODEL || 'gpt-4o-mini',
-      messages: [ { role: 'system', content: system }, { role: 'user', content: user } ],
-      temperature: 0.2,
-      max_tokens: 80
-    });
-    const content = resp?.choices?.[0]?.message?.content || 'No encontré coincidencias locales.';
-    return { answer: content, matches: [] };
-  }
-
-  return { answer: 'No encontré coincidencias locales. Probá con el código (ej. ASE011) o palabras más específicas.', matches: [] };
+  // No usar IA - devolver mensaje directo
+  return { 
+    answer: 'No encontré productos que coincidan con tu búsqueda. Probá con otras palabras clave o código de producto.', 
+    matches: [] 
+  };
 }
 
 
