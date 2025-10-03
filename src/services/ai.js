@@ -44,37 +44,59 @@ async function extractIntentWithAI(question) {
 
 function rankProducts(products, tokens, sku) {
   const normTokens = tokens.map(normalizeText).filter(Boolean);
-  // Fuzzy: usar Fuse sobre campos clave
+  
+  // Fuzzy: usar Fuse sobre TODOS los campos relevantes
   const fuse = new Fuse(products, {
     keys: [
-      { name: 'DETALLE1', weight: 0.6 },
-      { name: 'MARCA', weight: 0.2 },
+      { name: 'DETALLE1', weight: 0.4 },
+      { name: 'DETALLE', weight: 0.4 },
+      { name: 'MARCA', weight: 0.15 },
       { name: 'MODELO', weight: 0.15 },
-      { name: 'COD_ALFABA', weight: 0.05 }
+      { name: 'RUBRO', weight: 0.1 },
+      { name: 'SUBRUBRO', weight: 0.1 },
+      { name: 'COD_ALFABA', weight: 0.05 },
+      { name: 'CODIGO', weight: 0.05 }
     ],
     includeScore: true,
-    threshold: 0.4,
+    threshold: 0.6, // Aumentar threshold para traer más resultados
     ignoreLocation: true,
+    distance: 200 // Permitir coincidencias más lejanas
   });
+  
   const query = normTokens.join(' ');
   let results = query ? fuse.search(query).map((r) => ({ row: r.item, score: 1 - (r.score ?? 0) })) : [];
+  
   // boost por SKU exacto
   if (sku) {
     results = results.map((r) => ({
       row: r.row,
-      score: r.score + (String(r.row.COD_ALFABA || '').toUpperCase() === sku ? 1.5 : 0)
+      score: r.score + (String(r.row.COD_ALFABA || '').toUpperCase() === sku ? 2.0 : 0)
     }));
   }
-  // fallback si no hay resultados con fuzzy
+  
+  // fallback más exhaustivo: buscar en TODOS los campos
   if (results.length === 0 && normTokens.length) {
     results = products.map((row) => {
-      const hay = normalizeText(`${row.DETALLE1 || ''} ${row.MARCA || ''} ${row.MODELO || ''} ${row.COD_ALFABA || ''}`);
+      const searchText = normalizeText([
+        row.DETALLE1 || '',
+        row.DETALLE || '',
+        row.MARCA || '',
+        row.MODELO || '',
+        row.RUBRO || '',
+        row.SUBRUBRO || '',
+        row.COD_ALFABA || '',
+        row.CODIGO || ''
+      ].join(' '));
+      
       let score = 0;
-      for (const t of normTokens) if (t && hay.includes(t)) score += 1;
-      if (sku && String(row.COD_ALFABA || '').toUpperCase() === sku) score += 3;
+      for (const t of normTokens) {
+        if (t && searchText.includes(t)) score += 1;
+      }
+      if (sku && String(row.COD_ALFABA || '').toUpperCase() === sku) score += 5;
       return { row, score };
     }).filter((x) => x.score > 0);
   }
+  
   return results.sort((a, b) => b.score - a.score).map((x) => x.row);
 }
 
@@ -102,36 +124,54 @@ function rankPriceRows(priceRows, tokens, sku) {
   const normTokens = tokens.map(normalizeText).filter(Boolean);
   const fuse = new Fuse(priceRows, {
     keys: [
-      { name: 'DETALLE', weight: 0.8 },
-      { name: 'COD_ALFABA', weight: 0.2 }
+      { name: 'DETALLE', weight: 0.5 },
+      { name: 'DETALLE1', weight: 0.5 },
+      { name: 'RUBRO', weight: 0.15 },
+      { name: 'SUBRUBRO', weight: 0.15 },
+      { name: 'COD_ALFABA', weight: 0.1 },
+      { name: 'CATEGORIA', weight: 0.1 }
     ],
     includeScore: true,
-    threshold: 0.4,
+    threshold: 0.6,
     ignoreLocation: true,
+    distance: 200
   });
   const query = normTokens.join(' ');
   let results = query ? fuse.search(query).map((r) => ({ row: r.item, score: 1 - (r.score ?? 0) })) : [];
+  
   if (sku) {
     results = results.map((r) => ({
       row: r.row,
-      score: r.score + (String(r.row.COD_ALFABA || '').toUpperCase() === sku ? 1.5 : 0)
+      score: r.score + (String(r.row.COD_ALFABA || '').toUpperCase() === sku ? 2.0 : 0)
     }));
   }
+  
   if (results.length === 0 && normTokens.length) {
     results = priceRows.map((row) => {
-      const hay = normalizeText(`${row.DETALLE || ''} ${row.COD_ALFABA || ''}`);
+      const searchText = normalizeText([
+        row.DETALLE || '',
+        row.DETALLE1 || '',
+        row.RUBRO || '',
+        row.SUBRUBRO || '',
+        row.COD_ALFABA || '',
+        row.CATEGORIA || ''
+      ].join(' '));
+      
       let score = 0;
-      for (const t of normTokens) if (t && hay.includes(t)) score += 1;
-      if (sku && String(row.COD_ALFABA || '').toUpperCase() === sku) score += 3;
+      for (const t of normTokens) {
+        if (t && searchText.includes(t)) score += 1;
+      }
+      if (sku && String(row.COD_ALFABA || '').toUpperCase() === sku) score += 5;
       return { row, score };
     }).filter((x) => x.score > 0);
   }
+  
   return results.sort((a, b) => b.score - a.score).map((x) => x.row);
 }
 
-export async function answerQuestion({ question, _phoneNumber, productCode }) {
+export async function answerQuestion({ question, _phoneNumber, productCode, limit }) {
   // Si se proporciona _phoneNumber y productCode, usar consulta específica por teléfono
-  if (_phoneNumber && productCode) {
+  if (_phoneNumber && productCode && _phoneNumber !== '_phoneNumber') {
     try {
       const result = getBestPriceForClient(productCode, _phoneNumber, { getDataset });
       
@@ -210,8 +250,12 @@ export async function answerQuestion({ question, _phoneNumber, productCode }) {
     }
   }
   const expandedTokens = Array.from(expanded);
-  const candidates = rankProducts(productos, expandedTokens, sku).slice(0, 5);
-  const priceOnlyCandidates = rankPriceRows(precios, expandedTokens, sku).slice(0, 5);
+  
+  // Usar el límite proporcionado o traer TODOS los resultados por defecto
+  const maxResults = limit || 100;
+  
+  const candidates = rankProducts(productos, expandedTokens, sku).slice(0, maxResults);
+  const priceOnlyCandidates = rankPriceRows(precios, expandedTokens, sku).slice(0, maxResults);
   const priceIdx = buildPriceIndex(precios);
 
   const answers = [];
@@ -254,6 +298,11 @@ export async function answerQuestion({ question, _phoneNumber, productCode }) {
   }
 
   if (answers.length > 0) {
+    // Si hay muchos resultados, devolver resumen con todos los matches
+    if (answers.length > 5) {
+      const text = `Encontré ${answers.length} productos que coinciden con tu búsqueda. Aquí están los resultados:`;
+      return { answer: text, matches: answers };
+    }
     const top = answers[0];
     const text = `Precio ${top.sku ? `(${top.sku}) ` : ''}${top.producto}: ${top.precio}`;
     return { answer: text, matches: answers };
