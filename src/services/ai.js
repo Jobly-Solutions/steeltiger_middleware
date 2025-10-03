@@ -20,6 +20,75 @@ function extractCandidateSku(question) {
   return m ? m[0].toUpperCase() : null;
 }
 
+/**
+ * Extrae el año de la consulta del usuario
+ * Ejemplos: "nissan 19" -> 2019, "amarok 2022" -> 2022, "frontier 16" -> 2016
+ */
+function extractYearFromQuery(question) {
+  const normalized = question.toLowerCase().trim();
+  
+  // Buscar año completo (2016-2024)
+  const fullYearMatch = normalized.match(/\b(20[0-2][0-9])\b/);
+  if (fullYearMatch) {
+    return parseInt(fullYearMatch[1]);
+  }
+  
+  // Buscar año corto (16-24) - solo si está después de una marca/modelo
+  const shortYearMatch = normalized.match(/(?:nissan|frontier|amarok|hilux|ranger|alaskan|s10|colorado)\s+['"]?(\d{2})\b/);
+  if (shortYearMatch) {
+    const twoDigits = parseInt(shortYearMatch[1]);
+    // Convertir a año completo (asumiendo 2000s si < 50, sino 1900s)
+    return twoDigits >= 0 && twoDigits <= 50 ? 2000 + twoDigits : 1900 + twoDigits;
+  }
+  
+  return null;
+}
+
+/**
+ * Parsea el rango de años de un texto de producto
+ * Ejemplos: "16-21" -> {min: 2016, max: 2021}, "22->" -> {min: 2022, max: null}, "21>" -> {min: 2021, max: null}
+ */
+function parseYearRange(productText) {
+  if (!productText) return null;
+  
+  // Patrón: "16-21" o "2016-2021"
+  const rangeMatch = productText.match(/\b(\d{2}|\d{4})-(\d{2}|\d{4})\b/);
+  if (rangeMatch) {
+    let min = parseInt(rangeMatch[1]);
+    let max = parseInt(rangeMatch[2]);
+    
+    // Convertir años cortos a completos
+    if (min < 100) min = min >= 0 && min <= 50 ? 2000 + min : 1900 + min;
+    if (max < 100) max = max >= 0 && max <= 50 ? 2000 + max : 1900 + max;
+    
+    return { min, max };
+  }
+  
+  // Patrón: "22->" o "21>" (año en adelante)
+  const forwardMatch = productText.match(/\b(\d{2}|\d{4})[-]?>+\b/);
+  if (forwardMatch) {
+    let min = parseInt(forwardMatch[1]);
+    if (min < 100) min = min >= 0 && min <= 50 ? 2000 + min : 1900 + min;
+    return { min, max: null }; // null = hasta el presente
+  }
+  
+  return null;
+}
+
+/**
+ * Verifica si un producto es compatible con el año solicitado
+ */
+function isCompatibleWithYear(productText, targetYear) {
+  if (!targetYear || !productText) return true; // Si no hay año, no filtrar
+  
+  const range = parseYearRange(productText);
+  if (!range) return true; // Si no tiene rango, incluirlo
+  
+  // Verificar si el año está en el rango
+  const inRange = targetYear >= range.min && (range.max === null || targetYear <= range.max);
+  return inRange;
+}
+
 async function extractIntentWithAI(question) {
   // No usar IA, hacer búsqueda directa y exhaustiva
   const words = question.toLowerCase().split(/\s+/).filter(w => w.length >= 2);
@@ -268,6 +337,14 @@ export async function answerQuestion({ question, _phoneNumber, productCode, limi
     logger.error({ err }, 'Error fetching from Steel Tiger');
   }
 
+  // Extraer año de la consulta
+  const targetYear = extractYearFromQuery(question);
+  
+  logger.info({
+    question,
+    extractedYear: targetYear
+  }, 'Year extraction from query');
+
   const tokens = [];
   if (intent?.keywords?.length) tokens.push(...intent.keywords);
   // fallback para palabras comunes
@@ -325,8 +402,21 @@ export async function answerQuestion({ question, _phoneNumber, productCode, limi
     // Elegimos la primera fila (o la de menor PRE_NETO si hay varias)
     const best = plist.reduce((acc, x) => (acc && acc.PRE_NETO < x.PRE_NETO ? acc : x), null) || plist[0];
     const precio = typeof best.PRE_NETO === 'number' ? best.PRE_NETO : (typeof best.PRE_BRUTO === 'number' ? best.PRE_BRUTO : null);
+    
+    const productoText = prod.DETALLE1 || best.DETALLE || '';
+    
+    // Filtrar por compatibilidad de año si el usuario especificó un año
+    if (!isCompatibleWithYear(productoText, targetYear)) {
+      logger.debug({ 
+        producto: productoText, 
+        targetYear, 
+        skipped: true 
+      }, 'Product skipped due to year incompatibility');
+      continue;
+    }
+    
     answers.push({
-      producto: prod.DETALLE1 || '',
+      producto: productoText,
       sku: key,
       marca: prod.MARCA || null,
       modelo: prod.MODELO || null,
@@ -336,32 +426,47 @@ export async function answerQuestion({ question, _phoneNumber, productCode, limi
     });
   }
 
-  logger.info({ answersCount: answers.length }, 'Final answers count');
+  logger.info({ 
+    answersCount: answers.length,
+    filteredByYear: targetYear ? true : false,
+    targetYear 
+  }, 'Final answers count (after year filtering)');
 
   // Si no hay match por productos, intentamos directo con lista de precios
   if (answers.length === 0 && priceOnlyCandidates.length > 0) {
-    const pr = priceOnlyCandidates[0];
-    const key = String(pr.COD_ALFABA || '').trim().toUpperCase();
-    const precio = typeof pr.PRE_NETO === 'number' ? pr.PRE_NETO : (typeof pr.PRE_BRUTO === 'number' ? pr.PRE_BRUTO : null);
-    // Enriquecer con info de productos si existe
-    const prodMatch = productos.find((p) => String(p.COD_ALFABA || '').trim().toUpperCase() === key);
-    const name = prodMatch?.DETALLE1 || pr.DETALLE || '';
-    const text = `Precio ${key ? `(${key}) ` : ''}${name}: ${precio != null ? formatCurrency(precio) : 'N/D'}`;
-    return { answer: text, matches: [{
-      producto: name,
-      sku: key,
-      marca: prodMatch?.MARCA || null,
-      modelo: prodMatch?.MODELO || null,
-      precioNumerico: precio,
-      precio: precio != null ? formatCurrency(precio) : 'N/D',
-      listaCategoria: pr.CATEGORIA || null
-    }] };
+    // Aplicar filtro de año también aquí
+    for (const pr of priceOnlyCandidates) {
+      const key = String(pr.COD_ALFABA || '').trim().toUpperCase();
+      const precio = typeof pr.PRE_NETO === 'number' ? pr.PRE_NETO : (typeof pr.PRE_BRUTO === 'number' ? pr.PRE_BRUTO : null);
+      // Enriquecer con info de productos si existe
+      const prodMatch = productos.find((p) => String(p.COD_ALFABA || '').trim().toUpperCase() === key);
+      const name = prodMatch?.DETALLE1 || pr.DETALLE || '';
+      
+      // Filtrar por año
+      if (!isCompatibleWithYear(name, targetYear)) {
+        continue;
+      }
+      
+      const text = `Precio ${key ? `(${key}) ` : ''}${name}: ${precio != null ? formatCurrency(precio) : 'N/D'}`;
+      return { answer: text, matches: [{
+        producto: name,
+        sku: key,
+        marca: prodMatch?.MARCA || null,
+        modelo: prodMatch?.MODELO || null,
+        precioNumerico: precio,
+        precio: precio != null ? formatCurrency(precio) : 'N/D',
+        listaCategoria: pr.CATEGORIA || null
+      }] };
+    }
   }
 
   if (answers.length > 0) {
     // Si hay muchos resultados, devolver resumen con todos los matches
     if (answers.length > 5) {
-      const text = `Encontré ${answers.length} productos que coinciden con tu búsqueda. Nota: Los años se muestran como '16-21' (del 2016 al 2021), '22->' (del 2022 en adelante), etc. Aquí están los resultados ordenados por relevancia:`;
+      let text = targetYear 
+        ? `Encontré ${answers.length} productos compatibles con tu ${targetYear}.`
+        : `Encontré ${answers.length} productos que coinciden con tu búsqueda.`;
+      text += ` Nota: Los años se muestran como '16-21' (del 2016 al 2021), '22->' (del 2022 en adelante), etc. Aquí están los resultados ordenados por relevancia:`;
       return { answer: text, matches: answers };
     }
     const top = answers[0];
@@ -370,6 +475,11 @@ export async function answerQuestion({ question, _phoneNumber, productCode, limi
     // Agregar explicación de años si el producto contiene notación de año
     if (/\d{2}[-|>]/.test(top.producto)) {
       text += `. Nota: Los años se muestran como '16-21' (del 2016 al 2021), '22->' (del 2022 en adelante), etc.`;
+    }
+    
+    // Mencionar el año si se filtró por año
+    if (targetYear) {
+      text += ` (Compatible con tu ${targetYear})`;
     }
     
     return { answer: text, matches: answers };
