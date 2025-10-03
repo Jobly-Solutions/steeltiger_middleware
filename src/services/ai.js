@@ -92,35 +92,41 @@ function isCompatibleWithYear(productText, targetYear) {
 async function extractIntentWithAI(question) {
   // No usar IA, hacer búsqueda directa y exhaustiva
   const words = question.toLowerCase().split(/\s+/).filter(w => w.length >= 2);
+  
+  // Detectar si pregunta por enganches
+  const isEngancheQuery = /enganche|enganche|tow|hitch/i.test(question);
+  
   return { 
     intent: 'price_lookup', 
     keywords: words, 
-    sku: extractCandidateSku(question) 
+    sku: extractCandidateSku(question),
+    isEngancheQuery
   };
 }
 
 function rankProducts(products, tokens, sku) {
   const normTokens = tokens.map(normalizeText).filter(Boolean);
   
-  // Fuzzy: usar Fuse sobre TODOS los campos relevantes
+  // Fuzzy: usar Fuse sobre TODOS los campos relevantes con pesos optimizados
   const fuse = new Fuse(products, {
     keys: [
-      { name: 'DETALLE1', weight: 0.5 },      // Productos
-      { name: 'DETALLE', weight: 0.5 },       // Precios
+      { name: 'DETALLE1', weight: 0.4 },      // Productos - más peso
+      { name: 'DETALLE', weight: 0.4 },       // Precios - más peso
+      { name: 'MODELO', weight: 0.3 },        // Modelo importante (hilux, amarok, etc)
       { name: 'MARCA', weight: 0.2 },
-      { name: 'MODELO', weight: 0.2 },
+      { name: 'RUBRO', weight: 0.2 },         // Precios (enganches, defensas, etc)
+      { name: 'SUBRUBRO', weight: 0.2 },      // Precios
       { name: 'CATEGORIA', weight: 0.15 },    // Ambos
-      { name: 'RUBRO', weight: 0.1 },         // Precios
-      { name: 'SUBRUBRO', weight: 0.1 },      // Precios
       { name: 'COD_ALFABA', weight: 0.1 }     // Ambos
     ],
     includeScore: true,
-    threshold: 0.9, // MUY PERMISIVO - traer todos los resultados posibles
+    threshold: 0.95, // MUY MUY PERMISIVO
     ignoreLocation: true,
-    distance: 1000, // Permitir coincidencias muy lejanas
-    minMatchCharLength: 2, // Mínimo 2 caracteres
+    distance: 10000, // Permitir coincidencias MUY lejanas
+    minMatchCharLength: 1, // Buscar desde 1 carácter
     shouldSort: true,
-    findAllMatches: true // IMPORTANTE: Encuentra TODAS las coincidencias
+    findAllMatches: true, // IMPORTANTE: Encuentra TODAS las coincidencias
+    useExtendedSearch: false
   });
   
   const query = normTokens.join(' ');
@@ -189,18 +195,20 @@ function rankPriceRows(priceRows, tokens, sku) {
   const normTokens = tokens.map(normalizeText).filter(Boolean);
   const fuse = new Fuse(priceRows, {
     keys: [
-      { name: 'DETALLE', weight: 0.5 },
-      { name: 'DETALLE1', weight: 0.5 },
-      { name: 'RUBRO', weight: 0.15 },
-      { name: 'SUBRUBRO', weight: 0.15 },
+      { name: 'DETALLE', weight: 0.4 },
+      { name: 'DETALLE1', weight: 0.4 },
+      { name: 'MODELO', weight: 0.3 },
+      { name: 'RUBRO', weight: 0.2 },
+      { name: 'SUBRUBRO', weight: 0.2 },
+      { name: 'MARCA', weight: 0.2 },
       { name: 'COD_ALFABA', weight: 0.1 },
       { name: 'CATEGORIA', weight: 0.1 }
     ],
     includeScore: true,
-    threshold: 0.9, // MUY PERMISIVO
+    threshold: 0.95, // MUY MUY PERMISIVO
     ignoreLocation: true,
-    distance: 1000,
-    minMatchCharLength: 2,
+    distance: 10000,
+    minMatchCharLength: 1,
     shouldSort: true,
     findAllMatches: true
   });
@@ -352,10 +360,19 @@ export async function answerQuestion({ question, _phoneNumber, productCode, limi
   tokens.push(...fallbackWords);
 
   const sku = intent?.sku || extractCandidateSku(question);
-  // Sinónimos básicos
+  // Sinónimos expandidos
   const synonyms = [
-    ['lona maritima', 'cobertor', 'tapa', 'cover'],
-    ['amarok', 'vw amarok', 'volkswagen amarok']
+    ['lona maritima', 'cobertor', 'tapa', 'cover', 'lona'],
+    ['amarok', 'vw amarok', 'volkswagen amarok', 'vw'],
+    ['hilux', 'toyota hilux', 'toyota'],
+    ['frontier', 'nissan frontier', 'nissan'],
+    ['ranger', 'ford ranger', 'ford'],
+    ['s10', 'chevrolet s10', 'chevy s10', 'chevrolet'],
+    ['enganche', 'enganches', 'tow', 'hitch', 'enganche st'],
+    ['acople', 'acoples', 'bola', 'coupling'],
+    ['defensa', 'defensas', 'bumper', 'paragolpe'],
+    ['estribos', 'estribo', 'pisaderas', 'step bar'],
+    ['barra', 'barras', 'roll bar', 'barra antivuelco']
   ];
   const expanded = new Set(tokens.map((t) => normalizeText(t)));
   for (const group of synonyms) {
@@ -394,13 +411,41 @@ export async function answerQuestion({ question, _phoneNumber, productCode, limi
     limitApplied: !!limit
   }, 'Search results - ALL products found');
 
+  // Determinar lista a usar: lista del cliente o LISTA 1 por defecto
+  let clientList = 'LISTA 1'; // Default
+  if (_phoneNumber && _phoneNumber !== '_phoneNumber') {
+    const { findClientByPhone } = await import('./braviloClient.js');
+    const datasetManager = { getDataset };
+    const client = findClientByPhone(_phoneNumber, datasetManager);
+    if (client && (client.CATEGORIA || client.LISTA)) {
+      clientList = client.CATEGORIA || client.LISTA;
+      logger.info({ clientList, phoneNumber: _phoneNumber }, 'Using client assigned list');
+    }
+  }
+  logger.info({ clientList }, 'Price list to use');
+
   const answers = [];
   for (const prod of candidates) {
     const key = String(prod.COD_ALFABA || '').trim().toUpperCase();
     const plist = priceIdx.get(key) || [];
     if (plist.length === 0) continue;
-    // Elegimos la primera fila (o la de menor PRE_NETO si hay varias)
-    const best = plist.reduce((acc, x) => (acc && acc.PRE_NETO < x.PRE_NETO ? acc : x), null) || plist[0];
+    
+    // Filtrar precios por la lista asignada
+    const pricesForList = plist.filter(p => {
+      const priceList = (p.CATEGORIA || p.LISTA || '').toUpperCase();
+      return priceList === clientList.toUpperCase();
+    });
+    
+    // Si no hay precios para esa lista, usar cualquier precio disponible
+    const availablePrices = pricesForList.length > 0 ? pricesForList : plist;
+    
+    // Elegir el mejor precio (menor PRE_NETO)
+    const best = availablePrices.reduce((acc, x) => {
+      const accPrice = acc && (acc.PRE_NETO || acc.PRE_BRUTO || Infinity);
+      const xPrice = x.PRE_NETO || x.PRE_BRUTO || Infinity;
+      return accPrice < xPrice ? acc : x;
+    }, null) || availablePrices[0];
+    
     const precio = typeof best.PRE_NETO === 'number' ? best.PRE_NETO : (typeof best.PRE_BRUTO === 'number' ? best.PRE_BRUTO : null);
     
     const productoText = prod.DETALLE1 || best.DETALLE || '';
@@ -422,7 +467,7 @@ export async function answerQuestion({ question, _phoneNumber, productCode, limi
       modelo: prod.MODELO || null,
       precioNumerico: precio,
       precio: precio != null ? formatCurrency(precio) : 'N/D',
-      listaCategoria: best.CATEGORIA || null
+      listaCategoria: best.CATEGORIA || best.LISTA || clientList
     });
   }
 
@@ -461,28 +506,45 @@ export async function answerQuestion({ question, _phoneNumber, productCode, limi
   }
 
   if (answers.length > 0) {
+    // Recomendar acoples si preguntaron por enganches
+    const shouldRecommendAcoples = intent?.isEngancheQuery && 
+      answers.some(a => /enganche/i.test(a.producto));
+    
     // Si hay muchos resultados, devolver resumen con todos los matches
     if (answers.length > 5) {
       let text = targetYear 
         ? `Encontré ${answers.length} productos compatibles con tu ${targetYear}.`
         : `Encontré ${answers.length} productos que coinciden con tu búsqueda.`;
-      text += ` Nota: Los años se muestran como '16-21' (del 2016 al 2021), '22->' (del 2022 en adelante), etc. Aquí están los resultados ordenados por relevancia:`;
-      return { answer: text, matches: answers };
+      text += ` Precios según ${clientList}. Nota: Los años se muestran como '16-21' (del 2016 al 2021), '22->' (del 2022 en adelante), etc.`;
+      
+      if (shouldRecommendAcoples) {
+        text += ` 💡 Tip: Los enganches no incluyen acople. Te recomiendo consultar también por acoples para completar la instalación.`;
+      }
+      
+      return { answer: text, matches: answers, clientList };
     }
     const top = answers[0];
-    let text = `Precio ${top.sku ? `(${top.sku}) ` : ''}${top.producto}: ${top.precio}`;
+    let text = `${top.producto} - ${top.precio} (${clientList})`;
+    if (top.sku) {
+      text += ` [SKU: ${top.sku}]`;
+    }
     
     // Agregar explicación de años si el producto contiene notación de año
     if (/\d{2}[-|>]/.test(top.producto)) {
-      text += `. Nota: Los años se muestran como '16-21' (del 2016 al 2021), '22->' (del 2022 en adelante), etc.`;
+      text += `. Nota: '18->' significa del 2018 en adelante, '16-21' del 2016 al 2021.`;
     }
     
     // Mencionar el año si se filtró por año
     if (targetYear) {
-      text += ` (Compatible con tu ${targetYear})`;
+      text += ` ✅ Compatible con tu ${targetYear}.`;
     }
     
-    return { answer: text, matches: answers };
+    // Recomendar acoples si es un enganche
+    if (shouldRecommendAcoples) {
+      text += ` 💡 Importante: Este enganche no incluye acople. ¿Necesitás cotizar acoples también?`;
+    }
+    
+    return { answer: text, matches: answers, clientList };
   }
 
   // Fallback: intentar refrescar datasets en vivo y reintentar
