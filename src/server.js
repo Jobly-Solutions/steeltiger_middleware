@@ -4,6 +4,9 @@ import cors from 'cors';
 import { createServer } from 'http';
 import pino from 'pino';
 import pretty from 'pino-pretty';
+import archiver from 'archiver';
+import fs from 'fs';
+import path from 'path';
 import { scheduleRefresh, getAvailableDatasets, getDataset, refreshAllDatasets, searchDatasets, joinDatasets, getDataDir, syncClientDataToBravilo } from './services/datasetManager.js';
 import { fetchDataset, authorizeSteel } from './services/steelTigerClient.js';
 import { answerQuestion } from './services/ai.js';
@@ -376,6 +379,94 @@ app.get('/ai/query-simple', async (req, res) => {
   } catch (err) {
     logger.error(err);
     res.status(500).json({ error: 'AI query failed' });
+  }
+});
+
+// Download all datasets as ZIP
+app.get('/download/all', async (req, res) => {
+  try {
+    const format = req.query.format || 'zip'; // 'zip' or 'json'
+    const datasets = getAvailableDatasets();
+    const dataDir = getDataDir();
+    
+    if (format === 'json') {
+      // Return all datasets in a single JSON object
+      const allData = {};
+      for (const ds of datasets) {
+        const dsData = getDataset(ds);
+        allData[ds] = dsData;
+      }
+      
+      res.setHeader('Content-Type', 'application/json');
+      res.setHeader('Content-Disposition', `attachment; filename="steel-tiger-all-datasets-${Date.now()}.json"`);
+      res.json(allData);
+    } else {
+      // Create a ZIP file with all datasets
+      const archive = archiver('zip', { zlib: { level: 9 } });
+      
+      res.setHeader('Content-Type', 'application/zip');
+      res.setHeader('Content-Disposition', `attachment; filename="steel-tiger-datasets-${Date.now()}.zip"`);
+      
+      archive.on('error', (err) => {
+        logger.error({ err }, 'Archive error');
+        res.status(500).json({ error: 'Failed to create archive' });
+      });
+      
+      // Pipe archive data to the response
+      archive.pipe(res);
+      
+      // Add each dataset JSON file to the archive
+      for (const ds of datasets) {
+        const filePath = path.join(dataDir, `${ds}.json`);
+        if (fs.existsSync(filePath)) {
+          archive.file(filePath, { name: `${ds}.json` });
+        }
+      }
+      
+      // Add a metadata file with export info
+      const metadata = {
+        exportedAt: new Date().toISOString(),
+        datasets: datasets,
+        counts: {}
+      };
+      
+      for (const ds of datasets) {
+        const dsData = getDataset(ds);
+        metadata.counts[ds] = Array.isArray(dsData.data) ? dsData.data.length : 0;
+      }
+      
+      archive.append(JSON.stringify(metadata, null, 2), { name: 'metadata.json' });
+      
+      // Finalize the archive
+      await archive.finalize();
+      
+      logger.info({ datasets, format }, 'Datasets downloaded');
+    }
+  } catch (err) {
+    logger.error({ err }, 'Failed to download datasets');
+    res.status(500).json({ error: 'Failed to download datasets' });
+  }
+});
+
+// Download individual dataset
+app.get('/download/:dataset', (req, res) => {
+  try {
+    const { dataset } = req.params;
+    const dsData = getDataset(dataset);
+    
+    if (!dsData || dsData.error) {
+      return res.status(404).json({ error: `Dataset ${dataset} not found` });
+    }
+    
+    const filename = `steel-tiger-${dataset}-${Date.now()}.json`;
+    res.setHeader('Content-Type', 'application/json');
+    res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
+    res.json(dsData);
+    
+    logger.info({ dataset }, 'Dataset downloaded');
+  } catch (err) {
+    logger.error({ err }, 'Failed to download dataset');
+    res.status(500).json({ error: 'Failed to download dataset' });
   }
 });
 

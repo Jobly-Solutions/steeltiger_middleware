@@ -61,11 +61,20 @@ Endpoints
 - `POST /ai/query` → Q&A con IA usando muestras del dataset local
   - Body JSON: `{ "question": string, "datasets?": string[], "filters?": { "q?": string, "fields?": string[] }, "limit?": number }`
 
-Nuevos endpoints para sincronización con Bravilo AI:
+Endpoints para sincronización con Bravilo AI:
 - `GET /clients` → obtiene datos de clientes desde Steel Tiger API (query param: `dataset=clientes_ia`)
 - `POST /sync/contacts` → sincroniza contactos locales con Bravilo AI (body: `{ "dataset": "clientes_ia" }`)
 - `POST /sync/clients` → refresca datos de clientes y los sincroniza con Bravilo AI
 - `POST /sync/clients-to-bravilo` → sincroniza datos de clientes cacheados con Bravilo AI
+
+Endpoints para descarga de datos:
+- `GET /download/all` → descarga todos los datasets
+  - Query params: `format=zip` (default) o `format=json`
+  - ZIP incluye todos los archivos JSON + metadata.json con info de exportación
+  - JSON devuelve un objeto con todos los datasets
+  - Ej: `/download/all` o `/download/all?format=json`
+- `GET /download/:dataset` → descarga un dataset individual en JSON
+  - Ej: `/download/productos`, `/download/clientes_ia`
 
 Notas de diseño
 - Se cachea localmente cada dataset como `data/<dataset>.json` con metadatos de última descarga.
