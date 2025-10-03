@@ -33,6 +33,17 @@ Datasets sincronizados
 - `productos` (`_query: Productos`)
 - `lista_precios` (`_query: ListaDePrecios`)
 
+Convenciones de Datos
+
+Notación de Años en Productos:
+Los productos de Steel Tiger usan notación especial para años de compatibilidad:
+- `16-21` = Del año 2016 al 2021
+- `22->` = Del año 2022 en adelante  
+- `21>` = Del año 2021 en adelante
+- `16` = Solo para el año 2016
+
+Ejemplo: "Defensa Baja Negra para Nissan Frontier 16-21" significa compatible con Nissan Frontier desde 2016 hasta 2021.
+
 Endpoints
 - `GET /health` → estado del servicio, `dataDir`, datasets disponibles
 - `GET /datasets` → lista de datasets locales
