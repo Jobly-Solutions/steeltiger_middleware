@@ -470,6 +470,92 @@ app.get('/download/:dataset', (req, res) => {
   }
 });
 
+// Download productos with prices (joined data)
+app.get('/download/productos-con-precios', (req, res) => {
+  try {
+    const productos = getDataset('productos');
+    const precios = getDataset('lista_precios');
+    
+    if (!productos || productos.error) {
+      return res.status(404).json({ error: 'Productos dataset not found' });
+    }
+    if (!precios || precios.error) {
+      return res.status(404).json({ error: 'Lista_precios dataset not found' });
+    }
+    
+    const productosData = productos.data || [];
+    const preciosData = precios.data || [];
+    
+    // Crear índice de precios por COD_ALFABA
+    const preciosPorCodigo = new Map();
+    for (const precio of preciosData) {
+      const codigo = String(precio.COD_ALFABA || '').trim().toUpperCase();
+      if (!codigo) continue;
+      
+      if (!preciosPorCodigo.has(codigo)) {
+        preciosPorCodigo.set(codigo, []);
+      }
+      preciosPorCodigo.get(codigo).push({
+        lista: precio.CATEGORIA || precio.LISTA || null,
+        precioNeto: precio.PRE_NETO || null,
+        precioBruto: precio.PRE_BRUTO || null,
+        rubro: precio.RUBRO || null,
+        subrubro: precio.SUBRUBRO || null,
+        detalle: precio.DETALLE || null,
+        marca: precio.MARCA || null
+      });
+    }
+    
+    // Combinar productos con sus precios
+    const productosConPrecios = productosData.map(prod => {
+      const codigo = String(prod.COD_ALFABA || '').trim().toUpperCase();
+      const preciosProducto = preciosPorCodigo.get(codigo) || [];
+      
+      return {
+        codigo: prod.COD_ALFABA || null,
+        detalle: prod.DETALLE1 || null,
+        marca: prod.MARCA || null,
+        modelo: prod.MODELO || null,
+        categoria: prod.CATEGORIA || null,
+        precios: preciosProducto,
+        cantidadListas: preciosProducto.length,
+        // Incluir precio mínimo y máximo para referencia rápida
+        precioMin: preciosProducto.length > 0 
+          ? Math.min(...preciosProducto.map(p => p.precioNeto || p.precioBruto || Infinity).filter(p => p !== Infinity))
+          : null,
+        precioMax: preciosProducto.length > 0
+          ? Math.max(...preciosProducto.map(p => p.precioNeto || p.precioBruto || -Infinity).filter(p => p !== -Infinity))
+          : null
+      };
+    });
+    
+    const resultado = {
+      meta: {
+        exportedAt: new Date().toISOString(),
+        totalProductos: productosConPrecios.length,
+        productosConPrecio: productosConPrecios.filter(p => p.cantidadListas > 0).length,
+        productosSinPrecio: productosConPrecios.filter(p => p.cantidadListas === 0).length,
+        totalRegistrosPrecios: preciosData.length
+      },
+      data: productosConPrecios
+    };
+    
+    const filename = `steel-tiger-productos-precios-${Date.now()}.json`;
+    res.setHeader('Content-Type', 'application/json');
+    res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
+    res.json(resultado);
+    
+    logger.info({ 
+      totalProductos: productosConPrecios.length,
+      conPrecio: resultado.meta.productosConPrecio,
+      sinPrecio: resultado.meta.productosSinPrecio
+    }, 'Productos con precios downloaded');
+  } catch (err) {
+    logger.error({ err }, 'Failed to download productos con precios');
+    res.status(500).json({ error: 'Failed to download productos con precios' });
+  }
+});
+
 httpServer.listen(envPort, async () => {
   logger.info(`Steel Tiger middleware listening on http://localhost:${envPort}`);
   await scheduleRefresh();

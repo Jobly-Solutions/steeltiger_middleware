@@ -75,6 +75,11 @@ Endpoints para descarga de datos:
   - Ej: `/download/all` o `/download/all?format=json`
 - `GET /download/:dataset` → descarga un dataset individual en JSON
   - Ej: `/download/productos`, `/download/clientes_ia`
+- `GET /download/productos-con-precios` → descarga productos con precios combinados (JOIN)
+  - Combina productos con sus precios de todas las listas
+  - Incluye metadata con estadísticas (productos con/sin precio)
+  - Cada producto incluye array de precios por lista y precio min/max
+  - Formato: `{ meta: {...}, data: [{ codigo, detalle, marca, precios: [...], precioMin, precioMax }] }`
 
 Notas de diseño
 - Se cachea localmente cada dataset como `data/<dataset>.json` con metadatos de última descarga.
