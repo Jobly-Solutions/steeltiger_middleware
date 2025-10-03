@@ -1,6 +1,7 @@
 import OpenAI from 'openai';
 import { getAvailableDatasets, getDataset, refreshAllDatasets } from './datasetManager.js';
 import { fetchDataset as fetchSteelDataset } from './steelTigerClient.js';
+import { getBestPriceForClient } from './braviloClient.js';
 import Fuse from 'fuse.js';
 
 const openai = process.env.OPENAI_API_KEY ? new OpenAI({ apiKey: process.env.OPENAI_API_KEY }) : null;
@@ -128,7 +129,45 @@ function rankPriceRows(priceRows, tokens, sku) {
   return results.sort((a, b) => b.score - a.score).map((x) => x.row);
 }
 
-export async function answerQuestion({ question }) {
+export async function answerQuestion({ question, _phoneNumber, productCode }) {
+  // Si se proporciona _phoneNumber y productCode, usar consulta específica por teléfono
+  if (_phoneNumber && productCode) {
+    try {
+      const result = getBestPriceForClient(productCode, _phoneNumber, { getDataset });
+      
+      if (result.found) {
+        const priceFormatted = result.price ? new Intl.NumberFormat('es-AR', { 
+          style: 'currency', 
+          currency: 'ARS', 
+          maximumFractionDigits: 2 
+        }).format(result.price) : 'N/D';
+        
+        return {
+          answer: `Precio para ${result.client.nombre} (${result.clientList}): ${priceFormatted}`,
+          matches: [{
+            producto: productCode,
+            sku: productCode,
+            cliente: result.client,
+            clientList: result.clientList,
+            precioNumerico: result.price,
+            precio: priceFormatted,
+            priceDetails: result.priceDetails
+          }]
+        };
+      } else {
+        return {
+          answer: result.error || 'No se pudo obtener el precio',
+          matches: []
+        };
+      }
+    } catch (error) {
+      return {
+        answer: 'Error al consultar precio por teléfono',
+        matches: []
+      };
+    }
+  }
+
   const intent = await extractIntentWithAI(question);
 
   const productosRes = getDataset('productos');

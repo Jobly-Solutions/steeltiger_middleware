@@ -258,7 +258,7 @@ app.get('/diagnostic', async (req, res) => {
 
 app.post('/ai/query', async (req, res) => {
   try {
-    let { question, datasets, filters, limit } = req.body || {};
+    let { question, datasets, filters, limit, _phoneNumber, productCode } = req.body || {};
     
     // Handle Bravilo's nested JSON structure
     if (req.body && req.body.body && req.body.body.body) {
@@ -267,6 +267,8 @@ app.post('/ai/query', async (req, res) => {
       datasets = nestedBody.datasets;
       limit = nestedBody.limit;
       filters = nestedBody.filters;
+      _phoneNumber = nestedBody._phoneNumber;
+      productCode = nestedBody.productCode;
     }
     
     if (!question || typeof question !== 'string') {
@@ -294,7 +296,9 @@ app.post('/ai/query', async (req, res) => {
       question, 
       datasets: processedDatasets, 
       filters, 
-      limit: processedLimit 
+      limit: processedLimit,
+      _phoneNumber,
+      productCode
     });
     res.json(answer);
   } catch (err) {
@@ -303,57 +307,6 @@ app.post('/ai/query', async (req, res) => {
   }
 });
 
-// Endpoint para consultar precios por teléfono del cliente
-app.post('/price/by-phone', async (req, res) => {
-  try {
-    const { _phoneNumber, productCode } = req.body || {};
-    
-    if (!_phoneNumber) {
-      return res.status(400).json({ 
-        success: false, 
-        error: 'Missing _phoneNumber parameter' 
-      });
-    }
-    
-    if (!productCode) {
-      return res.status(400).json({ 
-        success: false, 
-        error: 'Missing productCode parameter' 
-      });
-    }
-    
-    const result = getBestPriceForClient(productCode, _phoneNumber, { getDataset });
-    
-    if (result.found) {
-      res.json({
-        success: true,
-        productCode,
-        phoneNumber: _phoneNumber,
-        client: result.client,
-        clientList: result.clientList,
-        price: result.price,
-        priceDetails: result.priceDetails,
-        message: `Precio encontrado para ${result.client.nombre} (Lista: ${result.clientList})`
-      });
-    } else {
-      res.json({
-        success: false,
-        productCode,
-        phoneNumber: _phoneNumber,
-        error: result.error,
-        clientList: result.clientList,
-        message: result.error
-      });
-    }
-  } catch (err) {
-    logger.error({ err, body: req.body }, 'Price by phone query failed');
-    res.status(500).json({ 
-      success: false, 
-      error: 'Price query failed',
-      message: err.message 
-    });
-  }
-});
 
 // Debug: consultar directamente Steel Tiger para un _query dado
 app.get('/debug/steel', async (req, res) => {

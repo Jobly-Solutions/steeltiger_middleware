@@ -169,11 +169,19 @@ Sincronización automática:
 - Logs detallados de éxito/error
 
 Consulta de precios por teléfono:
-- Endpoint: `POST /price/by-phone`
-- Parámetros: `_phoneNumber` y `productCode`
+- Integrado en endpoint: `POST /ai/query`
+- Parámetros adicionales: `_phoneNumber` y `productCode`
 - Busca el cliente por teléfono y obtiene su lista asignada
 - Devuelve el precio específico para esa lista
 - Normaliza números de teléfono automáticamente
+- Ejemplo de uso:
+  ```json
+  {
+    "question": "¿Cuánto cuesta el producto?",
+    "_phoneNumber": "+54 11 1234-5678",
+    "productCode": "ENG001"
+  }
+  ```
 
 Endpoints de sincronización:
 - `GET /clients` - Obtener datos de clientes desde Steel Tiger
