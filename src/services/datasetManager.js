@@ -73,42 +73,55 @@ export async function syncClientDataToBravilo() {
 
 export async function scheduleRefresh() {
   ensureDir(dataDir);
-  const cronExpr = process.env.REFRESH_CRON || '5 * * * *';
-  const clientSyncCron = process.env.CLIENT_SYNC_CRON || '0 * * * *'; // Every hour
+  // Actualizar a las 00:00 de cada día (medianoche)
+  const cronExpr = process.env.REFRESH_CRON || '0 0 * * *'; // Daily at midnight
+  const clientSyncCron = process.env.CLIENT_SYNC_CRON || '0 0 * * *'; // Daily at midnight
   
   try {
-    // Initial refresh on boot
-    await refreshAllDatasets();
-    logger.info(`Initial datasets refreshed. Scheduling cron: ${cronExpr}`);
+    // Initial refresh on boot ONLY if data doesn't exist
+    const datasetsExist = fs.existsSync(datasetFile('productos')) && 
+                          fs.existsSync(datasetFile('lista_precios')) &&
+                          fs.existsSync(datasetFile('clientes_ia'));
     
-    // Initial client sync
-    await syncClientDataToBravilo();
+    if (!datasetsExist) {
+      logger.info('No existing datasets found, performing initial refresh...');
+      await refreshAllDatasets();
+      logger.info('Initial datasets refreshed successfully');
+      
+      // Initial client sync
+      await syncClientDataToBravilo();
+      logger.info('Initial client sync completed');
+    } else {
+      logger.info('Existing datasets found, skipping initial refresh. Data will update at midnight.');
+    }
   } catch (err) {
     logger.error({ err }, 'Initial refresh failed');
   }
   
-  // Schedule regular dataset refresh
+  // Schedule daily dataset refresh at midnight
   cron.schedule(cronExpr, async () => {
     try {
-      logger.info('Cron: refreshing datasets');
+      logger.info('Cron (00:00): Refreshing all datasets...');
       await refreshAllDatasets();
-      logger.info('Cron: datasets refreshed successfully');
+      logger.info('Cron (00:00): Datasets refreshed successfully');
     } catch (err) {
       logger.error({ err }, 'Cron refresh failed');
     }
   });
   
-  // Schedule hourly client sync to Bravilo AI
+  // Schedule daily client sync to Bravilo AI at midnight
   cron.schedule(clientSyncCron, async () => {
     try {
-      logger.info('Cron: syncing client data to Bravilo AI');
+      logger.info('Cron (00:00): Syncing client data to Bravilo AI...');
       await syncClientDataToBravilo();
+      logger.info('Cron (00:00): Client sync completed');
     } catch (err) {
       logger.error({ err }, 'Cron client sync failed');
     }
   });
   
-  logger.info(`Client sync scheduled: ${clientSyncCron}`);
+  logger.info(`Dataset refresh scheduled: ${cronExpr} (daily at midnight)`);
+  logger.info(`Client sync scheduled: ${clientSyncCron} (daily at midnight)`);
 }
 
 function readDatasetSync(datasetKey) {

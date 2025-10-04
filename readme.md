@@ -20,7 +20,8 @@ Configurar entorno
 2) Opcional: `OPENAI_API_KEY` para habilitar `/ai/query`.
 3) Variables clave:
    - `PORT=3008`
-   - `REFRESH_CRON=5 * * * *` (minuto 5 de cada hora por defecto)
+   - `REFRESH_CRON=0 0 * * *` (diariamente a las 00:00 - medianoche)
+   - `CLIENT_SYNC_CRON=0 0 * * *` (diariamente a las 00:00 - medianoche)
    - `DATA_DIR=./data`
 
 Ejecutar
@@ -84,8 +85,9 @@ Endpoints para descarga de datos:
 
 Notas de diseño
 - Se cachea localmente cada dataset como `data/<dataset>.json` con metadatos de última descarga.
-- Refresco automático con `node-cron` (configurable por `REFRESH_CRON`).
-- Sincronización automática de clientes con Bravilo AI cada hora (configurable por `CLIENT_SYNC_CRON`).
+- **Refresco automático diario a las 00:00** (medianoche) con `node-cron` (configurable por `REFRESH_CRON`).
+- **Sincronización automática de clientes diaria a las 00:00** (medianoche) con Bravilo AI (configurable por `CLIENT_SYNC_CRON`).
+- **Datos persistentes:** Los datasets se mantienen en disco y solo se actualizan una vez al día, no se borran entre actualizaciones.
 - Cliente HTTP con `undici` y reintentos exponenciales.
 - IA opcional con `openai`; si no hay `OPENAI_API_KEY`, devuelve respuesta de cortesía.
 - Transformación automática de datos de Steel Tiger al formato de contactos de Bravilo AI.
@@ -189,9 +191,10 @@ Los datos de Steel Tiger se transforman automáticamente al formato de contactos
 - `metadata`: Información adicional como empresa, dirección, etc.
 
 Sincronización automática:
-- Se ejecuta cada hora por defecto
+- Se ejecuta **diariamente a las 00:00** (medianoche) por defecto
 - Solo sincroniza contactos que tengan email o teléfono
 - Incluye todos los campos del cliente en metadata
+- Los datos se mantienen en caché entre sincronizaciones
 - Logs detallados de éxito/error
 
 Consulta de precios por teléfono:
